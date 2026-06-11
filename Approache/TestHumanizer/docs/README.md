@@ -1,283 +1,904 @@
-# TestHumanizer
+# Architecture
 
-**TestHumanizer** is a modular SBST + LLM pipeline for improving automatically generated Java unit test suites.
+This document describes the internal architecture of TestHumanizer.
 
-It starts from EvoSuite-generated tests, prepares multiple refactoring prompts, applies LLM-based refactoring strategies, validates the resulting test suites, computes semantic and structural preservation metrics, and generates a synthetic report for analysis.
+It is intended for developers and researchers who want to understand, maintain, customize, or extend the pipeline.
 
-The goal of TestHumanizer is to support research and experimentation on the humanization of automatically generated test suites while preserving their behavioral intent.
+## 1. High-Level Architecture
 
-## Overview
+TestHumanizer is organized as a modular pipeline.
 
-Automatically generated tests are often useful for fault detection and coverage, but they can be hard to read, difficult to maintain, and poorly aligned with human-written test style.
+The main pipeline receives a YAML configuration, loads target Java classes, runs each processing phase, writes intermediate artifacts to disk, computes metrics, selects candidates, and generates reports.
 
-TestHumanizer provides an end-to-end experimental pipeline to:
-
-1.  Generate Java unit tests with EvoSuite.
-2.  Prepare test suites for LLM-based refactoring.
-3.  Run multiple refactoring scenarios.
-4.  Extract valid Java test suites from raw LLM outputs.
-5.  Validate original and refactored tests.
-6.  Compare original and refactored tests using semantic, lexical, readability, and complexity metrics.
-7.  Select the best refactored candidates.
-8.  Generate reports and dashboards.
-
-## Main Features
-
-- EvoSuite-based test generation.
-- Multi-scenario LLM refactoring.
-- Support for OpenAI and Mistral models.
-- Optional source-code summarization for summary-based prompting.
-- Original and refactored test validation.
-- Compilation and JUnit execution checks.
-- Optional JaCoCo coverage analysis.
-- CTSES composite similarity metrics.
-- CodeBERT, GraphCodeBERT, and OpenAI embedding cosine similarity.
-- Scalabrino readability score.
-- CCTR cognitive complexity.
-- PMD cyclomatic complexity and maintainability metrics.
-- Candidate selection based on validation, similarity, and CTSES thresholds.
-- Synthetic Markdown/HTML report generation.
-- Configurable CLI presets.
-- Lightweight logging modes for clean terminal output.
-
-## Pipeline Summary
-
-TestHumanizer currently runs the following phases:
-
-| Phase      | Description                                         |
-|------------|-----------------------------------------------------|
-| Phase 1    | Load and index target Java classes                  |
-| Phase 2    | Generate EvoSuite test suites                       |
-| Phase 3    | Validate original EvoSuite suites                   |
-| Phase 4    | Prepare LLM refactoring inputs                      |
-| Phase 4.5  | Generate and evaluate source-code summaries         |
-| Phase 5A   | Prepare refactoring prompts                         |
-| Phase 5B   | Run LLM refactoring                                 |
-| Phase 6    | Extract Java code and reconstruct refactored suites |
-| Phase 7    | Validate refactored suites                          |
-| Phase 8    | Compute CTSES metrics                               |
-| Phase 9    | Compute embedding cosine similarity                 |
-| Phase 10   | Compute Scalabrino readability                      |
-| Phase 11   | Compute CCTR cognitive complexity                   |
-| Phase 12   | Compute PMD complexity and maintainability          |
-| Phase 12.5 | Select best refactored candidates                   |
-| Phase 13   | Generate synthetic report and Plotly dashboard      |
-
-## Repository Structure
-
-A typical TestHumanizer repository contains:
+At a high level:
 
 ```text
-TestHumanizer/
-├── configs/
-│   └── experiments/
-│       ├── evosuite_simple_project.yaml
-│       └── targets_simple_project.csv
-├── examples/
-│   └── simple-java-project/
-├── testhumanizer/
-│   ├── cli.py
-│   ├── core/
-│   ├── config/
-│   ├── generators/
-│   ├── validation/
-│   ├── refactoring/
-│   ├── summarization/
-│   ├── metrics/
-│   ├── selection/
-│   ├── reports/
-│   └── utils/
-├── tools/
-│   ├── evosuite-master-1.2.1-SNAPSHOT.jar
-│   ├── JUNIT-HAMCREST/
-│   ├── jacoco-0.8.8/
-│   ├── pmd-bin-7.0.0-rc4/
-│   └── Readability-model/
-├── outputs/
-├── pyproject.toml
-└── README.md
+YAML Config
+   |
+   v
+CLI
+   |
+   v
+TestHumanizerPipeline
+   |
+   +--> Target loading
+   +--> EvoSuite generation
+   +--> Original validation
+   +--> Refactoring input preparation
+   +--> Source summarization
+   +--> Prompt preparation
+   +--> LLM refactoring
+   +--> Java extraction
+   +--> Refactored validation
+   +--> Metrics
+   +--> Candidate selection
+   +--> Report generation
 ```
-## Installation
+The pipeline is intentionally file-based. Each phase writes CSV and/or JSONL artifacts that are then consumed by later phases.
 
-### 1. Create a Python environment
+This makes the pipeline easier to debug, reproduce, and extend.
 
-TestHumanizer requires Python 3.10 or later.
+## 2. Main Entry Points
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -U pip
-pip install -e .
-```
-### 2. Install Java
+### CLI
 
-TestHumanizer relies on Java tools such as EvoSuite, JUnit, JaCoCo, PMD, and the Scalabrino readability model.
-
-Check Java availability:
-
-```bash
-java -version
-javac -version
-```
-### 3. Prepare external tools
-
-The default configuration expects the following tools:
+The command-line interface is implemented in:
 
 ```text
-tools/evosuite-master-1.2.1-SNAPSHOT.jar
-tools/JUNIT-HAMCREST/junit-4.13.2.jar
-tools/JUNIT-HAMCREST/hamcrest-core-1.3.jar
-tools/jacoco-0.8.8/lib/jacococli.jar
-tools/jacoco-0.8.8/lib/jacocoagent.jar
-tools/pmd-bin-7.0.0-rc4/
-tools/Readability-model/rsm.jar
+testhumanizer/cli.py
 ```
-If your paths differ, update the YAML configuration accordingly.
-
-### 4. Prepare CodeBLEU environment
-
-CodeBLEU is isolated in a separate environment in the current setup.
-
-Example:
+The CLI provides two main commands:
 
 ```bash
-python3 -m venv .venv-codebleu
-source .venv-codebleu/bin/activate
-pip install -U pip
-# install the CodeBLEU dependencies required by your setup
-deactivate
+testhumanizer run --config <config.yaml>
 ```
-The main YAML configuration points to:
+and:
+
+```bash
+testhumanizer inspect-config --config <config.yaml>
+```
+The `run` command loads the YAML configuration, applies optional CLI overrides, creates a `TestHumanizerPipeline`, and executes it.
+
+Supported CLI overrides include:
+
+```text
+--preset
+--models
+--temperature
+--iterations
+--scenarios
+--output-dir
+--no-llm
+--no-coverage
+--log-level
+--quiet
+--verbose
+--show-details
+--show-metrics
+```
+### Main Pipeline
+
+The central orchestration class is:
+
+```text
+testhumanizer/core/pipeline.py
+```
+The main class is:
+
+```text
+TestHumanizerPipeline
+```
+Its primary method is:
+
+```text
+run()
+```
+The pipeline controls all phases from target loading to report generation.
+
+## 3. Configuration Flow
+
+The configuration flow is:
+
+```text
+YAML file
+   |
+   v
+testhumanizer.config.loader.load_config
+   |
+   v
+CLI overrides
+   |
+   v
+TestHumanizerPipeline(config, config_path)
+   |
+   v
+Phase-specific components
+```
+At the beginning of a run, the effective configuration is copied into the output directory:
+
+```text
+outputs/<experiment_name>/config.yaml
+```
+This helps preserve experiment reproducibility.
+
+## 4. Output Directory Layout
+
+Each run writes into:
+
+```text
+outputs/<experiment_name>/
+```
+The pipeline creates the following main folders:
+
+```text
+outputs/<experiment_name>/
+├── logs/
+├── 01_targets/
+├── 02_evosuite/
+├── 03_summaries/
+├── 04_refactorings/
+├── 05_validation/
+├── 06_metrics/
+└── 07_reports/
+```
+Each phase reads from and writes to this directory.
+
+## 5. Phase Overview
+
+TestHumanizer currently has 13 main phases plus one candidate-selection subphase.
+
+```text
+Phase 1     Load and index target classes
+Phase 2     Generate EvoSuite test suites
+Phase 3     Validate original EvoSuite suites
+Phase 4     Prepare LLM refactoring inputs
+Phase 4.5   Generate and evaluate source-code summaries
+Phase 5A    Prepare refactoring prompts
+Phase 5B    Run LLM refactoring
+Phase 6     Extract Java and reconstruct refactored suites
+Phase 7     Validate refactored test suites
+Phase 8     Compute CTSES metrics
+Phase 9     Compute embedding cosine similarity
+Phase 10    Compute Scalabrino readability
+Phase 11    Compute CCTR cognitive complexity
+Phase 12    Compute PMD complexity and maintainability
+Phase 12.5  Select best refactored candidates
+Phase 13    Generate synthetic report and Plotly dashboard
+```
+## 6. Phase 1: Target Loading
+
+### Responsibility
+
+Phase 1 loads target Java classes from the target CSV file configured in:
 
 ```yaml
-metrics:
-  ctses:
-    codebleu_python: .venv-codebleu/bin/python
+dataset:
+  targets_file: configs/experiments/targets_simple_project.csv
 ```
-### 5. Configure API keys
-
-For OpenAI and Mistral models, export the required API keys:
-
-```bash
-export OPENAI_API_KEY_1="your-openai-key"
-export MISTRAL_API_KEY_2="your-mistral-key"
-```
-The environment variable names can be changed in the YAML configuration.
-
-## Quickstart
-
-Run the included simple Java project:
-
-```bash
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --preset fast
-```
-The `fast` preset runs all three refactoring scenarios with one iteration.
-
-Expected final output:
+### Main module
 
 ```text
-✓ Pipeline completed successfully. Reports are available in 07_reports.
+testhumanizer/core/targets.py
 ```
-The main report will be available under:
+### Main artifacts
 
 ```text
-outputs/evosuite_simple_project/07_reports/
+01_targets/targets_resolved.csv
+01_targets/targets_resolved.jsonl
 ```
-## CLI Usage
+### Data model
 
-TestHumanizer provides a command-line interface through the `testhumanizer` command.
+Target classes are represented internally using:
 
-### Run a pipeline
-
-```bash
-testhumanizer run --config configs/experiments/evosuite_simple_project.yaml
+```text
+testhumanizer/core/artifacts.py
 ```
-### Inspect a configuration
+The key target metadata includes:
 
-```bash
-testhumanizer inspect-config --config configs/experiments/evosuite_simple_project.yaml
+```text
+dataset
+project
+class_name
+bug_id
+source_path
+classpath
+test_class_fqdn
+class_files_dir
+source_files_dir
 ```
-### Use presets
+### Extension notes
 
-```bash
-testhumanizer run --config configs/experiments/evosuite_simple_project.yaml --preset ready
-testhumanizer run --config configs/experiments/evosuite_simple_project.yaml --preset fast
-testhumanizer run --config configs/experiments/evosuite_simple_project.yaml --preset full
+To support a new dataset, implement or adapt target loading so that each target is converted into the same internal `TargetClass` representation.
+
+## 7. Phase 2: EvoSuite Generation
+
+### Responsibility
+
+Phase 2 invokes EvoSuite for each target class and indexes the generated test suites.
+
+### Main modules
+
+```text
+testhumanizer/generators/evosuite.py
+testhumanizer/generators/indexing.py
 ```
-Preset behavior:
+### Main artifacts
 
-| Preset  | Behavior                                                   |
-|---------|------------------------------------------------------------|
-| `ready` | Uses the YAML configuration as the source of truth         |
-| `fast`  | Runs all scenarios with one iteration unless overridden    |
-| `full`  | Runs all scenarios with three iterations unless overridden |
-
-Explicit CLI arguments override preset defaults.
-
-### Override models
-
-```bash
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --models gpt4o
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --models gpt4o,mistral
+```text
+02_evosuite/generated/
+02_evosuite/original_suites_metadata.csv
+02_evosuite/original_suites_metadata.jsonl
 ```
-### Override scenarios
+### Configuration
 
-```bash
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --scenarios tests-only
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --scenarios tests-only,code-centric,summary-based
+```yaml
+test_generation:
+  enabled: true
+  tool: evosuite
+  evosuite_jar: tools/evosuite-master-1.2.1-SNAPSHOT.jar
+  runs_per_class: 1
+  search_budget_seconds: 60
 ```
-You can also use:
+### Extension notes
 
-```bash
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --scenarios all
+To support another SBST tool, add a new generator module with an interface similar to the EvoSuite generator, then register it in the pipeline.
+
+## 8. Phase 3: Original Suite Validation
+
+### Responsibility
+
+Phase 3 validates the original EvoSuite-generated suites.
+
+It can perform:
+
+```text
+compilation
+JUnit execution
+coverage computation
 ```
-### Override iterations
+### Main module
 
-```bash
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --iterations 3
+```text
+testhumanizer/validation/original_validator.py
 ```
-### Disable LLM execution
+### Main inputs
 
-Useful when you only want to reuse existing raw LLM outputs:
-
-```bash
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --no-llm
+```text
+02_evosuite/original_suites_metadata.csv
 ```
-### Disable coverage
+### Main outputs
 
-```bash
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --no-coverage
+```text
+05_validation/
 ```
-### Override output directory
+The exact CSV files depend on the validation configuration, but they typically include compilation, JUnit, and coverage results.
 
-```bash
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --output-dir outputs/my_custom_run
+### Extension notes
+
+Validation is one of the most important hard constraints in the pipeline. Later candidate selection can require original and refactored suites to compile and pass JUnit tests.
+
+## 9. Phase 4: Refactoring Input Preparation
+
+### Responsibility
+
+Phase 4 converts generated EvoSuite suites into structured refactoring inputs.
+
+It extracts useful information such as:
+
+```text
+full test code
+test methods
+helper methods
+target class metadata
+source-code context
 ```
-## Logging Options
+### Main module
 
-By default, TestHumanizer uses a clean normal logging mode.
+```text
+testhumanizer/refactoring/input_preparer.py
+```
+### Main inputs
 
-The YAML configuration supports:
+```text
+02_evosuite/original_suites_metadata.csv
+01_targets/targets_resolved.csv
+```
+### Main outputs
+
+```text
+04_refactorings/prepared_inputs.jsonl
+04_refactorings/prepared_inputs_metadata.csv
+```
+### Extension notes
+
+If you want to enrich prompts with additional context, Phase 4 is one of the best places to add metadata.
+
+## 10. Phase 4.5: Source-Code Summarization
+
+### Responsibility
+
+Phase 4.5 generates summaries of the source classes and optionally evaluates them.
+
+The selected summaries can be injected into the `summary-based` refactoring scenario.
+
+### Main modules
+
+```text
+testhumanizer/summarization/source_summarizer.py
+testhumanizer/summarization/summary_store.py
+testhumanizer/metrics/side/
+```
+### Main inputs
+
+```text
+01_targets/targets_resolved.csv
+source_path from each target
+```
+### Main outputs
+
+```text
+03_summaries/source_summaries.jsonl
+03_summaries/source_summaries_metadata.csv
+03_summaries/summary_attempts.jsonl
+```
+### Summary quality metadata
+
+Depending on configuration, metadata can include:
+
+```text
+selected
+official_side_score
+llm_side_score
+llm_side_faithfulness
+llm_side_coverage
+llm_side_conciseness
+llm_side_hallucination_risk
+```
+### Extension notes
+
+To customize summarization:
+
+- change the summarization prompt
+- change the LLM model
+- add another summary evaluator
+- modify selection policy
+- adjust summary injection into prompts
+
+## 11. Phase 5A: Prompt Preparation
+
+### Responsibility
+
+Phase 5A creates LLM refactoring prompts for each target suite, scenario, model, and iteration setting.
+
+### Main module
+
+```text
+testhumanizer/refactoring/prompt_preparer.py
+```
+### Main input
+
+```text
+04_refactorings/prepared_inputs.jsonl
+```
+### Main outputs
+
+```text
+04_refactorings/prompts/refactoring_prompts.jsonl
+04_refactorings/prompts/refactoring_prompts_metadata.csv
+```
+### Supported scenarios
+
+```text
+tests-only
+code-centric
+summary-based
+```
+### Extension notes
+
+To add a new prompt scenario:
+
+1.  Add the scenario name to configuration.
+2.  Update prompt preparation logic.
+3.  Add scenario-specific prompt construction.
+4.  Add metadata fields.
+5.  Validate that Phase 5B can consume the new prompts.
+
+## 12. Phase 5B: LLM Refactoring
+
+### Responsibility
+
+Phase 5B sends prompts to configured LLM providers and stores raw refactoring outputs.
+
+### Main module
+
+```text
+testhumanizer/refactoring/llm_refactorer.py
+```
+### Main input
+
+```text
+04_refactorings/prompts/refactoring_prompts.jsonl
+```
+### Main output
+
+```text
+04_refactorings/llm_outputs/raw_refactoring_outputs.jsonl
+```
+### Providers
+
+Current configurations typically use aliases such as:
+
+```text
+gpt4o
+mistral
+```
+Each alias maps to a provider and model name in the YAML configuration.
+
+### Extension notes
+
+To add a new provider:
+
+1.  Add or implement a provider client.
+2.  Add configuration fields.
+3.  Register dispatch logic in the LLM refactoring layer.
+4.  Add retry and timeout handling.
+5.  Save provider metadata in raw outputs.
+
+## 13. Phase 6: Java Extraction and Suite Reconstruction
+
+### Responsibility
+
+Phase 6 extracts Java code from raw LLM outputs and reconstructs complete refactored test suites.
+
+### Main module
+
+```text
+testhumanizer/refactoring/output_extractor.py
+```
+### Main inputs
+
+```text
+04_refactorings/llm_outputs/raw_refactoring_outputs.jsonl
+04_refactorings/prepared_inputs.jsonl
+```
+### Main outputs
+
+```text
+04_refactorings/extracted_suites/extracted_refactored_suites.jsonl
+04_refactorings/extracted_suites/extracted_refactored_suites_metadata.csv
+```
+### Extraction statuses
+
+Typical extraction statuses include:
+
+```text
+ok
+ok_no_fence
+ok_without_java_markers
+failed
+```
+### Extension notes
+
+If a new LLM output format is introduced, update extraction logic here. This phase should remain conservative: invalid or partial Java should be marked as failed rather than silently passed to validation.
+
+## 14. Phase 7: Refactored Suite Validation
+
+### Responsibility
+
+Phase 7 validates reconstructed refactored suites.
+
+It can perform:
+
+```text
+compilation
+JUnit execution
+coverage computation
+```
+### Main module
+
+```text
+testhumanizer/validation/refactored_validator.py
+```
+### Main input
+
+```text
+04_refactorings/extracted_suites/extracted_refactored_suites_metadata.csv
+```
+### Main outputs
+
+```text
+05_validation/
+```
+### Extension notes
+
+This phase is critical because candidate selection can require refactored suites to compile and pass JUnit tests.
+
+## 15. Phase 8: CTSES Metrics
+
+### Responsibility
+
+Phase 8 computes CTSES similarity between original and refactored test suites.
+
+CTSES combines:
+
+```text
+CodeBLEU
+METEOR
+ROUGE-L
+```
+### Main module
+
+```text
+testhumanizer/metrics/ctses/evaluator.py
+```
+### Main inputs
+
+```text
+04_refactorings/prepared_inputs.jsonl
+04_refactorings/extracted_suites/extracted_refactored_suites.jsonl
+```
+### Main outputs
+
+```text
+06_metrics/ctses/ctses_results.csv
+06_metrics/ctses/ctses_results.jsonl
+```
+### CTSES variants
+
+The implementation reports three variants:
+
+```text
+average_score_1
+CTSES_score_1
+CTSES_score_2
+```
+These correspond to the uniform baseline and the two CTSES profiles used in the paper.
+
+### Extension notes
+
+To add a new CTSES variant, update the aggregate computation and add the new field to the CSV/JSONL schema.
+
+## 16. Phase 9: Embedding Similarity
+
+### Responsibility
+
+Phase 9 computes embedding-based cosine similarity between original and refactored test suites.
+
+### Main module
+
+```text
+testhumanizer/metrics/embeddings/evaluator.py
+```
+### Embedding backends
+
+Supported backends include:
+
+```text
+CodeBERT
+GraphCodeBERT
+OpenAI embeddings
+```
+### Main inputs
+
+```text
+04_refactorings/prepared_inputs.jsonl
+04_refactorings/extracted_suites/extracted_refactored_suites.jsonl
+```
+### Main outputs
+
+```text
+06_metrics/embeddings/embedding_similarity_results.csv
+06_metrics/embeddings/embedding_similarity_results.jsonl
+```
+### Extension notes
+
+To add a new embedding backend:
+
+1.  Implement an embedder class.
+2.  Add configuration fields.
+3.  Register the model in the evaluator.
+4.  Write model alias and model name to outputs.
+5.  Update candidate selection if the new embedding is used as a primary metric.
+
+## 17. Phase 10: Scalabrino Readability
+
+### Responsibility
+
+Phase 10 computes code readability using the Scalabrino readability model.
+
+### Main modules
+
+```text
+testhumanizer/metrics/readability/evaluator.py
+testhumanizer/metrics/readability/scalabrino.py
+```
+### Main inputs
+
+```text
+02_evosuite/original_suites_metadata.csv
+04_refactorings/extracted_suites/extracted_refactored_suites_metadata.csv
+```
+### Main outputs
+
+```text
+06_metrics/readability/readability_results.csv
+06_metrics/readability/readability_results.jsonl
+06_metrics/readability/readability_summary.csv
+06_metrics/readability/readability_summary.jsonl
+```
+### Extension notes
+
+To use another readability model, implement a runner with a similar interface and update the evaluator.
+
+## 18. Phase 11: CCTR Cognitive Complexity
+
+### Responsibility
+
+Phase 11 computes CCTR cognitive complexity for original and refactored test suites.
+
+### Main modules
+
+```text
+testhumanizer/metrics/complexity/cctr.py
+testhumanizer/metrics/complexity/evaluator.py
+```
+### Main inputs
+
+```text
+02_evosuite/original_suites_metadata.csv
+04_refactorings/extracted_suites/extracted_refactored_suites_metadata.csv
+```
+### Main outputs
+
+```text
+06_metrics/complexity/cctr/cctr_results.csv
+06_metrics/complexity/cctr/cctr_results.jsonl
+06_metrics/complexity/cctr/cctr_summary.csv
+06_metrics/complexity/cctr/cctr_summary.jsonl
+```
+### Extension notes
+
+The CCTR calculator is separated from the evaluator. This allows developers to modify the complexity calculation independently from output formatting and pipeline integration.
+
+## 19. Phase 12: PMD Complexity and Maintainability
+
+### Responsibility
+
+Phase 12 uses PMD to compute additional complexity and maintainability metrics.
+
+### Main modules
+
+```text
+testhumanizer/metrics/complexity/pmd_evaluator.py
+testhumanizer/metrics/complexity/pmd_runner.py
+```
+### Main inputs
+
+```text
+02_evosuite/original_suites_metadata.csv
+04_refactorings/extracted_suites/extracted_refactored_suites_metadata.csv
+```
+### Main outputs
+
+```text
+06_metrics/complexity/pmd/
+```
+### Extension notes
+
+The PMD runner should remain isolated from the evaluator. If PMD CLI behavior changes, adapt the runner rather than the pipeline.
+
+## 20. Phase 12.5: Candidate Selection
+
+### Responsibility
+
+Phase 12.5 selects the best refactored candidate for each target/scenario/model group.
+
+### Main module
+
+```text
+testhumanizer/selection/candidate_selector.py
+```
+### Main inputs
+
+Candidate selection consumes outputs from:
+
+```text
+04_refactorings/extracted_suites/
+05_validation/
+06_metrics/ctses/
+06_metrics/embeddings/
+```
+### Main outputs
+
+```text
+06_metrics/selection/selected_candidates.csv
+06_metrics/selection/selected_candidates.jsonl
+```
+### Default selection logic
+
+The default policy uses:
+
+```text
+compilation status
+JUnit status
+OpenAI embedding cosine similarity
+CTSES score
+weighted ranking
+```
+### Extension notes
+
+To add a new selection policy:
+
+1.  Add a policy name to the YAML.
+2.  Implement policy logic in the selector.
+3.  Preserve existing output schema where possible.
+4.  Add new policy metadata fields if needed.
+5.  Update the report generator if the new fields are displayed.
+
+## 21. Phase 13: Synthetic Report Generation
+
+### Responsibility
+
+Phase 13 generates a synthetic Markdown/HTML report and Plotly dashboard.
+
+### Main module
+
+```text
+testhumanizer/reports/synthetic_report.py
+```
+### Main inputs
+
+Report generation consumes many previous outputs, including:
+
+```text
+06_metrics/selection/selected_candidates.csv
+06_metrics/ctses/ctses_results.csv
+06_metrics/embeddings/embedding_similarity_results.csv
+06_metrics/readability/readability_results.csv
+06_metrics/complexity/
+05_validation/
+```
+### Main outputs
+
+```text
+07_reports/synthetic_report.md
+07_reports/synthetic_report.html
+07_reports/report_summary.json
+07_reports/figures/
+```
+### Extension notes
+
+To add a new figure:
+
+1.  Load the metric file in the report generator.
+2.  Add a Plotly figure function.
+3.  Save HTML and optionally PNG.
+4.  Add the figure to the synthetic report.
+
+## 22. Module Organization
+
+The main package is organized as follows:
+
+```text
+testhumanizer/
+├── cli.py
+├── config/
+├── core/
+├── generators/
+├── validation/
+├── refactoring/
+├── summarization/
+├── metrics/
+├── selection/
+├── reports/
+└── utils/
+```
+### `cli.py`
+
+Handles command-line arguments, presets, and CLI overrides.
+
+### `config/`
+
+Loads YAML files and applies overrides.
+
+### `core/`
+
+Contains the main pipeline, target artifacts, and target loading helpers.
+
+### `generators/`
+
+Contains test generation logic, currently EvoSuite-based.
+
+### `validation/`
+
+Contains original and refactored validation logic.
+
+### `refactoring/`
+
+Contains refactoring input preparation, prompt preparation, LLM execution, and Java extraction.
+
+### `summarization/`
+
+Contains source summarization and summary storage.
+
+### `metrics/`
+
+Contains all metric evaluators.
+
+### `selection/`
+
+Contains candidate-selection logic.
+
+### `reports/`
+
+Contains synthetic report and dashboard generation.
+
+### `utils/`
+
+Contains shared utilities such as I/O helpers and logging.
+
+## 23. Data Flow
+
+The core data flow is:
+
+```text
+targets CSV
+   |
+   v
+01_targets/targets_resolved.*
+   |
+   v
+02_evosuite/original_suites_metadata.*
+   |
+   v
+04_refactorings/prepared_inputs.jsonl
+   |
+   +-----------------------------+
+   |                             |
+   v                             v
+03_summaries/source_summaries.*  04_refactorings/prompts/refactoring_prompts.*
+   |                             |
+   +-------------+---------------+
+                 |
+                 v
+04_refactorings/llm_outputs/raw_refactoring_outputs.jsonl
+                 |
+                 v
+04_refactorings/extracted_suites/extracted_refactored_suites.*
+                 |
+                 v
+05_validation/
+                 |
+                 v
+06_metrics/
+                 |
+                 v
+06_metrics/selection/selected_candidates.*
+                 |
+                 v
+07_reports/
+```
+This file-based structure allows restarting from intermediate phases when outputs already exist.
+
+## 24. Logging Architecture
+
+TestHumanizer uses a shared logger:
+
+```text
+testhumanizer/utils/logging.py
+```
+The logger supports:
+
+```text
+phase headers
+success messages
+warnings
+errors
+details
+metric-level logs
+final success panels
+```
+The logging behavior is controlled by YAML:
 
 ```yaml
 logging:
@@ -287,399 +908,244 @@ logging:
   show_metric_details: false
   show_warnings: true
 ```
-### Quiet mode
-
-```bash
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --quiet
-```
-### Verbose mode
-
-```bash
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --verbose
-```
-### Show per-item details
-
-```bash
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --show-details
-```
-### Show detailed metrics
-
-```bash
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --show-metrics
-```
-## Refactoring Scenarios
-
-TestHumanizer currently supports three prompt scenarios.
-
-### Scenario 1: Tests-only
-
-The LLM receives only the generated test suite and is asked to refactor it.
-
-This scenario measures how much the LLM can improve test readability and structure using only the test code.
-
-### Scenario 2: Code-centric
-
-The LLM receives the generated test suite and additional production-code context.
-
-This scenario helps the model understand the class under test and generate more meaningful names, organization, and assertions.
-
-### Scenario 3: Summary-based
-
-The LLM receives the generated test suite and a generated source-code summary.
-
-This scenario uses a compact semantic description of the class under test instead of relying only on raw source code.
-
-## Metrics
-
-TestHumanizer computes several families of metrics.
-
-### CTSES
-
-CTSES is a composite refactoring similarity score designed to estimate how well a refactored test suite preserves the original generated suite.
-
-It combines:
-
-- CodeBLEU
-- METEOR
-- ROUGE-L
-
-The current implementation reports three variants:
-
-| Variant                      | Weights                      |
-|------------------------------|------------------------------|
-| `average_score_1` / CTSESAVG | Uniform baseline             |
-| `CTSES_score_1` / CTSES_1    | Semantic-prioritized profile |
-| `CTSES_score_2` / CTSES_2    | Readability-aware profile    |
-
-### Embedding Similarity
-
-TestHumanizer computes cosine similarity between original and refactored test suites using:
-
-- CodeBERT
-- GraphCodeBERT
-- OpenAI `text-embedding-3-small`
-
-The OpenAI similarity is used as the primary semantic-preservation metric in the default candidate selection policy.
-
-### Readability
-
-TestHumanizer uses the Scalabrino readability model to estimate code readability for original and refactored test suites.
-
-### Cognitive Complexity
-
-TestHumanizer includes a CCTR cognitive complexity calculator based on Java parsing with Tree-sitter.
-
-### PMD Complexity and Maintainability
-
-TestHumanizer uses PMD to compute additional complexity and maintainability indicators, including cyclomatic complexity and maintainability-related metrics.
-
-## Candidate Selection
-
-After validation and metric computation, TestHumanizer selects the best refactored candidate for each class, test suite, scenario, model, and iteration group.
-
-The default selection policy is:
-
-```yaml
-selection:
-  policy: first_passing_then_best
-```
-The selection process applies:
-
-1.  Hard constraints:
+And can be overridden from the CLI:
 
 ```text
-- The refactored suite must compile.
-- The refactored suite must pass JUnit tests.
+--quiet
+--verbose
+--show-details
+--show-metrics
 ```
-2.  Semantic preservation thresholds:
+### Logging conventions
+
+For new modules:
 
 ```text
-- OpenAI embedding cosine similarity threshold.
-- CTSES threshold.
+self.log.success("Short summary.")
+self.log.warning("Important warning.")
+self.log.detail("Per-item detail.")
+self.log.metric("Metric-level detail.")
 ```
-3.  Ranking:
+Avoid direct `console.print(...)` calls in pipeline components unless there is a specific reason.
+
+## 25. CSV and JSONL Convention
+
+Most phases write both CSV and JSONL.
+
+### CSV
+
+CSV files are useful for:
 
 ```text
-- Cosine similarity weight.
-- CTSES weight.
+manual inspection
+spreadsheet analysis
+statistics
+report generation
 ```
-Default configuration:
+### JSONL
 
-```yaml
-selection:
-  hard_constraints:
-    require_compile_ok: true
-    require_junit_ok: true
-
-  cosine_similarity:
-    enabled: true
-    threshold: 0.80
-    primary_metric: cosine_similarity
-    primary_embedding_model_alias: openai
-
-  ctses:
-    enabled: true
-    threshold: 0.50
-
-  ranking:
-    cosine_weight: 0.60
-    ctses_weight: 0.40
-```
-## Output Structure
-
-A typical run creates:
+JSONL files are useful for:
 
 ```text
-outputs/<experiment_name>/
-├── config.yaml
-├── logs/
-├── 01_targets/
-│   ├── targets_resolved.csv
-│   └── targets_resolved.jsonl
-├── 02_evosuite/
-│   ├── generated/
-│   ├── original_suites_metadata.csv
-│   └── original_suites_metadata.jsonl
-├── 03_summaries/
-│   ├── source_summaries.jsonl
-│   ├── source_summaries_metadata.csv
-│   └── summary_attempts.jsonl
-├── 04_refactorings/
-│   ├── prepared_inputs.jsonl
-│   ├── prompts/
-│   ├── llm_outputs/
-│   └── extracted_suites/
-├── 05_validation/
-├── 06_metrics/
-│   ├── ctses/
-│   ├── embeddings/
-│   ├── readability/
-│   ├── complexity/
-│   └── selection/
-└── 07_reports/
-    ├── synthetic_report.md
-    ├── synthetic_report.html
-    ├── report_summary.json
-    └── figures/
+nested metadata
+prompt contents
+raw LLM outputs
+structured code content
+programmatic reuse
 ```
-## Main Output Files
+### Recommendation for new phases
 
-Important files include:
+A new phase should usually write:
 
 ```text
-01_targets/targets_resolved.csv
-02_evosuite/original_suites_metadata.csv
-03_summaries/source_summaries_metadata.csv
-04_refactorings/prepared_inputs.jsonl
-04_refactorings/prompts/refactoring_prompts_metadata.csv
-04_refactorings/llm_outputs/raw_refactoring_outputs.jsonl
-04_refactorings/extracted_suites/extracted_refactored_suites_metadata.csv
-05_validation/
-06_metrics/ctses/ctses_results.csv
-06_metrics/embeddings/embedding_similarity_results.csv
-06_metrics/readability/readability_results.csv
-06_metrics/complexity/cctr/cctr_results.csv
-06_metrics/complexity/pmd/pmd_complexity_results.csv
-06_metrics/selection/selected_candidates.csv
-07_reports/synthetic_report.html
+<phase_output>.csv
+<phase_output>.jsonl
 ```
-## Running Custom Java Projects
-
-To run TestHumanizer on a custom Java project, prepare:
-
-1.  A YAML configuration file.
-2.  A target CSV file listing the classes under test.
-3.  Java compilation dependencies.
-4.  Tool paths for EvoSuite, JUnit, JaCoCo, PMD, and readability if enabled.
-
-A target CSV should contain fields such as:
+And should include:
 
 ```text
-dataset,project,class_name,bug_id,source_path,classpath,test_class_fqdn,class_files_dir,source_files_dir
-custom,my-project,MyClass,,path/to/MyClass.java,path/to/classes,com.example.MyClass,path/to/classes,path/to/src/main/java
+id
+dataset
+project
+class_name
+bug_id
+testsuite_id
+scenario
+scenario_id
+iteration
+model_alias
+status
+error
 ```
-Then run:
+where applicable.
 
-```bash
-testhumanizer run \
-  --config configs/experiments/my_project.yaml \
-  --preset fast
+## 26. IDs and Metadata
+
+Stable IDs are important because outputs from different phases must be joined later.
+
+Typical identifiers include:
+
+```text
+dataset
+project
+class_name
+bug_id
+testsuite_id
+scenario_id
+model_alias
+iteration
 ```
-For complex Java projects, make sure that:
+A refactored candidate ID usually encodes several of these fields.
 
-- `classpath` includes all required compiled classes and dependencies.
-- `class_files_dir` points to compiled `.class` files.
-- `source_files_dir` points to the Java source tree.
-- The class under test can be compiled and executed outside TestHumanizer first.
-- EvoSuite can resolve the target class.
+When adding new artifacts, preserve these identifiers as much as possible.
 
-## Development Notes
+## 27. Error Handling
 
-TestHumanizer is organized as a modular pipeline.
+TestHumanizer should prefer structured failure metadata over silent crashes.
 
-Important extension points:
+Recommended pattern:
 
-| Component               | Location                             |
-|-------------------------|--------------------------------------|
-| CLI                     | `testhumanizer/cli.py`               |
-| Main pipeline           | `testhumanizer/core/pipeline.py`     |
-| EvoSuite generation     | `testhumanizer/generators/`          |
-| Validation              | `testhumanizer/validation/`          |
-| Refactoring preparation | `testhumanizer/refactoring/`         |
-| Source summarization    | `testhumanizer/summarization/`       |
-| CTSES metrics           | `testhumanizer/metrics/ctses/`       |
-| Embedding metrics       | `testhumanizer/metrics/embeddings/`  |
-| Readability metrics     | `testhumanizer/metrics/readability/` |
-| Complexity metrics      | `testhumanizer/metrics/complexity/`  |
-| Candidate selection     | `testhumanizer/selection/`           |
-| Reports                 | `testhumanizer/reports/`             |
-| Logging                 | `testhumanizer/utils/logging.py`     |
+```text
+status = ok | skipped | failed | error
+error = short error message
+```
+For batch phases, one failed item should not necessarily stop the entire run. Instead:
 
-## Extending TestHumanizer
+1.  Write an error row.
+2.  Continue processing other rows.
+3.  Print a warning.
+4.  Summarize failures at the end.
 
-### Add a new LLM provider
+Hard failures should be reserved for configuration errors or missing mandatory global inputs.
 
-To add a new LLM provider:
+## 28. Adding a New Phase
 
-1.  Add a client implementation in the LLM/refactoring layer.
-2.  Add provider-specific configuration fields.
-3.  Register the provider where LLM calls are dispatched.
-4.  Add an example configuration.
-5.  Test with `--models your_model_alias`.
+To add a new pipeline phase:
 
-### Add a new prompt scenario
+1.  Create a module under the appropriate package.
+2.  Implement an evaluator or processor class.
+3.  Add configuration keys.
+4.  Add input existence checks in the pipeline.
+5.  Write CSV and JSONL outputs.
+6.  Add concise logging.
+7.  Update report generation if needed.
+8.  Update documentation.
 
-To add a new scenario:
+Example skeleton:
 
-1.  Extend the scenario list in the configuration.
-2.  Update the prompt preparation logic.
-3.  Add metadata fields if the scenario uses additional context.
-4.  Ensure the scenario appears in output CSV/JSONL metadata.
-5.  Validate with `--scenarios your-scenario`.
+```python
+class NewMetricEvaluator:
+    def __init__(self, output_dir, config):
+        self.output_dir = Path(output_dir).expanduser().resolve()
+        self.config = config
+        self.log = THLogger(config)
 
-### Add a new metric
+    def evaluate(self, input_path):
+        rows = []
 
-To add a new metric:
+        # process inputs
 
-1.  Create a new module under `testhumanizer/metrics/`.
-2.  Implement an evaluator class with a clear `evaluate(...)` entry point.
-3.  Write detailed CSV and JSONL outputs.
-4.  Add a concise logging summary.
-5.  Register the evaluator in the main pipeline.
-6.  Add configuration switches under `metrics`.
-7.  Update reports and candidate selection if needed.
+        write_csv(...)
+        write_jsonl(...)
 
-### Add a new candidate selection policy
+        self.log.success(
+            f"New metric completed: rows={len(rows)}."
+        )
+```
+## 29. Adding a New Metric
 
-To add a new selection policy:
+A metric evaluator should:
 
-1.  Extend `testhumanizer/selection/candidate_selector.py`.
-2.  Add a new policy name in the YAML configuration.
-3.  Define hard constraints and ranking logic.
-4.  Save the selected candidate metadata.
-5.  Update the documentation.
+1.  Read existing artifacts.
+2.  Compute one or more scores.
+3.  Write detailed results.
+4.  Write summaries if useful.
+5.  Include status and error fields.
+6.  Avoid stopping the entire pipeline on one item failure.
+7.  Log one concise summary.
 
-## Troubleshooting
+Recommended output directory:
 
-### EvoSuite cannot find the target class
+```text
+06_metrics/<metric_name>/
+```
+Recommended files:
 
-Check:
+```text
+<metric_name>_results.csv
+<metric_name>_results.jsonl
+<metric_name>_summary.csv
+<metric_name>_summary.jsonl
+```
+## 30. Adding a New Report Figure
 
-- `classpath`
-- `class_files_dir`
-- compiled `.class` files
-- Java package names
-- source path correctness
+Report figures should be added in:
 
-### Java compilation fails
+```text
+testhumanizer/reports/synthetic_report.py
+```
+A figure should:
 
-Check:
+1.  Load the relevant CSV.
+2.  Create a Plotly figure.
+3.  Save an HTML file.
+4.  Optionally save a PNG file.
+5.  Register the figure in the report.
 
-- JUnit and Hamcrest jars
-- EvoSuite runtime jar
-- generated test imports
-- Java version compatibility
+Recommended output:
 
-### JUnit execution fails
+```text
+07_reports/figures/<figure_name>.html
+07_reports/figures/<figure_name>.png
+```
+## 31. Reproducibility Design
 
-Check:
+TestHumanizer supports reproducibility by:
 
-- runtime classpath
-- EvoSuite runtime dependency
-- test scaffolding
-- generated assertions
-- project dependencies
+```text
+copying the effective config into the output directory
+writing intermediate artifacts to disk
+using CSV/JSONL outputs
+recording model aliases and model names
+recording scenario IDs
+recording validation status
+recording metric status and errors
+using deterministic file paths where possible
+```
+For full reproducibility, also record:
 
-### Coverage fails
+```text
+Java version
+Python version
+EvoSuite version
+PMD version
+LLM model versions
+API model names
+CodeBLEU environment
+GPU/CPU device information
+```
+## 32. Development Checklist
 
-Check:
+Before committing a new feature:
 
-- JaCoCo jar paths
-- `jacocoagent.jar`
-- `jacococli.jar`
-- source and class directories
-- JVM arguments
+- [ ] The feature is configurable from YAML
+- [ ] It has a clear output directory
+- [ ] It writes CSV and/or JSONL outputs
+- [ ] It preserves core identifiers
+- [ ] It logs a concise success summary
+- [ ] It does not spam normal terminal output
+- [ ] It handles per-item failures gracefully
+- [ ] It is documented
+- [ ] It works with the simple Java example
+- [ ] It does not break candidate selection or reports
+## 33. Recommended Developer Workflow
 
-### CodeBLEU fails
-
-Check:
-
-- `.venv-codebleu`
-- `metrics.ctses.codebleu_python`
-- CodeBLEU dependencies
-- Java language configuration
-
-### OpenAI embeddings fail
-
-Check:
-
-- API key environment variable
-- model name
-- network access
-- retry settings
-- cache directory permissions
-
-### Scalabrino readability fails
-
-Check:
-
-- `tools/Readability-model/rsm.jar`
-- Java availability
-- timeout setting
-- input Java files
-
-### PMD fails
-
-Check:
-
-- PMD directory
-- PMD binary path
-- ruleset path
-- Java file paths
-
-## Recommended Workflow
-
-For a quick sanity check:
+For local development:
 
 ```bash
 testhumanizer run \
   --config configs/experiments/evosuite_simple_project.yaml \
   --preset fast
-```
-For a paper-like run:
-
-```bash
-testhumanizer run \
-  --config configs/experiments/evosuite_simple_project.yaml \
-  --preset full
 ```
 For debugging:
 
@@ -689,7 +1155,7 @@ testhumanizer run \
   --preset fast \
   --verbose
 ```
-For metric inspection:
+For metric debugging:
 
 ```bash
 testhumanizer run \
@@ -697,30 +1163,27 @@ testhumanizer run \
   --preset fast \
   --show-metrics
 ```
-## Citation
+For avoiding new LLM calls:
 
-If you use TestHumanizer in academic work, please cite the corresponding paper or technical report.
+```bash
+testhumanizer run \
+  --config configs/experiments/evosuite_simple_project.yaml \
+  --preset fast \
+  --no-llm
+```
+## 34. Design Principles
+
+TestHumanizer follows these principles:
 
 ```text
-@misc{testhumanizer,
-  title = {TestHumanizer: Humanizing Automatically Generated Unit Test Suites with LLM-Based Refactoring},
-  author = {Your Name},
-  year = {2026},
-  note = {Software artifact}
-}
+configuration-first
+file-based reproducibility
+phase-by-phase modularity
+structured metadata
+graceful per-item failure handling
+clear validation gates
+metric transparency
+extensibility
+clean terminal output
 ```
-## License
-
-Add your license information here.
-
-Recommended options for research software include:
-
-- MIT License
-- Apache License 2.0
-- BSD 3-Clause License
-
-## Status
-
-TestHumanizer is an active research prototype.
-
-The current version is designed for controlled experiments on Java unit test generation, LLM-based refactoring, validation, metric evaluation, candidate selection, and reporting.
+New code should follow the same principles.
