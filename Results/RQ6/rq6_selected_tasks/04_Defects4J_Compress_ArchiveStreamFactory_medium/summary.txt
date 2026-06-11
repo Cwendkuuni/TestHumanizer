@@ -1,0 +1,26 @@
+Dataset : Defects4J
+Project : Compress
+Class   : ArchiveStreamFactory
+Size    : medium (source_loc=118)
+Test methods : 20
+
+Class summary:
+```
+1. Overall Purpose:
+The `ArchiveStreamFactory` class serves as a factory for creating archive input and output streams, facilitating the handling of various archive formats like ZIP, TAR, JAR, AR, CPIO, and DUMP. It is a part of the Apache Commons Compress library, which provides a unified interface for working with different archive types in Java applications.
+
+2. Key Elements Identification:
+   - Main Methods:
+     - `createArchiveInputStream(String archiverName, InputStream in)`: This method creates an archive input stream based on a specified archive format name and input stream. It throws an `ArchiveException` if the format is unrecognized or inputs are null.
+     - `createArchiveOutputStream(String archiverName, OutputStream out)`: Similar to the input stream method, this creates an archive output stream for a given format and output stream, raising an `ArchiveException` for unknown formats or null inputs.
+     - `createArchiveInputStream(InputStream in)`: This method attempts to auto-detect the archive type from the input stream's signature bytes and create the appropriate input stream. It ensures the input stream supports mark/reset operations and throws an `ArchiveException` if detection fails.
+   - Important Variables:
+     - `AR`, `CPIO`, `DUMP`, `JAR`, `TAR`, `ZIP`: These are constants representing supported archive format names, used to identify the archive type in the factory methods.
+
+3. Method Relationships:
+The `createArchiveInputStream` and `createArchiveOutputStream` methods are related as they both use the provided archive format name to instantiate the correct type of archive stream, serving as complementary operations for reading and writing archive data, respectively. The auto-detecting `createArchiveInputStream` method extends this functionality by eliminating the need for specifying the format name.
+
+4. Summarize by Sections:
+   - Archive Stream Creation Methods: The `createArchiveInputStream` and `createArchiveOutputStream` methods provide a straightforward approach to instantiate archive streams for supported formats using a format name and a stream. These methods ensure the inputs are valid and raise exceptions for unknown formats, thereby simplifying archive stream management.
+   - Auto-Detection Method: The auto-detecting `createArchiveInputStream` method enhances usability by identifying the archive type from an input stream's initial bytes, eliminating the need for explicit format specification. This method requires the input stream to support mark/reset operations and handles different archive types through a series of signature checks.
+```

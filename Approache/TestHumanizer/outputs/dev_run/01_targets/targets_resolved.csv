@@ -1,0 +1,4 @@
+dataset,project,class_name,bug_id,source_path,classpath,test_class_fqdn
+Defects4J,Cli,CommandLine,1,/path/to/CommandLine.java,/path/to/classes:/path/to/dependencies,org.apache.commons.cli.CommandLine
+Defects4J,Cli,Option,16,/path/to/Option.java,/path/to/classes:/path/to/dependencies,org.apache.commons.cli2.Option
+SF110,15_beanbin,ReflectionSearch,,/path/to/ReflectionSearch.java,/path/to/classes:/path/to/dependencies,net.sourceforge.beanbin.reflect.ReflectionSearch

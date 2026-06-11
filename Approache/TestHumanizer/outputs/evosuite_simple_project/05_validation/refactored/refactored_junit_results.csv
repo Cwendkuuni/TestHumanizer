@@ -1,0 +1,1081 @@
+id,dataset,project,class_name,bug_id,testsuite_id,scenario,scenario_id,iteration,model_alias,provider,model,test_class_fqdn,junit_ok,returncode,stdout,stderr
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-1_gpt4o_iter_1,custom,simple-java-project,Calculator,,testsuite_1,tests-only,Scenario-1,1,gpt4o,openai,gpt-4o,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:36.548 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:36.548 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:36.561 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:36.561 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:36.562 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:36.562 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:36.739 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:36.740 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:36.740 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:36.740 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:36.740 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:36.740 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:36.740 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:36.749 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:36.749 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:36.752 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:36.790 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:36.791 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.224
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-1_gpt4o_iter_2,custom,simple-java-project,Calculator,,testsuite_1,tests-only,Scenario-1,2,gpt4o,openai,gpt-4o,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:38.301 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:38.302 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:38.314 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:38.314 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:38.315 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:38.315 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:38.495 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:38.495 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:38.495 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:38.495 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:38.495 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:38.495 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:38.495 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:38.504 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:38.504 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:38.507 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:38.543 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:38.544 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.223
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-1_gpt4o_iter_3,custom,simple-java-project,Calculator,,testsuite_1,tests-only,Scenario-1,3,gpt4o,openai,gpt-4o,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:40.101 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:40.102 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:40.114 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:40.114 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:40.115 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:40.115 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:40.290 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:40.290 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:40.290 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:40.290 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:40.290 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:40.290 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:40.290 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:40.299 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:40.299 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:40.302 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:40.340 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:40.341 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.22
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-1_mistral_iter_1,custom,simple-java-project,Calculator,,testsuite_1,tests-only,Scenario-1,1,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:41.818 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:41.819 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:41.831 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:41.831 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:41.832 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:41.832 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:42.005 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:42.005 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:42.005 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:42.005 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:42.005 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:42.005 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:42.005 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:42.014 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:42.014 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:42.016 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:42.054 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:42.055 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.22
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-1_mistral_iter_2,custom,simple-java-project,Calculator,,testsuite_1,tests-only,Scenario-1,2,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:43.589 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:43.590 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:43.602 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:43.602 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:43.603 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:43.603 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:43.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:43.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:43.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:43.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:43.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:43.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:43.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:43.800 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:43.800 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:43.802 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:43.840 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:43.840 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.231
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-1_mistral_iter_3,custom,simple-java-project,Calculator,,testsuite_1,tests-only,Scenario-1,3,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:45.389 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:45.390 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:45.402 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:45.402 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:45.403 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:45.403 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:45.579 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:45.579 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:45.579 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:45.579 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:45.579 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:45.579 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:45.579 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:45.588 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:45.588 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:45.591 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:45.629 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:45.629 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.22
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-2_gpt4o_iter_1,custom,simple-java-project,Calculator,,testsuite_1,code-centric,Scenario-2,1,gpt4o,openai,gpt-4o,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:47.149 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:47.150 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:47.162 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:47.162 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:47.163 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:47.163 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:47.348 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:47.349 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:47.349 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:47.349 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:47.349 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:47.349 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:47.349 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:47.358 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:47.358 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:47.361 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:47.398 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:47.399 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.23
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-2_gpt4o_iter_2,custom,simple-java-project,Calculator,,testsuite_1,code-centric,Scenario-2,2,gpt4o,openai,gpt-4o,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:48.938 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:48.938 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:48.950 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:48.951 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:48.952 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:48.952 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:49.127 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:49.127 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:49.127 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:49.127 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:49.127 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:49.127 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:49.127 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:49.137 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:49.137 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:49.139 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:49.176 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:49.176 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.22
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-2_gpt4o_iter_3,custom,simple-java-project,Calculator,,testsuite_1,code-centric,Scenario-2,3,gpt4o,openai,gpt-4o,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:50.697 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:50.697 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:50.709 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:50.710 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:50.711 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:50.711 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:50.894 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:50.894 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:50.894 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:50.894 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:50.894 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:50.894 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:50.894 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:50.904 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:50.904 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:50.906 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:50.942 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:50.943 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.226
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-2_mistral_iter_1,custom,simple-java-project,Calculator,,testsuite_1,code-centric,Scenario-2,1,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:52.504 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:52.504 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:52.516 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:52.516 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:52.517 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:52.517 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:52.702 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:52.702 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:52.702 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:52.702 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:52.702 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:52.702 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:52.702 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:52.713 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:52.713 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:52.715 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:52.753 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:52.753 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.23
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-2_mistral_iter_2,custom,simple-java-project,Calculator,,testsuite_1,code-centric,Scenario-2,2,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:54.295 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:54.295 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:54.307 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:54.307 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:54.308 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:54.308 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:54.485 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:54.485 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:54.485 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:54.485 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:54.485 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:54.485 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:54.485 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:54.494 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:54.494 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:54.496 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:54.533 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:54.533 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.219
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-2_mistral_iter_3,custom,simple-java-project,Calculator,,testsuite_1,code-centric,Scenario-2,3,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:56.091 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:56.091 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:56.103 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:56.104 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:56.105 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:56.105 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:56.283 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:56.283 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:56.283 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:56.283 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:56.283 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:56.283 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:56.283 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:56.293 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:56.293 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:56.295 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:56.332 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:56.332 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.221
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-3_gpt4o_iter_1,custom,simple-java-project,Calculator,,testsuite_1,summary-based,Scenario-3,1,gpt4o,openai,gpt-4o,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:57.859 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:57.859 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:57.872 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:57.872 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:57.873 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:57.873 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:58.047 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:58.047 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:58.047 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:58.047 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:58.047 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:58.047 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:58.047 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:58.056 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:58.056 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:58.059 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:58.099 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:58.099 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.221
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-3_gpt4o_iter_2,custom,simple-java-project,Calculator,,testsuite_1,summary-based,Scenario-3,2,gpt4o,openai,gpt-4o,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:06:59.599 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:06:59.600 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:06:59.612 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:59.612 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:06:59.613 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:06:59.613 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:06:59.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:06:59.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:06:59.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:06:59.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:06:59.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:06:59.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:06:59.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:06:59.800 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:06:59.800 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:06:59.803 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:06:59.841 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:06:59.841 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.223
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-3_gpt4o_iter_3,custom,simple-java-project,Calculator,,testsuite_1,summary-based,Scenario-3,3,gpt4o,openai,gpt-4o,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:07:01.338 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:07:01.339 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:07:01.351 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:07:01.351 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:07:01.352 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:07:01.352 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:07:01.537 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:01.537 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:01.537 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:01.537 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:01.537 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:01.537 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:01.537 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:01.546 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:07:01.546 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:07:01.549 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:07:01.586 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:07:01.586 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.229
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-3_mistral_iter_1,custom,simple-java-project,Calculator,,testsuite_1,summary-based,Scenario-3,1,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:07:03.107 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:07:03.108 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:07:03.120 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:07:03.120 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:07:03.121 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:07:03.121 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:07:03.294 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:03.295 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:03.295 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:03.295 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:03.295 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:03.295 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:03.295 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:03.304 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:07:03.304 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:07:03.306 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:07:03.345 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:07:03.346 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.22
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-3_mistral_iter_2,custom,simple-java-project,Calculator,,testsuite_1,summary-based,Scenario-3,2,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:07:05.007 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:07:05.007 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:07:05.019 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:07:05.019 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:07:05.020 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:07:05.020 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:07:05.195 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:05.195 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:05.195 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:05.195 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:05.195 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:05.195 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:05.195 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:05.204 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:07:05.204 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:07:05.207 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:07:05.245 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:07:05.245 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.22
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_Calculator_NA_testsuite_1_Scenario-3_mistral_iter_3,custom,simple-java-project,Calculator,,testsuite_1,summary-based,Scenario-3,3,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.Calculator_ESTest,True,0,"JUnit version 4.13.2
+19:07:06.804 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest
+19:07:06.805 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest'.
+19:07:06.817 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:07:06.817 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator_ESTest_scaffolding'.
+19:07:06.818 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest_scaffolding
+19:07:06.818 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator_ESTest
+19:07:06.993 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:06.993 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:06.993 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:06.993 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:06.993 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:06.993 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:06.993 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:07.003 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.Calculator
+19:07:07.003 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.Calculator'.
+19:07:07.006 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/Calculator
+19:07:07.045 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/Calculator
+19:07:07.046 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.Calculator
+.........
+Time: 0.223
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-1_gpt4o_iter_1,custom,simple-java-project,StringNormalizer,,testsuite_1,tests-only,Scenario-1,1,gpt4o,openai,gpt-4o,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:08.631 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:08.632 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:08.643 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:08.643 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:08.644 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:08.644 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:08.822 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:08.822 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:08.822 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:08.822 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:08.822 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:08.822 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:08.822 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:08.831 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:08.831 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:08.834 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:08.873 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:08.873 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.226
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-1_gpt4o_iter_2,custom,simple-java-project,StringNormalizer,,testsuite_1,tests-only,Scenario-1,2,gpt4o,openai,gpt-4o,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:10.420 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:10.420 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:10.432 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:10.432 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:10.433 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:10.433 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:10.613 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:10.613 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:10.613 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:10.613 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:10.613 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:10.614 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:10.614 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:10.623 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:10.623 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:10.625 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:10.662 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:10.663 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.227
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-1_gpt4o_iter_3,custom,simple-java-project,StringNormalizer,,testsuite_1,tests-only,Scenario-1,3,gpt4o,openai,gpt-4o,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:12.138 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:12.139 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:12.151 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:12.151 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:12.152 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:12.152 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:12.330 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:12.330 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:12.330 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:12.330 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:12.330 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:12.330 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:12.330 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:12.339 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:12.340 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:12.342 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:12.381 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:12.381 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.226
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-1_mistral_iter_1,custom,simple-java-project,StringNormalizer,,testsuite_1,tests-only,Scenario-1,1,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:13.892 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:13.892 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:13.904 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:13.904 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:13.905 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:13.905 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:14.079 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:14.079 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:14.079 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:14.079 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:14.079 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:14.079 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:14.079 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:14.088 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:14.088 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:14.091 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:14.130 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:14.130 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.223
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-1_mistral_iter_2,custom,simple-java-project,StringNormalizer,,testsuite_1,tests-only,Scenario-1,2,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:15.643 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:15.644 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:15.656 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:15.656 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:15.657 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:15.657 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:15.840 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:15.840 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:15.840 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:15.840 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:15.840 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:15.840 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:15.840 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:15.851 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:15.851 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:15.853 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:15.896 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:15.897 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.239
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-1_mistral_iter_3,custom,simple-java-project,StringNormalizer,,testsuite_1,tests-only,Scenario-1,3,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:17.412 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:17.412 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:17.425 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:17.425 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:17.426 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:17.426 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:17.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:17.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:17.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:17.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:17.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:17.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:17.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:17.617 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:17.617 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:17.619 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:17.655 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:17.656 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.225
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-2_gpt4o_iter_1,custom,simple-java-project,StringNormalizer,,testsuite_1,code-centric,Scenario-2,1,gpt4o,openai,gpt-4o,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:19.148 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:19.149 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:19.161 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:19.161 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:19.162 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:19.162 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:19.339 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:19.339 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:19.339 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:19.340 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:19.340 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:19.340 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:19.340 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:19.349 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:19.349 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:19.351 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:19.390 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:19.390 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.225
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-2_gpt4o_iter_2,custom,simple-java-project,StringNormalizer,,testsuite_1,code-centric,Scenario-2,2,gpt4o,openai,gpt-4o,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:20.914 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:20.915 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:20.927 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:20.927 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:20.928 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:20.928 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:21.117 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:21.117 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:21.117 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:21.117 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:21.117 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:21.117 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:21.117 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:21.126 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:21.126 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:21.128 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:21.164 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:21.164 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.231
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-2_gpt4o_iter_3,custom,simple-java-project,StringNormalizer,,testsuite_1,code-centric,Scenario-2,3,gpt4o,openai,gpt-4o,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:22.822 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:22.822 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:22.834 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:22.834 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:22.835 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:22.835 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:23.014 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:23.014 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:23.014 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:23.014 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:23.014 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:23.014 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:23.014 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:23.025 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:23.025 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:23.027 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:23.066 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:23.067 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.227
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-2_mistral_iter_1,custom,simple-java-project,StringNormalizer,,testsuite_1,code-centric,Scenario-2,1,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:24.547 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:24.548 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:24.560 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:24.560 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:24.561 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:24.561 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:24.746 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:24.746 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:24.746 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:24.746 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:24.746 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:24.746 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:24.746 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:24.756 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:24.756 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:24.758 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:24.796 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:24.797 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.231
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-2_mistral_iter_2,custom,simple-java-project,StringNormalizer,,testsuite_1,code-centric,Scenario-2,2,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:26.320 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:26.320 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:26.332 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:26.332 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:26.333 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:26.333 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:26.512 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:26.512 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:26.512 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:26.512 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:26.512 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:26.512 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:26.512 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:26.521 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:26.521 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:26.524 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:26.560 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:26.560 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.222
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-2_mistral_iter_3,custom,simple-java-project,StringNormalizer,,testsuite_1,code-centric,Scenario-2,3,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:28.113 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:28.113 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:28.125 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:28.126 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:28.127 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:28.127 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:28.301 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:28.301 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:28.301 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:28.301 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:28.301 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:28.301 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:28.301 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:28.309 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:28.310 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:28.312 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:28.350 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:28.350 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.219
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-3_gpt4o_iter_1,custom,simple-java-project,StringNormalizer,,testsuite_1,summary-based,Scenario-3,1,gpt4o,openai,gpt-4o,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:29.849 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:29.850 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:29.862 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:29.862 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:29.863 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:29.863 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:30.040 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:30.040 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:30.040 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:30.040 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:30.040 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:30.040 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:30.040 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:30.049 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:30.049 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:30.051 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:30.089 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:30.090 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.226
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-3_gpt4o_iter_2,custom,simple-java-project,StringNormalizer,,testsuite_1,summary-based,Scenario-3,2,gpt4o,openai,gpt-4o,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:31.642 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:31.642 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:31.654 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:31.654 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:31.655 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:31.655 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:31.829 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:31.829 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:31.829 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:31.829 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:31.829 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:31.829 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:31.829 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:31.839 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:31.839 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:31.841 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:31.879 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:31.879 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.22
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-3_gpt4o_iter_3,custom,simple-java-project,StringNormalizer,,testsuite_1,summary-based,Scenario-3,3,gpt4o,openai,gpt-4o,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:33.448 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:33.448 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:33.460 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:33.460 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:33.461 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:33.461 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:33.640 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:33.640 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:33.640 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:33.640 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:33.640 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:33.640 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:33.640 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:33.649 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:33.649 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:33.651 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:33.689 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:33.689 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.225
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-3_mistral_iter_1,custom,simple-java-project,StringNormalizer,,testsuite_1,summary-based,Scenario-3,1,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:35.176 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:35.176 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:35.189 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:35.189 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:35.190 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:35.190 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:35.366 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:35.366 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:35.366 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:35.366 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:35.366 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:35.366 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:35.366 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:35.375 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:35.375 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:35.378 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:35.416 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:35.416 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.221
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-3_mistral_iter_2,custom,simple-java-project,StringNormalizer,,testsuite_1,summary-based,Scenario-3,2,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:36.951 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:36.951 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:36.964 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:36.964 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:36.965 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:36.965 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:36.968 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:36.968 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:36.970 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:37.009 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:37.010 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+19:07:37.184 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:37.184 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:37.184 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:37.184 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:37.184 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:37.184 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:37.184 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+..........
+Time: 0.183
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+custom_simple-java-project_StringNormalizer_NA_testsuite_1_Scenario-3_mistral_iter_3,custom,simple-java-project,StringNormalizer,,testsuite_1,summary-based,Scenario-3,3,mistral,mistral,mistral-large-2407,com.testhumanizer.examples.StringNormalizer_ESTest,True,0,"JUnit version 4.13.2
+19:07:38.710 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:38.711 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest'.
+19:07:38.723 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:38.723 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding'.
+19:07:38.724 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest_scaffolding
+19:07:38.724 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer_ESTest
+19:07:38.900 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+19:07:38.900 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+19:07:38.900 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+19:07:38.900 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+19:07:38.900 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+19:07:38.900 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+19:07:38.900 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+19:07:38.910 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.testhumanizer.examples.StringNormalizer
+19:07:38.910 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.testhumanizer.examples.StringNormalizer'.
+19:07:38.912 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/testhumanizer/examples/StringNormalizer
+19:07:38.952 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/testhumanizer/examples/StringNormalizer
+19:07:38.952 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.testhumanizer.examples.StringNormalizer
+..........
+Time: 0.224
+
+OK (10 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"

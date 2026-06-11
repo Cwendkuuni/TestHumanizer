@@ -1,0 +1,15 @@
+task_id,dir_name,group,dataset,project,class,size_bin,loc,versionA,versionB
+01,01_Defects4J_Cli_TypeHandler_medium,A,Defects4J,Cli,TypeHandler,medium,145,EvoSuite,TestHumanizer
+02,03_Defects4J_Codec_Lang_medium,A,Defects4J,Codec,Lang,medium,84,EvoSuite,TestHumanizer
+05,07_Defects4J_Compress_X7875_NewUnix_medium,A,Defects4J,Compress,X7875_NewUnix,medium,164,EvoSuite,TestHumanizer
+07,09_Defects4J_Csv_CSVRecord_small,A,Defects4J,Csv,CSVRecord,small,65,EvoSuite,TestHumanizer
+08,10_Defects4J_Gson_ISO8601Utils_large,A,Defects4J,Gson,ISO8601Utils,large,242,EvoSuite,TestHumanizer
+09,11_Defects4J_JacksonCore_NumberInput_large,A,Defects4J,JacksonCore,NumberInput,large,247,TestHumanizer,EvoSuite
+10,12_Defects4J_JacksonDatabind_StdDateFormat_large,A,Defects4J,JacksonDatabind,StdDateFormat,large,254,EvoSuite,TestHumanizer
+13,15_Defects4J_Mockito_TypeBasedCandidateFilter_small,A,Defects4J,Mockito,TypeBasedCandidateFilter,small,10,EvoSuite,TestHumanizer
+14,16_SF110_21_geo-google_AddressToUsAddressFunctor_small,A,SF110,21_geo-google,AddressToUsAddressFunctor,small,54,EvoSuite,TestHumanizer
+17,19_SF110_60_sugar_FSPathExplorer_medium,A,SF110,60_sugar,FSPathExplorer,medium,158,TestHumanizer,EvoSuite
+19,21_SF110_77_io-project_ClientGroup_medium,A,SF110,77_io-project,ClientGroup,medium,83,TestHumanizer,EvoSuite
+20,22_SF110_85_shop_JSPredicateForm_large,A,SF110,85_shop,JSPredicateForm,large,218,TestHumanizer,EvoSuite
+23,25_SF110_commons-math_AbstractSimplex_small,A,SF110,commons-math,AbstractSimplex,small,71,TestHumanizer,EvoSuite
+24,26_SF110_guava_Monitor_large,A,SF110,guava,Monitor,large,442,TestHumanizer,EvoSuite

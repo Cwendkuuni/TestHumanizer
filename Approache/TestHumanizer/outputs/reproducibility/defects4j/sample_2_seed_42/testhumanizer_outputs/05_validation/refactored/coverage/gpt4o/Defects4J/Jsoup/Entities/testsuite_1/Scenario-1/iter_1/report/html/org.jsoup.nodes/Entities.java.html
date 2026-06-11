@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Entities.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCo Coverage Report</a> &gt; <a href="index.source.html" class="el_package">org.jsoup.nodes</a> &gt; <span class="el_source">Entities.java</span></div><h1>Entities.java</h1><pre class="source lang-java linenums">package org.jsoup.nodes;
+
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.CharsetEncoder;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * HTML entities, and escape routines.
+ * Source: &lt;a href=&quot;http://www.w3.org/TR/html5/named-character-references.html#named-character-references&quot;&gt;W3C HTML
+ * named character references&lt;/a&gt;.
+ */
+public class Entities {
+<span class="fc" id="L17">    public enum EscapeMode {</span>
+        /** Restricted entities suitable for XHTML output: lt, gt, amp, apos, and quot only. */
+<span class="fc" id="L19">        xhtml(xhtmlByVal),</span>
+        /** Default HTML output entities. */
+<span class="fc" id="L21">        base(baseByVal),</span>
+        /** Complete HTML entities. */
+<span class="fc" id="L23">        extended(fullByVal);</span>
+
+        private Map&lt;Character, String&gt; map;
+
+<span class="fc" id="L27">        EscapeMode(Map&lt;Character, String&gt; map) {</span>
+<span class="fc" id="L28">            this.map = map;</span>
+<span class="fc" id="L29">        }</span>
+
+        public Map&lt;Character, String&gt; getMap() {
+<span class="fc" id="L32">            return map;</span>
+        }
+    }
+
+    private static final Map&lt;String, Character&gt; full;
+    private static final Map&lt;Character, String&gt; xhtmlByVal;
+    private static final Map&lt;String, Character&gt; base;
+    private static final Map&lt;Character, String&gt; baseByVal;
+    private static final Map&lt;Character, String&gt; fullByVal;
+<span class="fc" id="L41">    private static final Pattern unescapePattern = Pattern.compile(&quot;&amp;(#(x|X)?([0-9a-fA-F]+)|[a-zA-Z]+\\d*);?&quot;);</span>
+<span class="fc" id="L42">    private static final Pattern strictUnescapePattern = Pattern.compile(&quot;&amp;(#(x|X)?([0-9a-fA-F]+)|[a-zA-Z]+\\d*);&quot;);</span>
+
+    private Entities() {}
+
+    /**
+     * Check if the input is a known named entity
+     * @param name the possible entity name (e.g. &quot;lt&quot; or &quot;amp&quot;)
+     * @return true if a known named entity
+     */
+    public static boolean isNamedEntity(String name) {
+<span class="fc" id="L52">        return full.containsKey(name);</span>
+    }
+
+    /**
+     * Check if the input is a known named entity in the base entity set.
+     * @param name the possible entity name (e.g. &quot;lt&quot; or &quot;amp&quot;)
+     * @return true if a known named entity in the base set
+     * @see #isNamedEntity(String)
+     */
+
+    /**
+     * Get the Character value of the named entity
+     * @param name named entity (e.g. &quot;lt&quot; or &quot;amp&quot;)
+     * @return the Character value of the named entity (e.g. '&lt;' or '&amp;')
+     */
+    public static Character getCharacterByName(String name) {
+<span class="fc" id="L68">        return full.get(name);</span>
+    }
+    
+    static String escape(String string, Document.OutputSettings out) {
+<span class="fc" id="L72">        return escape(string, out.encoder(), out.escapeMode());</span>
+    }
+
+    static String escape(String string, CharsetEncoder encoder, EscapeMode escapeMode) {
+<span class="fc" id="L76">        StringBuilder accum = new StringBuilder(string.length() * 2);</span>
+<span class="fc" id="L77">        Map&lt;Character, String&gt; map = escapeMode.getMap();</span>
+
+<span class="fc bfc" id="L79" title="All 2 branches covered.">        for (int pos = 0; pos &lt; string.length(); pos++) {</span>
+<span class="fc" id="L80">            Character c = string.charAt(pos);</span>
+<span class="fc bfc" id="L81" title="All 2 branches covered.">            if (map.containsKey(c))</span>
+<span class="fc" id="L82">                accum.append('&amp;').append(map.get(c)).append(';');</span>
+<span class="pc bpc" id="L83" title="1 of 2 branches missed.">            else if (encoder.canEncode(c))</span>
+<span class="fc" id="L84">                accum.append(c.charValue());</span>
+            else
+<span class="nc" id="L86">                accum.append(&quot;&amp;#&quot;).append((int) c).append(';');</span>
+        }
+
+<span class="fc" id="L89">        return accum.toString();</span>
+    }
+
+    static String unescape(String string) {
+<span class="fc" id="L93">        return unescape(string, false);</span>
+    }
+
+    /**
+     * Unescape the input string.
+     * @param string
+     * @param strict if &quot;strict&quot; (that is, requires trailing ';' char, otherwise that's optional)
+     * @return
+     */
+    static String unescape(String string, boolean strict) {
+<span class="fc bfc" id="L103" title="All 2 branches covered.">        if (!string.contains(&quot;&amp;&quot;))</span>
+<span class="fc" id="L104">            return string;</span>
+<span class="fc bfc" id="L105" title="All 2 branches covered.">        Matcher m = strict? strictUnescapePattern.matcher(string) : unescapePattern.matcher(string);</span>
+<span class="fc" id="L106">        StringBuffer accum = new StringBuffer(string.length());</span>
+<span class="fc bfc" id="L107" title="All 2 branches covered.">        while (m.find()) {</span>
+<span class="fc" id="L108">            int charval = -1;</span>
+<span class="fc" id="L109">            String num = m.group(3);</span>
+<span class="fc bfc" id="L110" title="All 2 branches covered.">            if (num != null) {</span>
+                try {
+<span class="pc bpc" id="L112" title="1 of 2 branches missed.">                    int base = m.group(2) != null ? 16 : 10;</span>
+<span class="nc" id="L113">                    charval = Integer.valueOf(num, base);</span>
+<span class="fc" id="L114">                } catch (NumberFormatException e) {</span>
+<span class="pc" id="L115">                }</span>
+            } else {
+<span class="fc" id="L117">                String name = m.group(1);</span>
+<span class="fc bfc" id="L118" title="All 2 branches covered.">                if (full.containsKey(name))</span>
+<span class="fc" id="L119">                    charval = full.get(name);</span>
+            }
+<span class="pc bpc" id="L121" title="1 of 4 branches missed.">            if (charval != -1 || charval &gt; 0xFFFF) {</span>
+<span class="fc" id="L122">                String c = Character.toString((char) charval);</span>
+<span class="fc" id="L123">                m.appendReplacement(accum, Matcher.quoteReplacement(c));</span>
+<span class="fc" id="L124">            } else {</span>
+<span class="fc" id="L125">                m.appendReplacement(accum, Matcher.quoteReplacement(m.group(0)));</span>
+            }
+<span class="fc" id="L127">        }</span>
+<span class="fc" id="L128">        m.appendTail(accum);</span>
+<span class="fc" id="L129">        return accum.toString();</span>
+    }
+
+    // xhtml has restricted entities
+<span class="fc" id="L133">    private static final Object[][] xhtmlArray = {</span>
+            {&quot;quot&quot;, 0x00022},
+            {&quot;amp&quot;, 0x00026},
+            {&quot;apos&quot;, 0x00027},
+            {&quot;lt&quot;, 0x0003C},
+            {&quot;gt&quot;, 0x0003E}
+    };
+
+    static {
+<span class="fc" id="L142">        xhtmlByVal = new HashMap&lt;Character, String&gt;();</span>
+<span class="fc" id="L143">        base = loadEntities(&quot;entities-base.properties&quot;);  // most common / default</span>
+<span class="fc" id="L144">        baseByVal = toCharacterKey(base);</span>
+<span class="fc" id="L145">        full = loadEntities(&quot;entities-full.properties&quot;); // extended and overblown.</span>
+<span class="fc" id="L146">        fullByVal = toCharacterKey(full);</span>
+
+<span class="fc bfc" id="L148" title="All 2 branches covered.">        for (Object[] entity : xhtmlArray) {</span>
+<span class="fc" id="L149">            Character c = Character.valueOf((char) ((Integer) entity[1]).intValue());</span>
+<span class="fc" id="L150">            xhtmlByVal.put(c, ((String) entity[0]));</span>
+        }
+<span class="fc" id="L152">    }</span>
+
+    private static Map&lt;String, Character&gt; loadEntities(String filename) {
+<span class="fc" id="L155">        Properties properties = new Properties();</span>
+<span class="fc" id="L156">        Map&lt;String, Character&gt; entities = new HashMap&lt;String, Character&gt;();</span>
+        try {
+<span class="fc" id="L158">            InputStream in = Entities.class.getResourceAsStream(filename);</span>
+<span class="fc" id="L159">            properties.load(in);</span>
+<span class="fc" id="L160">            in.close();</span>
+<span class="nc" id="L161">        } catch (IOException e) {</span>
+<span class="nc" id="L162">            throw new MissingResourceException(&quot;Error loading entities resource: &quot; + e.getMessage(), &quot;Entities&quot;, filename);</span>
+<span class="fc" id="L163">        }</span>
+
+<span class="fc bfc" id="L165" title="All 2 branches covered.">        for (Map.Entry entry: properties.entrySet()) {</span>
+<span class="fc" id="L166">            Character val = Character.valueOf((char) Integer.parseInt((String) entry.getValue(), 16));</span>
+<span class="fc" id="L167">            String name = (String) entry.getKey();</span>
+<span class="fc" id="L168">            entities.put(name, val);</span>
+<span class="fc" id="L169">        }</span>
+<span class="fc" id="L170">        return entities;</span>
+    }
+
+    private static Map&lt;Character, String&gt; toCharacterKey(Map&lt;String, Character&gt; inMap) {
+<span class="fc" id="L174">        Map&lt;Character, String&gt; outMap = new HashMap&lt;Character, String&gt;();</span>
+<span class="fc bfc" id="L175" title="All 2 branches covered.">        for (Map.Entry&lt;String, Character&gt; entry: inMap.entrySet()) {</span>
+<span class="fc" id="L176">            Character character = entry.getValue();</span>
+<span class="fc" id="L177">            String name = entry.getKey();</span>
+
+<span class="fc bfc" id="L179" title="All 2 branches covered.">            if (outMap.containsKey(character)) {</span>
+                // dupe, prefer the lower case version
+<span class="fc bfc" id="L181" title="All 2 branches covered.">                if (name.toLowerCase().equals(name))</span>
+<span class="fc" id="L182">                    outMap.put(character, name);</span>
+            } else {
+<span class="fc" id="L184">                outMap.put(character, name);</span>
+            }
+<span class="fc" id="L186">        }</span>
+<span class="fc" id="L187">        return outMap;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

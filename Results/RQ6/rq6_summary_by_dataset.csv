@@ -1,0 +1,13 @@
+dataset,approach,metric,N,min,q1,median,mean,q3,max
+Defects4J,EvoSuite,adopt,26,1.0,2.0,2.0,2.3076923076923075,3.0,4.0
+Defects4J,Summary,adopt,26,2.0,4.0,4.0,3.730769230769231,4.0,5.0
+Defects4J,EvoSuite,readability,26,1.0,2.0,2.0,2.230769230769231,3.0,4.0
+Defects4J,Summary,readability,26,1.0,4.0,4.0,3.769230769230769,4.0,5.0
+Defects4J,EvoSuite,trust,26,3.0,3.0,3.0,3.423076923076923,4.0,5.0
+Defects4J,Summary,trust,26,3.0,4.0,4.0,3.8461538461538463,4.0,4.0
+SF110,EvoSuite,adopt,30,1.0,1.0,3.0,2.4,3.0,4.0
+SF110,Summary,adopt,30,2.0,2.25,3.0,3.066666666666667,4.0,4.0
+SF110,EvoSuite,readability,30,1.0,2.0,2.5,2.6,4.0,4.0
+SF110,Summary,readability,30,2.0,3.0,4.0,3.533333333333333,4.0,5.0
+SF110,EvoSuite,trust,30,2.0,2.25,3.0,3.1,4.0,4.0
+SF110,Summary,trust,30,2.0,2.0,3.0,3.0,3.75,5.0

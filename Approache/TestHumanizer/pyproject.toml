@@ -1,0 +1,73 @@
+[project]
+name = "testhumanizer"
+version = "0.1.0"
+description = "A modular SBST+LLM pipeline for humanizing automatically generated unit test suites."
+requires-python = ">=3.10"
+
+# dependencies = [
+#     "pyyaml>=6.0.1",
+#     "pydantic>=2.0.0",
+#     "pandas>=2.0.0",
+#     "numpy>=1.24.0",
+#     "tqdm>=4.66.0",
+#     "plotly>=5.20.0",
+#     "rich>=13.0.0",
+
+#     # Java parsing
+#      "tree-sitter>=0.25.0,<0.26",
+#      "tree-sitter-java>=0.23.0,<0.24",
+   
+#      "setuptools<82",
+
+#     # Token counting / API clients
+#     "tiktoken",
+#     "python-dotenv",
+#     "openai",
+#     "mistralai",
+
+#     # CTSES metrics
+#     "nltk",
+#     "rouge-score",
+
+#     # Embedding / cosine metrics, later phase
+#     "scikit-learn",
+#     "transformers",
+#     "torch",
+# ]
+dependencies = [
+    "pyyaml>=6.0.1",
+    "pydantic>=2.0.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "tqdm>=4.66.0",
+    "plotly>=5.20.0",
+    "rich>=13.0.0",
+
+    # Java parsing for the main TestHumanizer pipeline
+    "tree-sitter>=0.25.0,<0.26",
+    "tree-sitter-java>=0.23.0,<0.24",
+    "setuptools<82",
+
+    # Token counting / API clients
+    "tiktoken",
+    "python-dotenv",
+    "openai",
+    "mistralai",
+
+    # CTSES metrics computed in the main environment
+    # CodeBLEU is intentionally isolated in .venv-codebleu
+    "nltk",
+    "rouge-score",
+
+    # Embedding / cosine metrics
+    "scikit-learn",
+    "transformers",
+    "torch",
+]
+
+[project.scripts]
+testhumanizer = "testhumanizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["testhumanizer*"]

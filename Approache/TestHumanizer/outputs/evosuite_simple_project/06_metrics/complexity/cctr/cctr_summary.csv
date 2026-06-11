@@ -1,0 +1,15 @@
+suite_kind,dataset,project,class_name,scenario_id,model_alias,total_files,ok_files,average_cognitive_complexity,median_cognitive_complexity,min_cognitive_complexity,max_cognitive_complexity,total_cognitive_complexity
+original,custom,simple-java-project,Calculator,Original,original,1,1,49.0,49.0,49.0,49.0,49.0
+original,custom,simple-java-project,StringNormalizer,Original,original,1,1,42.0,42.0,42.0,42.0,42.0
+refactored,custom,simple-java-project,Calculator,Scenario-1,gpt4o,3,3,49.0,49.0,49.0,49.0,147.0
+refactored,custom,simple-java-project,Calculator,Scenario-1,mistral,3,3,49.0,49.0,49.0,49.0,147.0
+refactored,custom,simple-java-project,Calculator,Scenario-2,gpt4o,3,3,49.0,49.0,49.0,49.0,147.0
+refactored,custom,simple-java-project,Calculator,Scenario-2,mistral,3,3,49.0,49.0,49.0,49.0,147.0
+refactored,custom,simple-java-project,Calculator,Scenario-3,gpt4o,3,3,49.0,49.0,49.0,49.0,147.0
+refactored,custom,simple-java-project,Calculator,Scenario-3,mistral,3,3,49.0,49.0,49.0,49.0,147.0
+refactored,custom,simple-java-project,StringNormalizer,Scenario-1,gpt4o,3,3,39.0,39.0,39.0,39.0,117.0
+refactored,custom,simple-java-project,StringNormalizer,Scenario-1,mistral,3,3,39.0,39.0,39.0,39.0,117.0
+refactored,custom,simple-java-project,StringNormalizer,Scenario-2,gpt4o,3,3,42.0,42.0,42.0,42.0,126.0
+refactored,custom,simple-java-project,StringNormalizer,Scenario-2,mistral,3,3,39.0,39.0,39.0,39.0,117.0
+refactored,custom,simple-java-project,StringNormalizer,Scenario-3,gpt4o,3,3,42.0,42.0,42.0,42.0,126.0
+refactored,custom,simple-java-project,StringNormalizer,Scenario-3,mistral,3,3,39.0,39.0,39.0,39.0,117.0

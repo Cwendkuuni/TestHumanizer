@@ -1,0 +1,5 @@
+suite_kind,dataset,project,class_name,scenario_id,model_alias,total_files,ok_files,average_maintainability_index,median_maintainability_index,min_maintainability_index,max_maintainability_index,average_cyclomatic_complexity,median_cyclomatic_complexity,min_cyclomatic_complexity,max_cyclomatic_complexity,total_cyclomatic_complexity,total_loc
+original,SF110,33_javaviewcontrol,TokenMgrError,Original,original,1,1,100.0,100.0,100.0,100.0,13.0,13.0,13.0,13.0,13.0,84
+original,SF110,74_fixsuite,Library,Original,original,1,1,100.0,100.0,100.0,100.0,5.0,5.0,5.0,5.0,5.0,50
+refactored,SF110,33_javaviewcontrol,TokenMgrError,Scenario-1,gpt4o,1,1,96.6010525740739,96.6010525740739,96.6010525740739,96.6010525740739,13.0,13.0,13.0,13.0,13.0,177
+refactored,SF110,74_fixsuite,Library,Scenario-1,gpt4o,1,1,98.38379573087389,98.38379573087389,98.38379573087389,98.38379573087389,5.0,5.0,5.0,5.0,5.0,66

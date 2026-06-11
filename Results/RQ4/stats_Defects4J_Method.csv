@@ -1,0 +1,6 @@
+dataset,coverage_type,source,min,q1,mean,q3,max,n
+Defects4J,Method,EvoSuite,78.19,100.0,99.6,100.0,100.0,105
+Defects4J,Method,gpt-4o,4.17,100.0,92.06,100.0,100.0,98
+Defects4J,Method,Tests-only,58.82,100.0,98.49,100.0,100.0,908
+Defects4J,Method,Code-centric,57.73,100.0,98.63,100.0,100.0,900
+Defects4J,Method,Summary-based,66.25,100.0,99.42,100.0,100.0,921

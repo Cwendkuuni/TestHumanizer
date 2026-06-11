@@ -1,0 +1,25 @@
+Dataset,Scenario,Model,Error_Category,Total_Errors
+Defects4J,Scenario-1,MISTRAL,Cannot Find Symbol,2331
+Defects4J,Scenario-1,MISTRAL,Other,408
+Defects4J,Scenario-1,MISTRAL,Incompatible Types,284
+Defects4J,Scenario-1,MISTRAL,Package Does Not Exist,183
+Defects4J,Scenario-2,MISTRAL,Cannot Find Symbol,2289
+Defects4J,Scenario-2,MISTRAL,Other,394
+Defects4J,Scenario-2,MISTRAL,Incompatible Types,280
+Defects4J,Scenario-2,MISTRAL,Package Does Not Exist,183
+Defects4J,Scenario-3,MISTRAL,Cannot Find Symbol,2198
+Defects4J,Scenario-3,MISTRAL,Other,366
+Defects4J,Scenario-3,MISTRAL,Incompatible Types,277
+Defects4J,Scenario-3,MISTRAL,Package Does Not Exist,100
+SF110,Scenario-1,MISTRAL,Other,774
+SF110,Scenario-1,MISTRAL,Cannot Find Symbol,64
+SF110,Scenario-1,MISTRAL,Incompatible Types,26
+SF110,Scenario-1,MISTRAL,Unclosed Character Literal,2
+SF110,Scenario-2,MISTRAL,Other,758
+SF110,Scenario-2,MISTRAL,Cannot Find Symbol,94
+SF110,Scenario-2,MISTRAL,Incompatible Types,34
+SF110,Scenario-2,MISTRAL,Unclosed Character Literal,1
+SF110,Scenario-3,MISTRAL,Other,696
+SF110,Scenario-3,MISTRAL,Cannot Find Symbol,41
+SF110,Scenario-3,MISTRAL,Incompatible Types,30
+SF110,Scenario-3,MISTRAL,Unclosed Character Literal,1

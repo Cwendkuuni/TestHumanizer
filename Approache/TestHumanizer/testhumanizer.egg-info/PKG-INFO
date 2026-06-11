@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: testhumanizer
+Version: 0.1.0
+Summary: A modular SBST+LLM pipeline for humanizing automatically generated unit test suites.
+Requires-Python: >=3.10
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: tqdm>=4.66.0
+Requires-Dist: plotly>=5.20.0
+Requires-Dist: kaleido>=0.2.1
+Requires-Dist: rich>=13.0.0

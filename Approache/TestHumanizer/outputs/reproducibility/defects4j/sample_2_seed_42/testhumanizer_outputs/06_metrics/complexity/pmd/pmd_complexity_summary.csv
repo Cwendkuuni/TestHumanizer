@@ -1,0 +1,5 @@
+suite_kind,dataset,project,class_name,scenario_id,model_alias,total_files,ok_files,average_maintainability_index,median_maintainability_index,min_maintainability_index,max_maintainability_index,average_cyclomatic_complexity,median_cyclomatic_complexity,min_cyclomatic_complexity,max_cyclomatic_complexity,total_cyclomatic_complexity,total_loc
+original,Defects4J,Cli,PosixParser,Original,original,1,1,100.0,100.0,100.0,100.0,13.0,13.0,13.0,13.0,13.0,142
+original,Defects4J,Jsoup,Entities,Original,original,1,1,100.0,100.0,100.0,100.0,9.0,9.0,9.0,9.0,9.0,66
+refactored,Defects4J,Cli,PosixParser,Scenario-1,gpt4o,1,1,95.90357805147164,95.90357805147164,95.90357805147164,95.90357805147164,13.0,13.0,13.0,13.0,13.0,153
+refactored,Defects4J,Jsoup,Entities,Scenario-1,gpt4o,1,1,96.00825042892843,96.00825042892843,96.00825042892843,96.00825042892843,9.0,9.0,9.0,9.0,9.0,102

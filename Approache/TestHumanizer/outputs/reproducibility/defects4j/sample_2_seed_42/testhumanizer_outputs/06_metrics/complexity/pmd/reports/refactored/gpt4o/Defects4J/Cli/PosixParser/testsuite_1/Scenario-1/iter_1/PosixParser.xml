@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0-rc4" timestamp="2026-06-11T10:59:00.696">
+<file name="/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs/04_refactorings/extracted_suites/generated/gpt4o/Defects4J/Cli/PosixParser/testsuite_1/Scenario-1/iter_1/org/apache/commons/cli/PosixParser_ESTest.java">
+<violation beginline="23" endline="23" begincolumn="17" endcolumn="52" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="testFlattenWithOptionsAndBurstToken" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFlattenWithOptionsAndBurstToken()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="39" endline="39" begincolumn="17" endcolumn="57" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="testFlattenWithSingleOptionAndBurstToken" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFlattenWithSingleOptionAndBurstToken()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="54" endline="54" begincolumn="17" endcolumn="41" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="testFlattenWithNoOptions" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFlattenWithNoOptions()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="68" endline="68" begincolumn="17" endcolumn="60" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="testFlattenWithMultipleOptionsAndBurstToken" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFlattenWithMultipleOptionsAndBurstToken()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="84" endline="84" begincolumn="17" endcolumn="66" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="testFlattenWithNullDescriptionOptionAndBurstToken" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFlattenWithNullDescriptionOptionAndBurstToken()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="99" endline="99" begincolumn="17" endcolumn="58" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="testFlattenWithNullOptionsThrowsException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFlattenWithNullOptionsThrowsException()' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="116" endline="116" begincolumn="17" endcolumn="60" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="testFlattenWithInvalidOptionThrowsException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFlattenWithInvalidOptionThrowsException()' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="134" endline="134" begincolumn="17" endcolumn="44" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="testFlattenWithEmptyOptions" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFlattenWithEmptyOptions()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="148" endline="148" begincolumn="17" endcolumn="42" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="testFlattenWithSingleDash" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFlattenWithSingleDash()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="162" endline="162" begincolumn="17" endcolumn="43" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="testFlattenWithNullOptions" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFlattenWithNullOptions()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="175" endline="175" begincolumn="17" endcolumn="57" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="testFlattenAndBurstTokenWithEmptyOptions" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFlattenAndBurstTokenWithEmptyOptions()' has a cyclomatic complexity of 1.
+</violation>
+</file>
+</pmd>

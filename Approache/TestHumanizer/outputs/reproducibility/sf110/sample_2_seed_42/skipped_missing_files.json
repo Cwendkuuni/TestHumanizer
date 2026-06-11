@@ -1,0 +1,36 @@
+[
+  {
+    "dataset": "SF110",
+    "project": "checkstyle",
+    "class_name": "FileText",
+    "bug_id": "",
+    "source_path": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle/com/puppycrawl/tools/checkstyle/api/FileText.java",
+    "classpath": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle:/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle/checkstyle-6.19-all 2.jar:/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle/checkstyle-6.19-all.jar:/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle/org.apache.tools.ant-1.6.5.jar",
+    "test_class_fqdn": "com.puppycrawl.tools.checkstyle.api.FileText",
+    "class_files_dir": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle",
+    "source_files_dir": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle",
+    "_source_exists": "False",
+    "_class_exists": "True",
+    "_source_token_count": "1051",
+    "_source_method_count": "10",
+    "_source_loc": "75",
+    "_metadata_key": "SF110|checkstyle||FileText|com.puppycrawl.tools.checkstyle.api"
+  },
+  {
+    "dataset": "SF110",
+    "project": "checkstyle",
+    "class_name": "AbstractLoader",
+    "bug_id": "",
+    "source_path": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle/com/puppycrawl/tools/checkstyle/api/AbstractLoader.java",
+    "classpath": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle:/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle/checkstyle-6.19-all 2.jar:/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle/checkstyle-6.19-all.jar:/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle/org.apache.tools.ant-1.6.5.jar",
+    "test_class_fqdn": "com.puppycrawl.tools.checkstyle.api.AbstractLoader",
+    "class_files_dir": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle",
+    "source_files_dir": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/checkstyle",
+    "_source_exists": "False",
+    "_class_exists": "True",
+    "_source_token_count": "433",
+    "_source_method_count": "4",
+    "_source_loc": "21",
+    "_metadata_key": "SF110|checkstyle||AbstractLoader|com.puppycrawl.tools.checkstyle.api"
+  }
+]

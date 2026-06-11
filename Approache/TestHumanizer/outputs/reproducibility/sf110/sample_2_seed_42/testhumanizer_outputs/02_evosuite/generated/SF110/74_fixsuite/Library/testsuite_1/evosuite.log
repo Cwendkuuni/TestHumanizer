@@ -1,0 +1,42 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Going to generate test cases for class: org.fixsuite.message.Library
+* Starting Client-0
+* Connecting to master process on port 9922
+* Analyzing classpath: 
+  - /home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/74_fixsuite
+  - /home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/74_fixsuite/fixsuite.jar
+* Finished analyzing classpath
+* Generating tests for class org.fixsuite.message.Library
+* Test criteria:
+  - Branch Coverage
+  - Top-Level Method Coverage
+  - Line Coverage
+* Total number of test goals for DYNAMOSA: 91
+* Using seed 1
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 38 / 91
+* Search finished after 31s and 4 generations, 3028 statements, best individual has fitness: 46.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 40%
+* Total number of goals: 35
+* Number of covered goals: 14
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 52%
+* Total number of goals: 52
+* Number of covered goals: 27
+* Generated 5 tests with total length 12
+* Resulting test suite's coverage: 64% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 9%
+* Compiling and checking tests
+* Writing tests to file
+* Writing JUnit test case 'Library_ESTest' to /home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/02_evosuite/generated/SF110/74_fixsuite/Library/testsuite_1
+* Done!
+
+* Computation finished

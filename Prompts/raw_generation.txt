@@ -1,0 +1,6 @@
+As a professional software tester who writes Java test methods, generate a complete JUnit 4 test suite to comprehensively test all methods in the following class named {class_name}. 
+
+Here is the source code:
+{source_code}
+
+Please ensure the generated test suite is enclosed within triple backticks ``` ``` for easy extraction.

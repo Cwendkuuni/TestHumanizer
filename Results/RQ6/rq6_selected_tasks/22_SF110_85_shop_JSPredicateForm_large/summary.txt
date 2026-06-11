@@ -1,0 +1,42 @@
+Dataset : SF110
+Project : 85_shop
+Class   : JSPredicateForm
+Size    : large (source_loc=218)
+Test methods : 31
+
+Class summary:
+```
+1. Overall Purpose:
+   The `JSPredicateForm` class is designed to represent and manipulate predicate forms used in logical programming or planning domains. It extends Java's `Vector` class, allowing it to function as a dynamic array for storing elements of a predicate. The class is likely used in a larger system for parsing, evaluating, and transforming logical expressions or predicates, possibly within a planning or AI context.
+
+2. Key Elements Identification:
+   - Constructors:
+     - `JSPredicateForm()`: Default constructor that initializes the predicate form.
+     - `JSPredicateForm(String text)`: Initializes the predicate form by tokenizing the input string.
+     - `JSPredicateForm(StreamTokenizer tokenizer)`: Initializes the predicate form using a given tokenizer.
+
+   - Main methods:
+     - `JSPredicateFormInit(StreamTokenizer tokenizer)`: Parses the input from a tokenizer to initialize the predicate form with elements.
+     - `print()`: Outputs the predicate form to standard output, formatted as a string.
+     - `toStr()`: Converts the predicate form to a `StringBuffer` and returns it.
+     - `clonePF()`: Creates and returns a deep copy of the predicate form.
+     - `applySubstitutionPF(JSSubstitution alpha)`: Applies a substitution to the predicate form and returns a new `JSPredicateForm` reflecting that substitution.
+     - `matches(JSPredicateForm t)`: Checks if the current predicate form matches another, returning a `JSSubstitution` object.
+     - `matches(JSPredicateForm t, JSSubstitution alpha)`: Similar to the previous method but starts with a given substitution.
+     - `equals(JSPredicateForm t)`: Compares this predicate form with another for equality.
+     - `standarizerPredicateForm()`: Standardizes the predicate form and returns the standardized version.
+   
+   - Important variables:
+     - The class primarily utilizes the inherited `Vector` structure to store elements of the predicate form. Elements can include strings, logical operators, and `JSTerm` objects.
+
+3. Method Relationships:
+   - The constructors and `JSPredicateFormInit` method work together to initialize the object, either from a string or a tokenizer.
+   - The `print` and `toStr` methods are related in that both provide string representations of the predicate form; `print` outputs directly, while `toStr` returns a `StringBuffer`.
+   - The `clonePF`, `applySubstitutionPF`, `matches`, and `equals` methods all interact with the contents of the `Vector` to manipulate, compare, or clone the predicate form.
+   - `standarizerPredicateForm` is similar to `clonePF` but performs standardization instead of simple cloning.
+
+4. Summarize by Sections:
+   - Initialization: The class offers multiple constructors and an initialization method (`JSPredicateFormInit`) to parse and store elements from strings or tokenized input, setting up the predicate form for further operations.
+   - Representation and Output: The `print` and `toStr` methods provide functionalities to convert the predicate form into a human-readable string or directly print it out, facilitating debugging and logging.
+   - Manipulation and Comparison: Methods like `clonePF`, `applySubstitutionPF`, `matches`, `equals`, and `standarizerPredicateForm` allow for copying, substituting, matching, comparing, and standardizing predicate forms, providing flexibility in handling logical expressions.
+```

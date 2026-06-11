@@ -1,0 +1,168 @@
+dataset,project,class_name,bug_id,testsuite_id,test_class_fqdn,junit_ok,returncode,stdout,stderr
+Defects4J,Cli,PosixParser,19,testsuite_1,org.apache.commons.cli.PosixParser_ESTest,True,0,"JUnit version 4.13.2
+10:57:41.926 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.PosixParser_ESTest
+10:57:41.927 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.PosixParser_ESTest'.
+10:57:41.939 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.PosixParser_ESTest_scaffolding
+10:57:41.939 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.PosixParser_ESTest_scaffolding'.
+10:57:41.941 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.PosixParser_ESTest_scaffolding
+10:57:41.941 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.PosixParser_ESTest
+10:57:42.108 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+10:57:42.108 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+10:57:42.108 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+10:57:42.108 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+10:57:42.108 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+10:57:42.108 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+10:57:42.108 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+10:57:42.117 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.UnrecognizedOptionException
+10:57:42.117 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.UnrecognizedOptionException'.
+10:57:42.119 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/apache/commons/cli/UnrecognizedOptionException
+10:57:42.156 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/apache/commons/cli/UnrecognizedOptionException
+10:57:42.157 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.ParseException
+10:57:42.157 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.ParseException'.
+10:57:42.157 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/apache/commons/cli/ParseException
+10:57:42.157 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/apache/commons/cli/ParseException
+10:57:42.157 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.ParseException
+10:57:42.157 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.UnrecognizedOptionException
+10:57:42.158 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.CommandLineParser
+10:57:42.158 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.CommandLineParser'.
+10:57:42.158 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.CommandLineParser
+10:57:42.158 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.Options
+10:57:42.158 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.Options'.
+10:57:42.158 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/apache/commons/cli/Options
+10:57:42.159 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/apache/commons/cli/Options
+10:57:42.159 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.Options
+10:57:42.160 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.Parser
+10:57:42.160 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.Parser'.
+10:57:42.160 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/apache/commons/cli/Parser
+10:57:42.161 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/apache/commons/cli/Parser
+10:57:42.161 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.Parser
+10:57:42.161 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.MissingArgumentException
+10:57:42.161 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.MissingArgumentException'.
+10:57:42.162 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/apache/commons/cli/MissingArgumentException
+10:57:42.162 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/apache/commons/cli/MissingArgumentException
+10:57:42.162 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.MissingArgumentException
+10:57:42.162 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.MissingOptionException
+10:57:42.162 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.MissingOptionException'.
+10:57:42.162 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/apache/commons/cli/MissingOptionException
+10:57:42.162 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/apache/commons/cli/MissingOptionException
+10:57:42.163 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.MissingOptionException
+10:57:42.163 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.OptionValidator
+10:57:42.163 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.OptionValidator'.
+10:57:42.163 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/apache/commons/cli/OptionValidator
+10:57:42.164 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/apache/commons/cli/OptionValidator
+10:57:42.165 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.OptionValidator
+10:57:42.165 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.OptionGroup
+10:57:42.165 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.OptionGroup'.
+10:57:42.165 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/apache/commons/cli/OptionGroup
+10:57:42.165 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/apache/commons/cli/OptionGroup
+10:57:42.166 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.OptionGroup
+10:57:42.166 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.AlreadySelectedException
+10:57:42.166 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.AlreadySelectedException'.
+10:57:42.166 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/apache/commons/cli/AlreadySelectedException
+10:57:42.166 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/apache/commons/cli/AlreadySelectedException
+10:57:42.166 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.AlreadySelectedException
+10:57:42.166 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.CommandLine
+10:57:42.166 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.CommandLine'.
+10:57:42.166 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/apache/commons/cli/CommandLine
+10:57:42.167 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/apache/commons/cli/CommandLine
+10:57:42.167 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.CommandLine
+10:57:42.167 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.PosixParser
+10:57:42.167 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.PosixParser'.
+10:57:42.167 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/apache/commons/cli/PosixParser
+10:57:42.168 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/apache/commons/cli/PosixParser
+10:57:42.168 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.PosixParser
+10:57:42.168 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.Option
+10:57:42.168 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.Option'.
+10:57:42.169 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/apache/commons/cli/Option
+10:57:42.170 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/apache/commons/cli/Option
+10:57:42.170 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field UNINITIALIZED
+10:57:42.170 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field UNLIMITED_VALUES
+10:57:42.171 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.Option
+10:57:42.171 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.apache.commons.cli.Util
+10:57:42.171 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.apache.commons.cli.Util'.
+10:57:42.171 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/apache/commons/cli/Util
+10:57:42.173 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/apache/commons/cli/Util
+10:57:42.173 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.apache.commons.cli.Util
+...........
+Time: 0.235
+
+OK (11 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+Defects4J,Jsoup,Entities,28,testsuite_1,org.jsoup.nodes.Entities_ESTest,True,0,"JUnit version 4.13.2
+10:57:43.757 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jsoup.nodes.Entities_ESTest
+10:57:43.758 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jsoup.nodes.Entities_ESTest'.
+10:57:43.769 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jsoup.nodes.Entities_ESTest_scaffolding
+10:57:43.769 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jsoup.nodes.Entities_ESTest_scaffolding'.
+10:57:43.770 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jsoup.nodes.Entities_ESTest_scaffolding
+10:57:43.770 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jsoup.nodes.Entities_ESTest
+10:57:43.938 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+10:57:43.938 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+10:57:43.938 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+10:57:43.938 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+10:57:43.938 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+10:57:43.938 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+10:57:43.938 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+10:57:43.947 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jsoup.nodes.Document$QuirksMode
+10:57:43.947 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jsoup.nodes.Document$QuirksMode'.
+10:57:43.949 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jsoup/nodes/Document$QuirksMode
+10:57:43.985 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jsoup/nodes/Document$QuirksMode
+10:57:43.986 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jsoup.nodes.Document$QuirksMode
+10:57:43.986 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jsoup.nodes.Node
+10:57:43.986 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jsoup.nodes.Node'.
+10:57:43.988 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jsoup/nodes/Node
+10:57:43.995 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jsoup/nodes/Node
+10:57:43.996 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jsoup.nodes.Node
+10:57:43.996 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jsoup.select.NodeVisitor
+10:57:43.996 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jsoup.select.NodeVisitor'.
+10:57:43.996 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Error while loading class: java.lang.ClassNotFoundException: Class 'org/jsoup/select/NodeVisitor.class' should be in target project, but could not be found!
+10:57:43.996 [main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Could not initialize org.jsoup.nodes.Node: org/jsoup/select/NodeVisitor
+10:57:43.996 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jsoup.nodes.Document$OutputSettings
+10:57:43.996 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jsoup.nodes.Document$OutputSettings'.
+10:57:43.996 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jsoup/nodes/Document$OutputSettings
+10:57:43.997 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jsoup/nodes/Document$OutputSettings
+10:57:43.997 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jsoup.nodes.Document$OutputSettings
+10:57:43.998 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jsoup.nodes.Element
+10:57:43.998 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jsoup.nodes.Element'.
+10:57:43.998 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jsoup/nodes/Element
+10:57:44.002 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jsoup/nodes/Element
+10:57:44.003 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jsoup.nodes.Element
+10:57:44.003 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jsoup.select.NodeVisitor
+10:57:44.003 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jsoup.select.NodeVisitor'.
+10:57:44.003 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Error while loading class: java.lang.ClassNotFoundException: Class 'org/jsoup/select/NodeVisitor.class' should be in target project, but could not be found!
+10:57:44.003 [main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Could not initialize org.jsoup.nodes.Element: org/jsoup/select/NodeVisitor
+10:57:44.003 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jsoup.nodes.Document
+10:57:44.003 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jsoup.nodes.Document'.
+10:57:44.003 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jsoup/nodes/Document
+10:57:44.004 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jsoup/nodes/Document
+10:57:44.004 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jsoup.nodes.Document
+10:57:44.004 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jsoup.select.NodeVisitor
+10:57:44.004 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jsoup.select.NodeVisitor'.
+10:57:44.004 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Error while loading class: java.lang.ClassNotFoundException: Class 'org/jsoup/select/NodeVisitor.class' should be in target project, but could not be found!
+10:57:44.004 [main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Could not initialize org.jsoup.nodes.Document: org/jsoup/select/NodeVisitor
+10:57:44.004 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jsoup.nodes.Entities
+10:57:44.004 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jsoup.nodes.Entities'.
+10:57:44.004 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jsoup/nodes/Entities
+10:57:44.005 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jsoup/nodes/Entities
+10:57:44.005 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jsoup.nodes.Entities
+10:57:44.009 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jsoup.nodes.Entities$EscapeMode
+10:57:44.009 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jsoup.nodes.Entities$EscapeMode'.
+10:57:44.009 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jsoup/nodes/Entities$EscapeMode
+10:57:44.010 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jsoup/nodes/Entities$EscapeMode
+10:57:44.010 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jsoup.nodes.Entities$EscapeMode
+.........
+Time: 0.25
+
+OK (9 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"

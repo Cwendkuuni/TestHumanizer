@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0-rc4" timestamp="2026-06-10T19:08:23.817">
+<file name="/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/evosuite_simple_project/04_refactorings/extracted_suites/generated/gpt4o/custom/simple-java-project/Calculator/testsuite_1/Scenario-3/iter_2/com/testhumanizer/examples/Calculator_ESTest.java">
+<violation beginline="21" endline="21" begincolumn="17" endcolumn="35" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="testIsEvenWithZero" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testIsEvenWithZero()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="34" endline="34" begincolumn="17" endcolumn="40" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="testIsEvenWithOddNumber" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testIsEvenWithOddNumber()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="47" endline="47" begincolumn="17" endcolumn="48" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="testDivideByZeroThrowsException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testDivideByZeroThrowsException()' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="63" endline="63" begincolumn="17" endcolumn="50" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="testDivideWithNegativeDenominator" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testDivideWithNegativeDenominator()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="76" endline="76" begincolumn="17" endcolumn="29" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="testAddition" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testAddition()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="89" endline="89" begincolumn="17" endcolumn="32" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="testClearMemory" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testClearMemory()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="101" endline="101" begincolumn="17" endcolumn="33" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="testRecallMemory" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testRecallMemory()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="113" endline="113" begincolumn="17" endcolumn="40" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="testSubtractionWithZero" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testSubtractionWithZero()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="126" endline="126" begincolumn="17" endcolumn="41" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="testStoreAndRecallMemory" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testStoreAndRecallMemory()' has a cyclomatic complexity of 1.
+</violation>
+</file>
+</pmd>

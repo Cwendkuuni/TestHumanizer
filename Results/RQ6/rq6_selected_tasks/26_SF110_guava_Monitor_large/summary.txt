@@ -1,0 +1,40 @@
+Dataset : SF110
+Project : guava
+Class   : Monitor
+Size    : large (source_loc=442)
+Test methods : 26
+
+Class summary:
+```
+1. Overall Purpose:
+The `Monitor` class from the `com.google.common.util.concurrent` package provides a flexible and robust mechanism for managing thread synchronization and coordination via conditions. It builds upon `ReentrantLock` to offer more sophisticated concurrency control, primarily by allowing threads to wait for certain conditions (encapsulated by `Guard` objects) to be met before proceeding, making it suitable for scenarios where complex thread interactions are managed.
+
+2. Key Elements Identification:
+   - Main Methods:
+     - `enter()`, `enterInterruptibly()`, `tryEnter()`: These methods acquire the lock, with variations to handle interruptions and attempt non-blocking acquisition.
+     - `enter(long time, TimeUnit unit)`, `enterInterruptibly(long time, TimeUnit unit)`: These methods attempt to acquire the lock within a specified timeframe, with or without handling interruptions.
+     - `enterWhen(Guard guard)`, `enterWhenUninterruptibly(Guard guard)`: These methods acquire the lock and wait for the associated `Guard` condition to be satisfied, with one handling interruptions.
+     - `enterWhen(Guard guard, long time, TimeUnit unit)`, `enterWhenUninterruptibly(Guard guard, long time, TimeUnit unit)`: These methods are time-bound versions of `enterWhen`, waiting for a condition to be satisfied within a specified time.
+     - `enterIf(Guard guard)`, `enterIfInterruptibly(Guard guard)`: Acquire the lock only if the `Guard` condition is satisfied upon entry, with an interruptible variant.
+     - `leave()`: Releases the lock and signals the next waiting thread if any.
+     - `waitFor(Guard guard)`, `waitForUninterruptibly(Guard guard)`: Waits for the `Guard` condition to be satisfied while holding the lock, with one supporting interruptions.
+     - `await(Guard guard, boolean signalBeforeWaiting)`, `awaitUninterruptibly(Guard guard, boolean signalBeforeWaiting)`: Helper methods for waiting on a condition, with or without handling interruptions.
+     - `awaitNanos(Guard guard, long nanos, boolean signalBeforeWaiting)`: Waits for a condition to be satisfied within a given timeout.
+
+   - Important Variables:
+     - `fair`: A boolean indicating if the lock should use a fair ordering policy.
+     - `lock`: A `ReentrantLock` used to enforce thread synchronization.
+     - `activeGuards`: A linked list of active `Guard` objects, managed by the lock to track waiting conditions.
+
+3. Method Relationships:
+   - Lock Acquisition Methods: `enter`, `enterInterruptibly`, `tryEnter`, and their timed variants handle basic lock acquisition with different interruption and timeout strategies.
+   - Condition Waiting Methods: `enterWhen`, `enterWhenUninterruptibly`, `waitFor`, and their timed variants manage waiting based on `Guard` conditions.
+   - Helper Methods: `await`, `awaitUninterruptibly`, and `awaitNanos` are used internally to manage condition waiting logic in a synchronized manner.
+
+4. Summarize by Sections:
+   - Lock Management: The class provides methods to acquire and release a lock (`enter`, `leave`), supporting various strategies for managing thread access and interruptions.
+   - Condition Synchronization: Methods like `enterWhen`, `waitFor`, and their variants allow threads to wait for specific conditions, encapsulated by `Guard` objects, to be met, enhancing control over thread execution flow.
+   - Guard Management: The `Guard` abstract class defines conditions that threads can wait upon, offering a mechanism to encapsulate complex logic for determining when a thread should proceed.
+   
+The `Monitor` class effectively combines lock acquisition with condition-based waiting, providing a comprehensive solution for thread synchronization in concurrent applications.
+```

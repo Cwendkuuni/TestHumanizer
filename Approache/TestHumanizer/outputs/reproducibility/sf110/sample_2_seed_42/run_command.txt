@@ -1,0 +1,1 @@
+testhumanizer run --config /home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/generated_config.yaml --preset fast --models gpt4o --scenarios tests-only --iterations 1

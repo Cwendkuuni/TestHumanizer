@@ -1,0 +1,41 @@
+# Python environments
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Large ML / binary artifacts
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Java / binary dependencies
+*.jar
+*.class
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Generated / heavy outputs
+**/REORGANIZED-TESTS*/
+**/*Processed_Tests*/
+**/Refactoring-output*/
+**/outputs/processed_tests/
+**/outputs/reorganized_tests/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

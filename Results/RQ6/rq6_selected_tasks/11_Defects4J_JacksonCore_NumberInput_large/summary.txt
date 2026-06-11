@@ -1,0 +1,42 @@
+Dataset : Defects4J
+Project : JacksonCore
+Class   : NumberInput
+Size    : large (source_loc=247)
+Test methods : 52
+
+Class summary:
+```
+1. Overall Purpose:
+   The `NumberInput` class provides utility methods for efficiently parsing numbers from strings and character arrays. It is designed for scenarios where conversion of textual numeric data to numeric types (such as `int`, `long`, `double`, and `BigDecimal`) needs to be handled swiftly and safely, likely within data processing frameworks or libraries such as JSON parsers.
+
+2. Key Elements Identification:
+   - Main Methods:
+     - `parseInt(char[] digitChars, int offset, int len)`: Parses a portion of a character array into an `int`, assuming the number fits within 32-bit signed integer limits. It returns the integer value parsed.
+     - `parseInt(String str)`: Efficiently parses a string into an `int` if it has 1-9 digits, otherwise defaults to `Integer.parseInt`. It returns the integer value parsed.
+     - `parseLong(char[] digitChars, int offset, int len)`: Parses a section of a character array into a `long`, expecting between 10 and 18 digits and returns the long value.
+     - `parseLong(String str)`: Parses a string into a `long`, optimizing "fake longs" as `int` for strings of length 9 or less, otherwise defaults to `Long.parseLong`.
+     - `inLongRange(char[] digitChars, int offset, int len, boolean negative)`: Checks if a number represented by a character array fits within a 64-bit `long` range, considering sign.
+     - `inLongRange(String numberStr, boolean negative)`: Similar to the above, but operates on strings instead of character arrays.
+     - `parseAsInt(String input, int defaultValue)`: Attempts to parse a string as an `int`, using a default value if parsing fails due to format issues.
+     - `parseAsLong(String input, long defaultValue)`: Attempts to parse a string as a `long`, defaulting if format issues occur.
+     - `parseAsDouble(String input, double defaultValue)`: Parses a string as a `double`, resorting to a default value upon format failure.
+     - `parseDouble(String numStr)`: Directly parses a string into a `double`, with special handling for a notorious small double constant.
+     - `parseBigDecimal(String numStr)`: Converts a string to `BigDecimal`.
+     - `parseBigDecimal(char[] buffer, int offset, int len)`: Converts a section of a character array to `BigDecimal`.
+
+   - Important Variables:
+     - `NASTY_SMALL_DOUBLE`: A constant string representation of a double that can cause issues with Java's double parsing.
+     - `L_BILLION`: A constant representing one billion, used in parsing `long` values to manage large number multiplication.
+     - `MIN_LONG_STR_NO_SIGN` and `MAX_LONG_STR`: Strings representing the minimum and maximum `long` values, respectively, used in range checks.
+
+3. Method Relationships:
+   - Parsing Methods (`parseInt`, `parseLong`, `parseDouble`, `parseBigDecimal`): These methods are central to the class's purpose of converting textual data to numeric forms. They provide optimized parsing paths for different numeric types and input forms (strings and character arrays).
+   - Range Check Methods (`inLongRange`): These methods support the parsing functionality by determining if a given numeric text can be safely converted to a `long` without overflow.
+
+4. Summarize by Sections:
+   - Integer Parsing: Methods like `parseInt(char[]...)` and `parseInt(String...)` offer fast paths for converting array sections and strings to integers, focusing on performance for numbers that fit within specific digit limits.
+   - Long Parsing: `parseLong(char[]...)` and `parseLong(String...)` methods extend integer parsing to accommodate larger numbers, using optimized strategies for numbers that can fit within an `int` range.
+   - Range Checking: `inLongRange` methods provide utility to assess if numeric representations can be safely parsed into `long`, ensuring no overflow occurs during conversion.
+   - Default Parsers: Methods like `parseAsInt`, `parseAsLong`, and `parseAsDouble` provide robust parsing with default value fallbacks, allowing graceful handling of malformed numeric strings.
+   - Double and BigDecimal Parsing: `parseDouble` and `parseBigDecimal` methods handle higher precision and special cases (e.g., `NASTY_SMALL_DOUBLE`) for floating-point and arbitrary-precision numbers, ensuring reliable conversion from strings and character arrays.
+```

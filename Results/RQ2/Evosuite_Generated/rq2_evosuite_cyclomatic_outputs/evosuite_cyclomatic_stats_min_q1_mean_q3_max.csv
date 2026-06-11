@@ -1,0 +1,3 @@
+dataset,paradigm,metric,min,q1,mean,q3,max,n
+defects4j,EvoSuite,Cyclomatic Complexity,1.0,6.0,19.78,29.0,131.0,1905
+sf110,EvoSuite,Cyclomatic Complexity,1.0,8.0,25.55,34.0,230.0,2242

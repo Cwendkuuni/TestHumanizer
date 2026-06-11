@@ -1,0 +1,48 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.cli.PosixParser
+* Starting Client-0
+* Connecting to master process on port 9922
+* Analyzing classpath: 
+  - /home/e113/Documents/Humanization-Project/HUMANIZATION/DEFECTS4J/SOURCES/Cli/19
+[MASTER] 10:56:35.229 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.io.ObjectInputFilter
+[MASTER] 10:56:35.241 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.cli.PosixParser
+* Test criteria:
+  - Branch Coverage
+  - Top-Level Method Coverage
+  - Line Coverage
+* Total number of test goals for DYNAMOSA: 112
+* Using seed 1
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 30 / 112
+[MASTER] 10:56:39.453 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 10:56:50.332 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 31s and 2096 generations, 1149623 statements, best individual has fitness: 5.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 93%
+* Total number of goals: 44
+* Number of covered goals: 41
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 97%
+* Total number of goals: 65
+* Number of covered goals: 63
+* Generated 11 tests with total length 72
+* Resulting test suite's coverage: 97% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 52%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing tests to file
+* Writing JUnit test case 'PosixParser_ESTest' to /home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs/02_evosuite/generated/Defects4J/Cli/PosixParser/19/testsuite_1
+* Done!
+
+* Computation finished

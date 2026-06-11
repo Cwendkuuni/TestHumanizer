@@ -1,0 +1,3 @@
+{"dataset": "Defects4J", "project": "Cli", "class_name": "CommandLine", "bug_id": "1", "source_path": "/path/to/CommandLine.java", "classpath": "/path/to/classes:/path/to/dependencies", "test_class_fqdn": "org.apache.commons.cli.CommandLine"}
+{"dataset": "Defects4J", "project": "Cli", "class_name": "Option", "bug_id": "16", "source_path": "/path/to/Option.java", "classpath": "/path/to/classes:/path/to/dependencies", "test_class_fqdn": "org.apache.commons.cli2.Option"}
+{"dataset": "SF110", "project": "15_beanbin", "class_name": "ReflectionSearch", "bug_id": "", "source_path": "/path/to/ReflectionSearch.java", "classpath": "/path/to/classes:/path/to/dependencies", "test_class_fqdn": "net.sourceforge.beanbin.reflect.ReflectionSearch"}

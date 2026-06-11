@@ -1,0 +1,29 @@
+{
+  "output_dir": "/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs",
+  "num_targets": 2,
+  "num_prompt_rows": 2,
+  "num_summary_rows": 2,
+  "num_candidate_rows": 2,
+  "num_selected_candidates": 2,
+  "scenarios": [
+    "Scenario-1"
+  ],
+  "models": [
+    "gpt4o"
+  ],
+  "prompt_tokens_total": 2382.0,
+  "prompt_tokens_mean": 1191.0,
+  "prompt_tokens_max": 1629.0,
+  "selected_candidates_threshold_pass": 1,
+  "selected_candidates_threshold_total": 2,
+  "selected_candidates_threshold_pass_rate": 0.5,
+  "selected_cosine_mean": 0.9478005,
+  "selected_cosine_min": 0.93938,
+  "selected_cosine_max": 0.956221,
+  "selected_ctses_mean": 0.6516,
+  "selected_ctses_min": 0.5655,
+  "selected_ctses_max": 0.7377,
+  "llm_side_mean": 0.9,
+  "llm_side_min": 0.9,
+  "llm_side_max": 0.9
+}

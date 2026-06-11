@@ -1,0 +1,3 @@
+id,input_id,dataset,project,class_name,bug_id,testsuite_id,scenario,scenario_id,model_alias,provider,model_target,prompt_sha256,prompt_length_chars,prompt_token_count,summary_used,summary_source,summary_status,summary_official_side_score
+Defects4J_Cli_PosixParser_19_testsuite_1_Scenario-1_gpt4o,Defects4J_Cli_PosixParser_19_testsuite_1,Defects4J,Cli,PosixParser,19,testsuite_1,tests-only,Scenario-1,gpt4o,openai,gpt-4o,5a4b67ac10ce350757a14fae4f83bda20b114077ca123828c67c02ee08982bbb,7155,1821,False,,ok,
+Defects4J_Jsoup_Entities_28_testsuite_1_Scenario-1_gpt4o,Defects4J_Jsoup_Entities_28_testsuite_1,Defects4J,Jsoup,Entities,28,testsuite_1,tests-only,Scenario-1,gpt4o,openai,gpt-4o,5276fc9ba1b3a0ce7a2fb431e04d3612212288ead0df7e7e17d4b7e5855ab4c8,4082,954,False,,ok,

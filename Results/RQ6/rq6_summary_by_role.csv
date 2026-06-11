@@ -1,0 +1,13 @@
+evaluator,approach,metric,N,min,q1,median,mean,q3,max
+Advanced graduate student,EvoSuite,adopt,28,1.0,2.0,3.0,2.5714285714285716,3.0,4.0
+Advanced graduate student,Summary,adopt,28,2.0,3.0,4.0,3.5,4.0,5.0
+Senior developer,EvoSuite,adopt,28,1.0,1.0,2.0,2.142857142857143,3.0,4.0
+Senior developer,Summary,adopt,28,2.0,2.0,4.0,3.25,4.0,5.0
+Advanced graduate student,EvoSuite,readability,28,2.0,2.0,2.5,2.7142857142857144,3.0,4.0
+Advanced graduate student,Summary,readability,28,2.0,3.0,4.0,3.7857142857142856,4.0,5.0
+Senior developer,EvoSuite,readability,28,1.0,1.0,2.0,2.142857142857143,3.0,4.0
+Senior developer,Summary,readability,28,1.0,2.0,4.0,3.5,4.0,5.0
+Advanced graduate student,EvoSuite,trust,28,2.0,3.0,3.0,3.3214285714285716,4.0,5.0
+Advanced graduate student,Summary,trust,28,2.0,3.0,4.0,3.4285714285714284,4.0,5.0
+Senior developer,EvoSuite,trust,28,2.0,3.0,3.0,3.1785714285714284,4.0,4.0
+Senior developer,Summary,trust,28,2.0,3.0,4.0,3.357142857142857,4.0,4.0

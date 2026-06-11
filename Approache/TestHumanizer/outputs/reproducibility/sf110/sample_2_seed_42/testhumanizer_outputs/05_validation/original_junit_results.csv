@@ -1,0 +1,129 @@
+dataset,project,class_name,bug_id,testsuite_id,test_class_fqdn,junit_ok,returncode,stdout,stderr
+SF110,33_javaviewcontrol,TokenMgrError,,testsuite_1,com.pmdesigns.jvc.tools.TokenMgrError_ESTest,True,0,"JUnit version 4.13.2
+11:00:27.235 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.pmdesigns.jvc.tools.TokenMgrError_ESTest
+11:00:27.236 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.pmdesigns.jvc.tools.TokenMgrError_ESTest'.
+11:00:27.251 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.pmdesigns.jvc.tools.TokenMgrError_ESTest_scaffolding
+11:00:27.251 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.pmdesigns.jvc.tools.TokenMgrError_ESTest_scaffolding'.
+11:00:27.252 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.pmdesigns.jvc.tools.TokenMgrError_ESTest_scaffolding
+11:00:27.252 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.pmdesigns.jvc.tools.TokenMgrError_ESTest
+11:00:27.423 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+11:00:27.423 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+11:00:27.423 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+11:00:27.424 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+11:00:27.424 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+11:00:27.424 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+11:00:27.424 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+11:00:27.433 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.pmdesigns.jvc.tools.TokenMgrError
+11:00:27.433 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.pmdesigns.jvc.tools.TokenMgrError'.
+11:00:27.436 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/pmdesigns/jvc/tools/TokenMgrError
+11:00:27.475 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/pmdesigns/jvc/tools/TokenMgrError
+11:00:27.475 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field LEXICAL_ERROR
+11:00:27.475 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field STATIC_LEXER_ERROR
+11:00:27.475 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field INVALID_LEXICAL_STATE
+11:00:27.475 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field LOOP_DETECTED
+11:00:27.476 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.pmdesigns.jvc.tools.TokenMgrError
+............
+Time: 0.22
+
+OK (12 tests)
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"
+SF110,74_fixsuite,Library,,testsuite_1,org.fixsuite.message.Library_ESTest,False,1,"JUnit version 4.13.2
+11:00:29.131 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.Library_ESTest
+11:00:29.131 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.Library_ESTest'.
+11:00:29.143 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.Library_ESTest_scaffolding
+11:00:29.143 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.Library_ESTest_scaffolding'.
+11:00:29.144 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.Library_ESTest_scaffolding
+11:00:29.144 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.Library_ESTest
+11:00:29.318 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+11:00:29.318 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+11:00:29.318 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+11:00:29.318 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+11:00:29.318 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+11:00:29.318 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+11:00:29.318 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+11:00:29.327 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.CompositeFixInfo
+11:00:29.327 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.CompositeFixInfo'.
+11:00:29.341 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.fixsuite.message.info, 233256630
+11:00:29.342 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.FixInfo
+11:00:29.342 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.FixInfo'.
+11:00:29.342 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.FixInfo
+11:00:29.342 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.CompositeFixInfo
+11:00:29.342 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.DictionaryInfo
+11:00:29.342 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.DictionaryInfo'.
+11:00:29.343 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/info/DictionaryInfo
+11:00:29.368 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/fixsuite/message/info/DictionaryInfo
+11:00:29.368 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.DictionaryInfo
+11:00:29.369 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.Library
+11:00:29.369 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.Library'.
+11:00:29.369 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/Library
+11:00:29.372 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/fixsuite/message/Library
+11:00:29.373 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.Library
+11:00:29.373 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.GroupInfo
+11:00:29.373 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.GroupInfo'.
+11:00:29.373 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/info/GroupInfo
+11:00:29.374 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/fixsuite/message/info/GroupInfo
+11:00:29.374 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.FieldInfo
+11:00:29.374 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.FieldInfo'.
+11:00:29.374 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/info/FieldInfo
+11:00:29.375 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/fixsuite/message/info/FieldInfo
+11:00:29.375 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.FieldInfo
+11:00:29.375 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.GroupInfo
+11:00:29.375 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.ComponentInfo
+11:00:29.375 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.ComponentInfo'.
+11:00:29.375 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/info/ComponentInfo
+11:00:29.376 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/fixsuite/message/info/ComponentInfo
+11:00:29.376 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.ComponentInfo
+11:00:29.377 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.MessageInfo
+11:00:29.377 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.MessageInfo'.
+11:00:29.377 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/info/MessageInfo
+11:00:29.377 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/fixsuite/message/info/MessageInfo
+11:00:29.377 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.MessageInfo
+11:00:29.377 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.ValueInfo
+11:00:29.377 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.ValueInfo'.
+11:00:29.377 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/info/ValueInfo
+11:00:29.377 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/fixsuite/message/info/ValueInfo
+11:00:29.378 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.ValueInfo
+.11:00:29.389 [Time-limited test] ERROR org.fixsuite.message.Library - Supplied path is not a directory.
+11:00:29.394 [Time-limited test] DEBUG org.fixsuite.message.Library - Approximate memory allocation: 0 MB.
+11:00:29.394 [Time-limited test] INFO org.fixsuite.message.Library - Loading time: 0 milliseconds.
+11:00:29.395 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.parsers.fpl.MainParser
+11:00:29.395 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.parsers.fpl.MainParser'.
+11:00:29.395 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/parsers/fpl/MainParser
+11:00:29.396 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/fixsuite/message/parsers/fpl/MainParser
+11:00:29.396 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.fixsuite.message.parsers.fpl, 248437024
+11:00:29.396 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.parsers.fpl.MainParser
+11:00:29.396 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.parsers.Parser
+11:00:29.396 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.parsers.Parser'.
+11:00:29.396 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.fixsuite.message.parsers, 1247861036
+11:00:29.396 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.parsers.Parser
+...11:00:29.406 [Time-limited test] ERROR org.fixsuite.message.Library - Supplied directory is empty.
+11:00:29.411 [Time-limited test] DEBUG org.fixsuite.message.Library - Approximate memory allocation: 0 MB.
+11:00:29.411 [Time-limited test] INFO org.fixsuite.message.Library - Loading time: 0 milliseconds.
+E.11:00:29.419 [Time-limited test] ERROR org.fixsuite.message.Library - Supplied directory is empty.
+11:00:29.424 [Time-limited test] DEBUG org.fixsuite.message.Library - Approximate memory allocation: 0 MB.
+11:00:29.424 [Time-limited test] INFO org.fixsuite.message.Library - Loading time: 0 milliseconds.
+
+Time: 0.267
+There was 1 failure:
+1) test0(org.fixsuite.message.Library_ESTest)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at org.fixsuite.message.Library_ESTest.test0(Library_ESTest.java:28)
+
+FAILURES!!!
+Tests run: 5,  Failures: 1
+
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+"

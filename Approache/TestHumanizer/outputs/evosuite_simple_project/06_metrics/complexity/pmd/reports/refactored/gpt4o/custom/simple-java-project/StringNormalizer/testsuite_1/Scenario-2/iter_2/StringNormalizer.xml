@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0-rc4" timestamp="2026-06-10T19:08:30.809">
+<file name="/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/evosuite_simple_project/04_refactorings/extracted_suites/generated/gpt4o/custom/simple-java-project/StringNormalizer/testsuite_1/Scenario-2/iter_2/com/testhumanizer/examples/StringNormalizer_ESTest.java">
+<violation beginline="21" endline="21" begincolumn="17" endcolumn="40" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="testFirstWordWithSpaces" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFirstWordWithSpaces()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="33" endline="33" begincolumn="17" endcolumn="42" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="testFirstWordWithNoSpaces" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFirstWordWithNoSpaces()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="45" endline="45" begincolumn="17" endcolumn="44" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="testRepeatWithNegativeTimes" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testRepeatWithNegativeTimes()' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="60" endline="60" begincolumn="17" endcolumn="40" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="testRepeatWithNullInput" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testRepeatWithNullInput()' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="75" endline="75" begincolumn="17" endcolumn="41" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="testRepeatWithValidInput" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testRepeatWithValidInput()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="87" endline="87" begincolumn="17" endcolumn="46" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="testIsBlankWithNonEmptyString" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testIsBlankWithNonEmptyString()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="99" endline="99" begincolumn="17" endcolumn="43" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="testIsBlankWithEmptyString" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testIsBlankWithEmptyString()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="111" endline="111" begincolumn="17" endcolumn="43" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="testFirstWordWithNullInput" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testFirstWordWithNullInput()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="123" endline="123" begincolumn="17" endcolumn="43" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="testNormalizeWithNullInput" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testNormalizeWithNullInput()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="135" endline="135" begincolumn="17" endcolumn="48" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="testNormalizeWithNonEmptyString" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testNormalizeWithNonEmptyString()' has a cyclomatic complexity of 1.
+</violation>
+</file>
+</pmd>

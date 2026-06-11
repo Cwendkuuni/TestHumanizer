@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0-rc4" timestamp="2026-06-10T19:08:15.047">
+<file name="/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/evosuite_simple_project/02_evosuite/generated/custom/simple-java-project/Calculator/testsuite_1/com/testhumanizer/examples/Calculator_ESTest.java">
+<violation beginline="20" endline="20" begincolumn="15" endcolumn="20" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="test0" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test0()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="28" endline="28" begincolumn="15" endcolumn="20" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="test1" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test1()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="36" endline="36" begincolumn="15" endcolumn="20" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="test2" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test2()' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="52" endline="52" begincolumn="15" endcolumn="20" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="test3" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test3()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="60" endline="60" begincolumn="15" endcolumn="20" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="test4" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test4()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="68" endline="68" begincolumn="15" endcolumn="20" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="test5" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test5()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="75" endline="75" begincolumn="15" endcolumn="20" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="test6" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test6()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="82" endline="82" begincolumn="15" endcolumn="20" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="test7" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test7()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="90" endline="90" begincolumn="15" endcolumn="20" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="Calculator_ESTest" method="test8" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test8()' has a cyclomatic complexity of 1.
+</violation>
+</file>
+</pmd>

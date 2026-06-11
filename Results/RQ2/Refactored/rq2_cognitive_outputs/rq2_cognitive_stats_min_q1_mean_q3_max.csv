@@ -1,0 +1,7 @@
+dataset,scenario,approach,min,q1,mean,q3,max,n
+defects4j,Scenario-1,Tests-only,0,17.0,34.2,50.0,147,3129
+defects4j,Scenario-2,Code-centric,0,18.0,35.48,52.0,146,3058
+defects4j,Scenario-3,Summary-based,0,18.0,34.94,50.0,161,3098
+sf110,Scenario-1,Tests-only,0,12.0,47.61,67.0,394,6468
+sf110,Scenario-2,Code-centric,0,12.0,46.7,67.0,401,6465
+sf110,Scenario-3,Summary-based,1,12.0,47.77,67.0,415,6486

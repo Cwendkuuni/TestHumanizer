@@ -1,0 +1,40 @@
+{
+  "input_dataset": "/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Datasets/combined_base_extracted.json",
+  "summary_root": "/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Results/RQ1/Code_Summary/Summary-output-raw",
+  "structured_output": "/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Results/RQ1/Code_Summary/Summary-output-structured/code_summary_dataset_structured.json",
+  "flat_output": "/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Results/RQ1/Code_Summary/Summary-output-structured/code_summary_dataset_flat.json",
+  "num_source_records": 4230,
+  "num_flat_summary_records": 126900,
+  "expected_iterations_per_model": 15,
+  "models": [
+    "GPT",
+    "MISTRAL"
+  ],
+  "by_dataset": {
+    "Defects4J": {
+      "num_source_records": 1860,
+      "num_summary_records": 55800
+    },
+    "SF110": {
+      "num_source_records": 2370,
+      "num_summary_records": 71100
+    }
+  },
+  "by_model": {
+    "GPT": {
+      "num_source_records": 4230,
+      "num_found_summary_dirs": 4230,
+      "num_missing_summary_dirs": 0,
+      "num_summary_files": 63450,
+      "num_complete_15_iterations": 4230
+    },
+    "MISTRAL": {
+      "num_source_records": 4230,
+      "num_found_summary_dirs": 4230,
+      "num_missing_summary_dirs": 0,
+      "num_summary_files": 63450,
+      "num_complete_15_iterations": 4230
+    }
+  },
+  "missing_or_incomplete": []
+}

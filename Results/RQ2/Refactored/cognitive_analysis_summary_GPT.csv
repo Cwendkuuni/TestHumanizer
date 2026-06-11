@@ -1,0 +1,7 @@
+Dataset,Project,Scenario,Total Classes,Average Cognitive Complexity,Min Cognitive Complexity,Max Cognitive Complexity,Median Cognitive Complexity,Total Cognitive Complexity
+defects4j,Scenario,Scenario-1,3129,34.195589645254074,0,147,27,106998
+defects4j,Scenario,Scenario-2,3058,35.47972531066056,0,146,29.0,108497
+sf110,Scenario,Scenario-1,6468,47.60590599876314,0,394,34.0,307915
+defects4j,Scenario,Scenario-3,3098,34.93511943189154,0,161,28.0,108229
+sf110,Scenario,Scenario-2,6465,46.704717710750195,0,401,34,301946
+sf110,Scenario,Scenario-3,6486,47.766419981498615,1,415,34.0,309813

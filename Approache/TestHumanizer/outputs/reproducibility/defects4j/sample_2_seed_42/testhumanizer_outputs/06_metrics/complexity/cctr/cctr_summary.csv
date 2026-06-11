@@ -1,0 +1,5 @@
+suite_kind,dataset,project,class_name,scenario_id,model_alias,total_files,ok_files,average_cognitive_complexity,median_cognitive_complexity,min_cognitive_complexity,max_cognitive_complexity,total_cognitive_complexity
+original,Defects4J,Cli,PosixParser,Original,original,1,1,42.0,42.0,42.0,42.0,42.0
+original,Defects4J,Jsoup,Entities,Original,original,1,1,29.0,29.0,29.0,29.0,29.0
+refactored,Defects4J,Cli,PosixParser,Scenario-1,gpt4o,1,1,42.0,42.0,42.0,42.0,42.0
+refactored,Defects4J,Jsoup,Entities,Scenario-1,gpt4o,1,1,29.0,29.0,29.0,29.0,29.0

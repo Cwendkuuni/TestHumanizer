@@ -1,0 +1,32 @@
+{
+  "output_dir": "/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/evosuite_simple_project",
+  "num_targets": 2,
+  "num_prompt_rows": 12,
+  "num_summary_rows": 2,
+  "num_candidate_rows": 36,
+  "num_selected_candidates": 12,
+  "scenarios": [
+    "Scenario-1",
+    "Scenario-2",
+    "Scenario-3"
+  ],
+  "models": [
+    "gpt4o",
+    "mistral"
+  ],
+  "prompt_tokens_total": 15406.0,
+  "prompt_tokens_mean": 1283.8333333333333,
+  "prompt_tokens_max": 1545.0,
+  "selected_candidates_threshold_pass": 12,
+  "selected_candidates_threshold_total": 12,
+  "selected_candidates_threshold_pass_rate": 1.0,
+  "selected_cosine_mean": 0.9476751666666668,
+  "selected_cosine_min": 0.930832,
+  "selected_cosine_max": 0.957365,
+  "selected_ctses_mean": 0.6170166666666667,
+  "selected_ctses_min": 0.5887,
+  "selected_ctses_max": 0.6485,
+  "llm_side_mean": 0.9,
+  "llm_side_min": 0.9,
+  "llm_side_max": 0.9
+}

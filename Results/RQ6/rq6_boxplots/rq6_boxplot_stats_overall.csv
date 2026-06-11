@@ -1,0 +1,7 @@
+metric,metric_label,approach,N,min,q1,median,mean,q3,max
+adopt,Willingness to adopt,EvoSuite,56,1.0,1.0,2.0,2.357142857142857,3.0,4.0
+adopt,Willingness to adopt,TestHumanizer,56,2.0,3.0,4.0,3.375,4.0,5.0
+readability,Readability / clarity of intent,EvoSuite,56,1.0,2.0,2.0,2.4285714285714284,3.0,4.0
+readability,Readability / clarity of intent,TestHumanizer,56,1.0,3.0,4.0,3.642857142857143,4.0,5.0
+trust,Trust in correctness,EvoSuite,56,2.0,3.0,3.0,3.25,4.0,5.0
+trust,Trust in correctness,TestHumanizer,56,2.0,3.0,4.0,3.392857142857143,4.0,5.0

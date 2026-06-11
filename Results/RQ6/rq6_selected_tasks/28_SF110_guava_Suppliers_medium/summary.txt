@@ -1,0 +1,36 @@
+Dataset : SF110
+Project : guava
+Class   : Suppliers
+Size    : medium (source_loc=125)
+Test methods : 13
+
+Class summary:
+```
+1. Overall Purpose: The `Suppliers` class is a utility class within the Google Guava library that provides various static methods to create and manipulate `Supplier` instances. These suppliers are used to provide values on demand, and the class offers several ways to manage the computation and caching of these values, making it useful for scenarios where lazy computation or caching is required.
+
+2. Key Elements Identification:
+   - Main methods:
+     - `compose(final Function<? super F, T> function, final Supplier<F> supplier)`: Returns a supplier that applies a given function to the result from another supplier. Takes a function and a supplier as inputs and returns a composed supplier.
+     - `memoize(final Supplier<T> delegate)`: Wraps a supplier to cache the value it provides, ensuring it's computed only once. Takes a supplier and returns a memoized supplier.
+     - `memoizeWithExpiration(final Supplier<T> delegate, final long duration, final TimeUnit unit)`: Similar to `memoize`, but with a caching duration after which the value is recomputed. Takes a supplier, a duration, and a time unit, returning an expiring memoized supplier.
+     - `ofInstance(@Nullable final T instance)`: Creates a supplier that always returns the same instance provided. Takes an instance and returns a supplier.
+     - `synchronizedSupplier(final Supplier<T> delegate)`: Wraps a supplier to make its `get` method thread-safe. Takes a supplier and returns a synchronized supplier.
+     - `supplierFunction()`: Provides a function that retrieves a value from a supplier. Returns a function that operates on suppliers.
+
+   - Important variables:
+     - `SupplierComposition`: Inner class representing a supplier that applies a function to another supplier's value.
+     - `MemoizingSupplier`: Inner class that caches the value from its delegate supplier.
+     - `ExpiringMemoizingSupplier`: Inner class that caches the value with an expiration time.
+     - `SupplierOfInstance`: Inner class that returns a constant instance.
+     - `ThreadSafeSupplier`: Inner class ensuring thread-safe access to a supplier.
+     - `SupplierFunctionImpl`: Enum implementation of a function that retrieves values from suppliers.
+
+3. Method Relationships: The methods `memoize`, `memoizeWithExpiration`, and `synchronizedSupplier` all extend the functionality of a given supplier by adding caching or synchronization capabilities. The `compose` method is related by allowing transformation of the supplier's output using a function.
+
+4. Summarize by Sections:
+   - Supplier Composition: The `compose` method and `SupplierComposition` class work together to create suppliers that apply a given function to transform the output of another supplier. This pattern is useful for chaining operations in a functional programming style.
+   - Memoization: The `memoize` and `memoizeWithExpiration` methods, along with their respective classes, provide mechanisms to cache the results of supplier computations, reducing redundant computations by storing the result for future use, with `memoizeWithExpiration` adding a time-based invalidation.
+   - Instance Suppliers: The `ofInstance` method and `SupplierOfInstance` class create suppliers that always return the same instance, which is useful for constant or precomputed values that don't require additional computation.
+   - Thread Safety: The `synchronizedSupplier` method and `ThreadSafeSupplier` class wrap a supplier to ensure that its `get` method is thread-safe, preventing concurrent access issues when multiple threads may access the supplier.
+   - Supplier Function: The `supplierFunction` method provides a lightweight function interface to retrieve values from suppliers, which can be integrated seamlessly into other functional programming constructs.
+```

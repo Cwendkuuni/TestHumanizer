@@ -1,0 +1,14 @@
+You are an expert software engineer with advanced knowledge of Java programming. Your task is to summarize the following Java class, focusing on its functionality, the relationships between methods, and the roles of key variables. Approach the task in a structured way, addressing each element step-by-step.
+1. Overall Purpose: Briefly explain the primary function of the class, including its use case within a larger project if identifiable.
+2. Key Elements Identification: Identify and describe the purpose of:
+   - Main methods: Explain the role of each significant method, focusing on its purpose, input parameters, and return type.
+   - Important variables: Highlight any essential fields, their roles, and how they interact within the methods.
+3. Method Relationships: For methods that are closely related (e.g., helper methods, overloaded methods), group and describe their relationship to provide context on how they collectively support the class’s functionality.
+4. Summarize by Sections:
+   - For each logical section of the class, generate a concise, human-readable summary in 2-3 sentences, ensuring clarity on how to use the class effectively.
+   - If the class contains distinct groups of related methods, summarize them together to clarify their combined role in achieving a particular function.
+
+Here is the Class to summarize:
+{class_code}
+
+Please ensure the complete summary is placed between the three quotes ``` ``` for easy extraction.

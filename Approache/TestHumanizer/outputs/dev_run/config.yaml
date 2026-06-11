@@ -1,0 +1,84 @@
+experiment:
+  name: testhumanizer_dev_run
+  output_dir: outputs/dev_run
+  random_seed: 42
+
+dataset:
+  name: Defects4J
+  root: /path/to/defects4j
+  targets_file: configs/experiments/targets_sample.csv
+
+test_generation:
+  enabled: false
+  tool: evosuite
+  evosuite_jar: /path/to/evosuite.jar
+  runs_per_class: 15
+  search_budget_seconds: 180
+  algorithm: DynaMOSA
+  disable_minimization: true
+  disable_cleanup: true
+
+llms:
+  summarization:
+    provider: openai
+    model: gpt-4o
+    temperature: 0.1
+  refactoring:
+    provider: openai
+    model: gpt-4o
+    temperature: 0.1
+
+summarization:
+  enabled: true
+  max_attempts: 3
+  side_threshold: 0.50
+  keep_best_if_below_threshold: true
+
+refactoring:
+  enabled: true
+  scenarios:
+    - tests-only
+    - code-centric
+    - summary-based
+  max_attempts: 3
+  cosine_threshold: 0.80
+  ctses_threshold: 0.50
+  preserve_original_scaffolding: true
+
+validation:
+  syntax:
+    enabled: true
+    parser: tree-sitter
+  compilation:
+    enabled: true
+  junit:
+    enabled: true
+  coverage:
+    enabled: true
+    tool: jacoco
+    jacoco_cli_jar: /path/to/jacococli.jar
+    jacoco_agent_jar: /path/to/jacocoagent.jar
+
+metrics:
+  similarity:
+    codebert: true
+    graphcodebert: true
+    openai_embeddings: false
+  ctses:
+    codebleu: true
+    rouge_l: true
+    meteor: true
+  readability:
+    scalabrino: true
+  complexity:
+    pmd: true
+    cctr: true
+  smells:
+    tsdetect: true
+    jnose: false
+
+reporting:
+  csv: true
+  jsonl: true
+  html_plotly: true
+  latex_tables: true

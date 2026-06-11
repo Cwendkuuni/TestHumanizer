@@ -1,0 +1,39 @@
+Dataset : Defects4J
+Project : Codec
+Class   : Lang
+Size    : medium (source_loc=84)
+Test methods : 1
+
+Class summary:
+```
+1. Overall Purpose:
+The `Lang` class is a utility for guessing the possible languages a word originates from, based on predefined rules stored in resource files. It is designed to be used as part of a language processing or natural language understanding system, potentially within the Apache Commons Codec library, where language identification is required.
+
+2. Key Elements Identification:
+- Main Methods:
+  - `instance(NameType nameType)`: This static method retrieves a `Lang` instance configured with language-guessing rules for a specified `NameType`. It takes a `NameType` as a parameter and returns a `Lang` object.
+  - `loadFromResource(String languageRulesResourceName, Languages languages)`: This static method loads language rules from a specified resource file and initializes a `Lang` object with these rules. It takes the resource name and a `Languages` instance as parameters and returns a `Lang` object.
+  - `guessLanguage(String text)`: This method attempts to guess the language of a given word. It takes a string input and returns a string representing the guessed language or a constant indicating no unique match.
+  - `guessLanguages(String input)`: This method determines potential languages for a given word, returning a set of language names. It takes a string input and returns a `Languages.LanguageSet`.
+
+- Important Variables:
+  - `LangRule`: A private static nested class representing a language rule, including a regular expression pattern, a set of languages, and a boolean `acceptOnMatch` that determines rule behavior.
+  - `Langs`: A static map associating `NameType` values with `Lang` instances, storing pre-loaded language rules.
+  - `LANGUAGE_RULES_RN`: A constant string indicating the resource name for the default language rules.
+  - `languages`: An instance variable holding the `Languages` object associated with the `Lang` instance.
+  - `rules`: An unmodifiable list of `LangRule` objects representing the language rules used by the `Lang` instance.
+
+3. Method Relationships:
+- The `guessLanguage` and `guessLanguages` methods are closely related, as `guessLanguage` uses `guessLanguages` to determine potential matches and then selects a single language if possible. They collectively facilitate language identification for input text.
+- The `instance` and `loadFromResource` methods are related in that `instance` uses `loadFromResource` to initialize `Lang` instances with rules from resource files.
+
+4. Summarize by Sections:
+- Static Factory Interface:
+  The `instance` method provides a way to access `Lang` instances preloaded with language rules for specific `NameType` values, ensuring efficient reuse of configurations. The `loadFromResource` method is used internally to load these rules from a resource file, allowing customization of language rules for advanced users.
+  
+- Lang Instance Methods:
+  The `guessLanguage` and `guessLanguages` methods form the core functionality of the `Lang` class, enabling it to identify potential languages for a given word by applying the loaded language rules. They work by matching the input text against patterns specified in the rules and adjusting the set of candidate languages accordingly.
+
+- LangRule Class:
+  This internal helper class defines the structure of a language rule, consisting of a pattern, a set of languages, and a matching behavior. It is used within the `Lang` class to encapsulate and evaluate language rules during language guessing operations.
+```

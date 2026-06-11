@@ -1,0 +1,269 @@
+experiment:
+  name: defects4j_sample_2_seed_42
+  output_dir: /home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs
+  random_seed: 42
+logging:
+  level: normal
+  show_phase_headers: true
+  show_per_item_details: false
+  show_metric_details: false
+  show_warnings: true
+dataset:
+  name: custom
+  root: .
+  targets_file: /home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/generated_targets.csv
+test_generation:
+  enabled: true
+  tool: evosuite
+  evosuite_jar: tools/evosuite-master-1.2.1-SNAPSHOT.jar
+  java_cmd: java
+  java_memory: -Xmx512M
+  runs_per_class: 1
+  search_budget_seconds: 30
+  algorithm: DynaMOSA
+  stopping_condition: MaxTime
+  criterion: BRANCH:METHOD:LINE
+  generate_mo_suite: true
+  show_progress: false
+  disable_minimization: false
+  disable_cleanup: false
+selection:
+  enabled: true
+  policy: first_passing_then_best
+  hard_constraints:
+    require_compile_ok: true
+    require_junit_ok: true
+  cosine_similarity:
+    enabled: true
+    threshold: 0.8
+    primary_metric: cosine_similarity
+    primary_embedding_model_alias: openai
+    diagnostic_metrics:
+    - codebert
+    - graphcodebert
+  ctses:
+    enabled: true
+    threshold: 0.5
+    primary_metric: ctses_score
+    fallback_metric: codebleu_score
+  ranking:
+    cosine_weight: 0.6
+    ctses_weight: 0.4
+  output:
+    directory: 06_metrics/selection
+llms:
+  summarization:
+    provider: openai
+    model: gpt-4o
+    api_key_env: OPENAI_API_KEY_1
+    temperature: 0.1
+    max_retries: 30
+    retry_wait_seconds: 10
+    timeout_seconds: 120
+    reserved_response_tokens: 16000
+    max_total_tokens: 128000
+  refactoring_models:
+  - name: gpt4o
+    provider: openai
+    model: gpt-4o
+    api_key_env: OPENAI_API_KEY_1
+    temperature: 0.1
+    max_retries: 30
+    retry_wait_seconds: 10
+    timeout_seconds: 120
+    reserved_response_tokens: 16000
+    max_total_tokens: 128000
+  - name: mistral
+    provider: mistral
+    model: mistral-large-2407
+    api_key_env: MISTRAL_API_KEY_2
+    temperature: 0.1
+    max_retries: 30
+    retry_wait_seconds: 10
+    timeout_seconds: 120
+    reserved_response_tokens: 16000
+    max_total_tokens: 128000
+summarization:
+  enabled: true
+  iterations: 1
+  max_attempts: 3
+  inject_into_summary_based: true
+  selection_policy: threshold_then_best
+  side_threshold: 0.5
+  keep_best_if_below_threshold: true
+  prompt:
+    require_code_fence: true
+    extract_from_code_fence: true
+    max_total_tokens: 128000
+    reserved_response_tokens: 16000
+  llm:
+    name: gpt4o-summary
+    provider: openai
+    model: gpt-4o
+    api_key_env: OPENAI_API_KEY_1
+    temperature: 0.1
+    max_retries: 30
+    retry_wait_seconds: 10
+    timeout_seconds: 120
+    reserved_response_tokens: 16000
+    max_total_tokens: 128000
+  official_side:
+    enabled: false
+    use_for_selection: false
+    model_dir: tools/SIDE_Model/hard-negatives
+    device: auto
+    max_length: 512
+    threshold: 0.5
+  llm_side:
+    enabled: true
+    use_for_selection: true
+    threshold: 0.7
+    provider: openai
+    model: gpt-4o
+    api_key_env: OPENAI_API_KEY_1
+    temperature: 0.0
+    max_retries: 30
+    retry_wait_seconds: 10
+    timeout_seconds: 120
+    score_min: 0.0
+    score_max: 1.0
+  output:
+    skip_existing: true
+    save_raw_outputs: true
+    save_attempts: true
+refactoring:
+  enabled: true
+  scenarios:
+  - tests-only
+  - code-centric
+  - summary-based
+  iterations: 1
+  max_attempts: 3
+  cosine_threshold: 0.8
+  ctses_threshold: 0.5
+  preserve_original_scaffolding: true
+preparation:
+  refactoring_inputs: true
+  refactoring_prompts: true
+llm_execution:
+  refactoring_outputs: true
+  skip_existing: true
+extraction:
+  refactored_suites: true
+validation:
+  syntax:
+    enabled: false
+    parser: tree-sitter
+  compilation:
+    enabled: true
+    javac_cmd: javac
+    output_subdir: compiled_tests
+    extra_classpath:
+    - tools/evosuite-master-1.2.1-SNAPSHOT.jar
+    - tools/JUNIT-HAMCREST/junit-4.13.2.jar
+    - tools/JUNIT-HAMCREST/hamcrest-core-1.3.jar
+  junit:
+    enabled: true
+    java_cmd: java
+    java_memory: -Xmx512M
+    extra_classpath:
+    - tools/evosuite-master-1.2.1-SNAPSHOT.jar
+    - tools/JUNIT-HAMCREST/junit-4.13.2.jar
+    - tools/JUNIT-HAMCREST/hamcrest-core-1.3.jar
+  coverage:
+    enabled: true
+    tool: jacoco
+    jacoco_cli_jar: tools/jacoco-0.8.8/lib/jacococli.jar
+    jacoco_agent_jar: tools/jacoco-0.8.8/lib/jacocoagent.jar
+    jvm_args:
+    - -Devosuite.runtime.instrumentation=false
+    - -Devosuite.use_separate_classloader=false
+    report_formats:
+    - csv
+    - html
+    - xml
+  refactored:
+    enabled: true
+metrics:
+  ctses:
+    enabled: true
+    preprocess: true
+    nltk_download_if_missing: true
+    nltk_data_dir: null
+    meteor: true
+    rouge_l: true
+    codebleu: true
+    codebleu_python: .venv-codebleu/bin/python
+    codebleu_timeout_seconds: 120
+    codebleu_lang: java
+    codebleu_weights:
+    - 0.25
+    - 0.25
+    - 0.25
+    - 0.25
+    aggregate_scores:
+      average_score_1: true
+      ctses_score_1: true
+      ctses_score_2: true
+  similarity:
+    enabled: false
+    lexical: false
+    rouge_l: false
+    jaccard: false
+    levenshtein: false
+    codebert: false
+    graphcodebert: false
+    openai_embeddings: false
+  embeddings:
+    enabled: true
+    preprocess: true
+    codebert:
+      enabled: true
+      model_name: microsoft/codebert-base
+      device: auto
+      max_length: 512
+    graphcodebert:
+      enabled: true
+      model_name: microsoft/graphcodebert-base
+      device: auto
+      max_length: 512
+    openai:
+      enabled: true
+      model_name: text-embedding-3-small
+      api_key_env: OPENAI_API_KEY_1
+      max_retries: 30
+      retry_wait_seconds: 15
+      timeout_seconds: 120
+      cache_enabled: true
+  readability:
+    enabled: true
+    scalabrino: true
+    rsm_dir: tools/Readability-model
+    rsm_jar: rsm.jar
+    java_cmd: java
+    timeout_seconds: 60
+  complexity:
+    enabled: true
+    cctr:
+      enabled: true
+    pmd:
+      enabled: true
+      pmd_dir: tools/pmd-bin-7.0.0-rc4
+      pmd_bin: bin/pmd
+      ruleset: cyclomatic_ruleset.xml
+      timeout_seconds: 120
+  smells:
+    tsdetect: false
+    jnose: false
+reporting:
+  csv: true
+  jsonl: true
+  html_plotly: false
+  latex_tables: false
+reports:
+  synthetic:
+    enabled: true
+    output_dir: 07_reports
+    export_html: true
+    export_png: true
+    png_scale: 3

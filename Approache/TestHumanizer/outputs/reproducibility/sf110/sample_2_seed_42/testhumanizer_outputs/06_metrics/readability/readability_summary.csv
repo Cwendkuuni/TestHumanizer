@@ -1,0 +1,5 @@
+suite_kind,dataset,project,class_name,scenario_id,model_alias,total_files,ok_files,average_readability,median_readability,min_readability,max_readability,total_readability
+original,SF110,33_javaviewcontrol,TokenMgrError,Original,original,1,1,0.522857771293881,0.522857771293881,0.522857771293881,0.522857771293881,0.522857771293881
+original,SF110,74_fixsuite,Library,Original,original,1,1,0.5709055185317993,0.5709055185317993,0.5709055185317993,0.5709055185317993,0.5709055185317993
+refactored,SF110,33_javaviewcontrol,TokenMgrError,Scenario-1,gpt4o,1,1,0.6686438756684462,0.6686438756684462,0.6686438756684462,0.6686438756684462,0.6686438756684462
+refactored,SF110,74_fixsuite,Library,Scenario-1,gpt4o,1,1,0.8573161721229553,0.8573161721229553,0.8573161721229553,0.8573161721229553,0.8573161721229553

@@ -1,0 +1,43 @@
+Dataset : Defects4J
+Project : Lang
+Class   : ExtendedMessageFormat
+Size    : large (source_loc=245)
+Test methods : 12
+
+Class summary:
+```
+1. Overall Purpose:
+The `ExtendedMessageFormat` class extends the functionality of Java's `MessageFormat` to allow for customizable formatting options using a registry of `FormatFactory` instances. This class is particularly useful in scenarios where one needs to define custom formats beyond the standard ones provided by `MessageFormat`, enabling more flexible and dynamic message formatting.
+
+2. Key Elements Identification:
+   - Main Methods:
+     - `ExtendedMessageFormat(String pattern)`: Initializes the format with a given pattern for the default locale.
+     - `ExtendedMessageFormat(String pattern, Locale locale)`: Initializes with a pattern and specific locale.
+     - `ExtendedMessageFormat(String pattern, Map registry)`: Initializes with a pattern and a registry of format factories.
+     - `ExtendedMessageFormat(String pattern, Locale locale, Map registry)`: Full constructor initializing with a pattern, locale, and registry.
+     - `toPattern()`: Returns the pattern string used by the format.
+     - `applyPattern(String pattern)`: Applies the given pattern, parsing and handling custom formats if a registry is present.
+     - `setFormat`, `setFormatByArgumentIndex`, `setFormats`, `setFormatsByArgumentIndex`: These methods throw `UnsupportedOperationException` as they are overridden to prevent modification of formats directly.
+     - `getFormat(String desc)`: Retrieves a custom `Format` from the registry based on a description.
+     - `readArgumentIndex(String pattern, ParsePosition pos)`: Parses and returns the argument index from a format element.
+     - `parseFormatDescription(String pattern, ParsePosition pos)`: Extracts a format description from a pattern.
+     - `insertFormats(String pattern, ArrayList customPatterns)`: Inserts custom formats back into the pattern for `toPattern()` support.
+     - Helper Methods: `seekNonWs`, `next`, `appendQuotedString`, `getQuotedString`, `containsElements`: Support parsing and pattern handling by manipulating `ParsePosition` and handling quoted strings.
+
+   - Important Variables:
+     - `toPattern`: Stores the current pattern string.
+     - `registry`: Holds the mapping of format names to `FormatFactory` instances for custom format support.
+     - Constants like `DUMMY_PATTERN`, `ESCAPED_QUOTE`, `START_FMT`, `END_FE`, `START_FE`, `QUOTE`: Used for parsing and handling patterns.
+
+3. Method Relationships:
+   - Constructors: Overloaded constructors provide various ways to initialize the `ExtendedMessageFormat` with different combinations of patterns, locales, and registries.
+   - Pattern Handling: `applyPattern`, `readArgumentIndex`, `parseFormatDescription`, and `insertFormats` work together to parse, apply, and manage custom and standard format elements within message patterns.
+   - Unsupported Methods: Overridden methods like `setFormat` and its variants ensure that the class's approach to formatting is not bypassed by direct modification, enforcing the use of the registry-based approach.
+   - Helper Methods: These methods assist in parsing tasks, such as managing whitespace and quoted strings, supporting the core functionality of applying and interpreting patterns.
+
+4. Summarize by Sections:
+   - Initialization: The class is initialized through various constructors that allow setting up the format pattern, locale, and optional custom format registry, setting the stage for flexible message formatting.
+   - Pattern Application: `applyPattern` and related methods handle parsing and applying the pattern, integrating custom formats if a registry is provided, and ensuring compatibility with standard `MessageFormat` features.
+   - Format Management: The class disables direct format manipulation through `setFormat` and similar methods to enforce pattern-based format specification, maintaining the integrity of the custom format approach.
+   - Parsing Utilities: Helper methods like `seekNonWs` and `appendQuotedString` provide essential parsing utilities to ensure accurate interpretation and application of message patterns, particularly in handling complex format descriptions.
+```

@@ -1,0 +1,3 @@
+dataset,paradigm,metric,min,q1,mean,q3,max,n
+defects4j,LLM (gpt-4o),Readability Score,0.0004,0.6302,0.6702,0.7417,0.8747,1257
+sf110,LLM (gpt-4o),Readability Score,0.2378,0.5874,0.6436,0.7085,0.9028,1141

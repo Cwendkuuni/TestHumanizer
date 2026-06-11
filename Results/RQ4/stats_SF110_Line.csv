@@ -1,0 +1,6 @@
+dataset,coverage_type,source,min,q1,mean,q3,max,n
+SF110,Line,EvoSuite,80.77,90.82,93.89,98.01,100.0,65
+SF110,Line,gpt-4o,7.7,66.7,60.29,66.7,100.0,127
+SF110,Line,Tests-only,30.63,88.69,92.39,97.52,100.0,907
+SF110,Line,Code-centric,73.81,88.9,92.68,98.02,100.0,906
+SF110,Line,Summary-based,72.4,89.52,93.61,100.0,100.0,890

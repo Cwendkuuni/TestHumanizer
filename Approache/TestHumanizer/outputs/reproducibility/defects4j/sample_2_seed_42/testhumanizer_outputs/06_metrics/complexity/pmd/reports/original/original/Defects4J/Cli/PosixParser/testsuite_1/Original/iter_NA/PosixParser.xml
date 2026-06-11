@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0-rc4" timestamp="2026-06-11T10:58:59.518">
+<file name="/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs/02_evosuite/generated/Defects4J/Cli/PosixParser/19/testsuite_1/org/apache/commons/cli/PosixParser_ESTest.java">
+<violation beginline="22" endline="22" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="test00" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test00()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="36" endline="36" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="test01" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test01()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="47" endline="47" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="test02" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test02()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="57" endline="57" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="test03" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test03()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="71" endline="71" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="test04" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test04()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="82" endline="82" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="test05" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test05()' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="102" endline="102" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="test06" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test06()' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="121" endline="121" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="test07" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test07()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="131" endline="131" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="test08" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test08()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="141" endline="141" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="test09" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test09()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="150" endline="150" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="org.apache.commons.cli" class="PosixParser_ESTest" method="test10" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test10()' has a cyclomatic complexity of 1.
+</violation>
+</file>
+</pmd>

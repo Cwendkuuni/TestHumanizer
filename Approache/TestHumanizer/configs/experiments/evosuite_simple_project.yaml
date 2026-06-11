@@ -1,0 +1,382 @@
+experiment:
+  name: evosuite_simple_project
+  output_dir: outputs/evosuite_simple_project
+  random_seed: 42
+
+logging:
+  level: normal
+  show_phase_headers: true
+  show_per_item_details: false
+  show_metric_details: false
+  show_warnings: true
+
+
+dataset:
+  name: custom
+  root: .
+  targets_file: configs/experiments/targets_simple_project.csv
+
+test_generation:
+  enabled: true
+  tool: evosuite
+  evosuite_jar: tools/evosuite-master-1.2.1-SNAPSHOT.jar
+  java_cmd: java
+  java_memory: -Xmx512M
+  runs_per_class: 1
+  search_budget_seconds: 30
+  algorithm: DynaMOSA
+  stopping_condition: MaxTime
+  criterion: BRANCH:METHOD:LINE
+  generate_mo_suite: true
+  show_progress: false
+  disable_minimization: false
+  disable_cleanup: false
+
+selection:
+  enabled: true
+
+  # Professional/simple policy:
+  # 1. keep candidates that compile and pass JUnit
+  # 2. among them, prefer first candidate passing cosine + CTSES thresholds
+  # 3. if none pass thresholds, keep best candidate by composite score
+  policy: first_passing_then_best
+
+  hard_constraints:
+    require_compile_ok: true
+    require_junit_ok: true
+
+  cosine_similarity:
+    enabled: true
+    threshold: 0.80
+    primary_metric: cosine_similarity
+    primary_embedding_model_alias: openai
+    diagnostic_metrics:
+      - codebert
+      - graphcodebert
+
+  ctses:
+    enabled: true
+    threshold: 0.50
+    primary_metric: ctses_score
+    fallback_metric: codebleu_score
+
+  ranking:
+    cosine_weight: 0.60
+    ctses_weight: 0.40
+
+  output:
+    directory: 06_metrics/selection
+
+
+llms:
+  summarization:
+    provider: openai
+    model: gpt-4o
+    api_key_env: OPENAI_API_KEY_1
+    temperature: 0.1
+    max_retries: 30
+    retry_wait_seconds: 10
+    timeout_seconds: 120
+    reserved_response_tokens: 16000
+    max_total_tokens: 128000
+
+  refactoring_models:
+    - name: gpt4o
+      provider: openai
+      model: gpt-4o
+      api_key_env: OPENAI_API_KEY_1
+      temperature: 0.1
+      max_retries: 30
+      retry_wait_seconds: 10
+      timeout_seconds: 120
+      reserved_response_tokens: 16000
+      max_total_tokens: 128000
+
+    - name: mistral
+      provider: mistral
+      model: mistral-large-2407
+      api_key_env: MISTRAL_API_KEY_2
+      temperature: 0.1
+      max_retries: 30
+      retry_wait_seconds: 10
+      timeout_seconds: 120
+      reserved_response_tokens: 16000
+      max_total_tokens: 128000
+
+# summarization:
+#   enabled: false
+#   max_attempts: 3
+#   side_threshold: 0.5
+#   keep_best_if_below_threshold: true
+
+summarization:
+  # Main switch.
+  # If false, TestHumanizer keeps the current behavior and Scenario-3 can use
+  # the fallback/no-summary behavior already implemented.
+  enabled: true
+
+  # Number of summaries to generate per target class.
+  # For the paper-like setting, you can increase this later.
+  iterations: 1
+
+  # Number of attempts per summary generation if the LLM call fails
+  # or if the generated output cannot be parsed.
+  max_attempts: 3
+
+  # Whether the selected summary should be injected into Scenario-3
+  # summary-based refactoring prompts.
+  inject_into_summary_based: true
+
+  # How to select the summary when several summaries/attempts exist.
+  # Recommended default: first_success
+  #
+  # Available policies:
+  # - first_success:
+  #     use the first valid generated summary.
+  # - best_side:
+  #     use the summary with the highest official SIDE score.
+  #     requires official_side.enabled=true.
+  # - threshold_then_best:
+  #     accept the first summary whose official SIDE score >= threshold;
+  #     otherwise keep the best SIDE summary if keep_best_if_below_threshold=true.
+  #     requires official_side.enabled=true.
+  
+  #selection_policy: first_success
+  selection_policy: threshold_then_best
+
+  # Backward-compatible global threshold.
+  # Used when selection_policy is threshold_then_best unless overridden below.
+  side_threshold: 0.5
+
+  # If all summaries are below the SIDE threshold, keep the best one instead
+  # of disabling summary injection.
+  keep_best_if_below_threshold: true
+
+  # Summary prompt/options.
+  prompt:
+    require_code_fence: true
+    extract_from_code_fence: true
+    max_total_tokens: 128000
+    reserved_response_tokens: 16000
+
+  # Default LLM used for source-code summarization.
+  # This can reuse the same provider/client system as the refactoring phase.
+  llm:
+    name: gpt4o-summary
+    provider: openai
+    model: gpt-4o
+    api_key_env: OPENAI_API_KEY_1
+    temperature: 0.1
+    max_retries: 30
+    retry_wait_seconds: 10
+    timeout_seconds: 120
+    reserved_response_tokens: 16000
+    max_total_tokens: 128000
+
+  # Official SIDE metric from the paper.
+  # This is optional and mainly useful for reproducibility and reporting.
+  official_side:
+    enabled: false
+
+    # If false, SIDE is computed and reported but does not decide which summary
+    # is selected. This is the recommended default for modern LLM summaries.
+    use_for_selection: false
+
+    model_dir: tools/SIDE_Model/hard-negatives
+    device: auto
+    max_length: 512
+    threshold: 0.5
+
+  # Soft SIDE: LLM-as-a-judge evaluation of code-summary alignment.
+  # Optional diagnostic metric, not a replacement for official SIDE.
+  llm_side:
+    enabled: true
+
+    # If false, the LLM-side score is only reported and does not affect selection.
+    use_for_selection: true
+
+    threshold: 0.7
+    provider: openai
+    model: gpt-4o
+    api_key_env: OPENAI_API_KEY_1
+    temperature: 0.0
+    max_retries: 30
+    retry_wait_seconds: 10
+    timeout_seconds: 120
+
+    # Expected score range for the JSON returned by the judge.
+    score_min: 0.0
+    score_max: 1.0
+
+  # Output/cache behavior.
+  output:
+    skip_existing: true
+    save_raw_outputs: true
+    save_attempts: true
+
+
+
+refactoring:
+  enabled: true
+  scenarios:
+    - tests-only
+    - code-centric
+    - summary-based
+  iterations: 1
+  max_attempts: 3
+  cosine_threshold: 0.8
+  ctses_threshold: 0.5
+  preserve_original_scaffolding: true
+
+preparation:
+  refactoring_inputs: true
+  refactoring_prompts: true
+
+llm_execution:
+  refactoring_outputs: true
+  skip_existing: true
+
+extraction:
+  refactored_suites: true
+
+validation:
+  syntax:
+    enabled: false
+    parser: tree-sitter
+
+  compilation:
+    enabled: true
+    javac_cmd: javac
+    output_subdir: compiled_tests
+    extra_classpath:
+      - tools/evosuite-master-1.2.1-SNAPSHOT.jar
+      - tools/JUNIT-HAMCREST/junit-4.13.2.jar
+      - tools/JUNIT-HAMCREST/hamcrest-core-1.3.jar
+
+  junit:
+    enabled: true
+    java_cmd: java
+    java_memory: -Xmx512M
+    extra_classpath:
+      - tools/evosuite-master-1.2.1-SNAPSHOT.jar
+      - tools/JUNIT-HAMCREST/junit-4.13.2.jar
+      - tools/JUNIT-HAMCREST/hamcrest-core-1.3.jar
+
+  coverage:
+    enabled: true
+    tool: jacoco
+    jacoco_cli_jar: tools/jacoco-0.8.8/lib/jacococli.jar
+    jacoco_agent_jar: tools/jacoco-0.8.8/lib/jacocoagent.jar
+    jvm_args:
+      - -Devosuite.runtime.instrumentation=false
+      - -Devosuite.use_separate_classloader=false
+    report_formats:
+      - csv
+      - html
+      - xml
+
+  refactored:
+    enabled: true
+
+metrics:
+  ctses:
+    enabled: true
+
+    preprocess: true
+    nltk_download_if_missing: true
+    nltk_data_dir: null
+
+    meteor: true
+    rouge_l: true
+    codebleu: true
+    codebleu_python: .venv-codebleu/bin/python
+    codebleu_timeout_seconds: 120
+    codebleu_lang: java
+    codebleu_weights:
+      - 0.25
+      - 0.25
+      - 0.25
+      - 0.25
+
+    aggregate_scores:
+      average_score_1: true
+      ctses_score_1: true
+      ctses_score_2: true
+
+  similarity:
+    enabled: false
+    lexical: false
+    rouge_l: false
+    jaccard: false
+    levenshtein: false
+    codebert: false
+    graphcodebert: false
+    openai_embeddings: false
+
+  embeddings:
+    enabled: true
+
+    preprocess: true
+
+    codebert:
+      enabled: true
+      model_name: microsoft/codebert-base
+      device: auto
+      max_length: 512
+
+    graphcodebert:
+      enabled: true
+      model_name: microsoft/graphcodebert-base
+      device: auto
+      max_length: 512
+
+    openai:
+      enabled: true
+      model_name: text-embedding-3-small
+      api_key_env: OPENAI_API_KEY_1
+      max_retries: 30
+      retry_wait_seconds: 15
+      timeout_seconds: 120
+      cache_enabled: true
+
+  readability:
+    enabled: true
+    scalabrino: true
+    rsm_dir: tools/Readability-model
+    rsm_jar: rsm.jar
+    java_cmd: java
+    timeout_seconds: 60
+
+  complexity:
+    enabled: true
+
+    cctr:
+     enabled: true
+
+    pmd:
+      enabled: true
+      pmd_dir: tools/pmd-bin-7.0.0-rc4
+      pmd_bin: bin/pmd
+      ruleset: cyclomatic_ruleset.xml
+      timeout_seconds: 120
+
+  smells:
+    tsdetect: false
+    jnose: false
+
+reporting:
+  csv: true
+  jsonl: true
+  html_plotly: false
+  latex_tables: false
+
+
+reports:
+  synthetic:
+    enabled: true
+    output_dir: 07_reports
+    export_html: true
+    export_png: true
+    png_scale: 3
+
+

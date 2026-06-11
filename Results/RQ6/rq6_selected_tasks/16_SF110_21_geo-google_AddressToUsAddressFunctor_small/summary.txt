@@ -1,0 +1,25 @@
+Dataset : SF110
+Project : 21_geo-google
+Class   : AddressToUsAddressFunctor
+Size    : small (source_loc=54)
+Test methods : 4
+
+Class summary:
+```
+1. Overall Purpose: The primary function of the `AddressToUsAddressFunctor` class is to transform a `GeoAddress` object into a `GeoUsAddress` object, specifically extracting and mapping address details relevant to the United States. It serves as a utility within a larger geolocation application to standardize address data for U.S. addresses.
+
+2. Key Elements Identification:
+   - Main methods:
+     - `getInstance()`: This static method returns the singleton instance of the `AddressToUsAddressFunctor` class. It takes no parameters and returns an `AddressToUsAddressFunctor` object.
+     - `execute(GeoAddress addr)`: This method is the core functionality of the class, which converts a `GeoAddress` into a `GeoUsAddress`. It accepts a `GeoAddress` as its parameter and returns a `GeoUsAddress` object after populating it with relevant information extracted from the input address.
+   - Important variables:
+     - `_instance`: This is a static final variable that holds the singleton instance of `AddressToUsAddressFunctor`. It ensures only one instance of the class exists, supporting the singleton pattern.
+
+3. Method Relationships:
+   - The `getInstance()` and `_instance` variable are related as they implement the singleton pattern, ensuring that the `AddressToUsAddressFunctor` class has only one instance.
+   - The `execute` method is the main operational method, leveraging data extraction and transformation mechanisms to achieve the class's primary function.
+
+4. Summarize by Sections:
+   - Singleton Pattern: The class uses a singleton design pattern, as seen in the private static `_instance` and public static `getInstance()` method, ensuring a single instance of `AddressToUsAddressFunctor` is used throughout the application.
+   - Address Transformation: The `execute` method is responsible for extracting address components from a `GeoAddress` and mapping them to a `GeoUsAddress`. It checks each level of the address hierarchy, from country to thoroughfare, setting properties on the `GeoUsAddress` object, such as country, state, county, city, postal code, and address lines. Additionally, it clones the coordinate from the input address and sets the accuracy level, ensuring comprehensive transformation of relevant data.
+```

@@ -1,0 +1,32 @@
+Dataset : SF110
+Project : 87_jaw-br
+Class   : Salvar
+Size    : small (source_loc=16)
+Test methods : 2
+
+Class summary:
+```
+1. Overall Purpose:
+The `Salvar` class is designed to manage the saving of entity data within a Java application, particularly for projects organized under the "jaw" framework. Its primary function is to facilitate the saving of project data either in a custom ".jaw" format or as an XML file ".jaw.xml". This class is integral in handling user interactions for file saving through a graphical interface, ensuring data persistence and export capabilities.
+
+2. Key Elements Identification:
+- Main methods:
+  - The constructor `Salvar(final ProcessarEntidades form, final int tipoSalvar)` is the core method that orchestrates the saving process. It takes a `ProcessarEntidades` object, which provides the entities to be saved and a save type integer flag which determines the format and behavior of the saving process. This method does not return a value but handles file dialog interactions and calls necessary serialization methods.
+  
+- Important variables:
+  - `vela`: A boolean used to track whether a file chooser interaction is necessary.
+  - `arquivo`: A string representing the file path where data will be saved.
+  - `xml`: A string storing the XML representation of the entities if saving as XML.
+  - `entidade`: A list of `Entidade` objects representing the main data to be saved.
+  - `SALVAR_XML`, `SALVAR`, `SALVAR_COMO`: Integer constants defining different save operation modes.
+
+3. Method Relationships:
+The `Salvar` class does not have multiple methods, but its constructor acts as a central point that coordinates interactions with helper classes and methods like `Serializacao` and `SerializacaoXML` for data serialization. It also utilizes nested classes `Filtro` and `Filtro2` to define file filters for the file chooser component, depending on whether the user is saving a standard project file or an XML file.
+
+4. Summarize by Sections:
+- Constructor & File Saving Logic:
+  The `Salvar` constructor initiates by extracting entities from a `ProcessarEntidades` form and setting up a `JFileChooser` to prompt the user for a save location. Depending on the `tipoSalvar` parameter, it applies a file filter for either `.jaw` or `.jaw.xml` files. If a new project is detected or if "Save As" is requested, it displays the file chooser dialog. The method then determines the correct file extension and leverages serialization classes to write the data to disk, displaying success or error messages as appropriate.
+
+- File Filters:
+  The `Filtro` and `Filtro2` classes are inner classes extending `FileFilter`, designed to filter file selections in the save dialog based on file extension. `Filtro` accepts directories or files ending with ".jaw", while `Filtro2` accepts directories or files ending with ".jaw.xml". These filters ensure that the user selects or saves the file in the correct format.
+```

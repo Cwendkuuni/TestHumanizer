@@ -1,0 +1,15 @@
+suite_kind,dataset,project,class_name,scenario_id,model_alias,total_files,ok_files,average_maintainability_index,median_maintainability_index,min_maintainability_index,max_maintainability_index,average_cyclomatic_complexity,median_cyclomatic_complexity,min_cyclomatic_complexity,max_cyclomatic_complexity,total_cyclomatic_complexity,total_loc
+original,custom,simple-java-project,Calculator,Original,original,1,1,100.0,100.0,100.0,100.0,10.0,10.0,10.0,10.0,10.0,82
+original,custom,simple-java-project,StringNormalizer,Original,original,1,1,100.0,100.0,100.0,100.0,12.0,12.0,12.0,12.0,12.0,91
+refactored,custom,simple-java-project,Calculator,Scenario-1,gpt4o,3,3,95.88081611328971,95.88081611328971,95.88081611328971,95.88081611328971,10.0,10.0,10.0,10.0,30.0,321
+refactored,custom,simple-java-project,Calculator,Scenario-1,mistral,3,3,96.0602170403938,96.0602170403938,96.0602170403938,96.0602170403938,10.0,10.0,10.0,10.0,30.0,315
+refactored,custom,simple-java-project,Calculator,Scenario-2,gpt4o,3,3,95.96094121442967,95.88081611328971,95.88081611328971,96.12119141670956,10.0,10.0,10.0,10.0,30.0,320
+refactored,custom,simple-java-project,Calculator,Scenario-2,mistral,3,3,96.0602170403938,96.0602170403938,96.0602170403938,96.0602170403938,10.0,10.0,10.0,10.0,30.0,315
+refactored,custom,simple-java-project,Calculator,Scenario-3,gpt4o,3,3,95.88081611328971,95.88081611328971,95.88081611328971,95.88081611328971,10.0,10.0,10.0,10.0,30.0,321
+refactored,custom,simple-java-project,Calculator,Scenario-3,mistral,3,3,95.98028278518986,96.0602170403938,95.82041427478197,96.0602170403938,10.0,10.0,10.0,10.0,30.0,316
+refactored,custom,simple-java-project,StringNormalizer,Scenario-1,gpt4o,3,3,95.55512027827609,95.44449732085755,95.39241000357171,95.82845351039902,12.0,12.0,12.0,12.0,36.0,368
+refactored,custom,simple-java-project,StringNormalizer,Scenario-1,mistral,3,3,95.96807775463611,95.93391076626597,95.88139824168654,96.08892425595583,12.0,12.0,12.0,12.0,36.0,371
+refactored,custom,simple-java-project,StringNormalizer,Scenario-2,gpt4o,3,3,94.81121053007696,95.44511253424423,93.54340652174243,95.44511253424423,12.0,12.0,12.0,12.0,36.0,352
+refactored,custom,simple-java-project,StringNormalizer,Scenario-2,mistral,3,3,96.2625800327833,96.34940792119704,96.08892425595583,96.34940792119704,12.0,12.0,12.0,12.0,36.0,366
+refactored,custom,simple-java-project,StringNormalizer,Scenario-3,gpt4o,3,3,95.44511253424423,95.44511253424423,95.44511253424423,95.44511253424423,12.0,12.0,12.0,12.0,36.0,342
+refactored,custom,simple-java-project,StringNormalizer,Scenario-3,mistral,3,3,95.37987074764611,95.17049376386605,95.03520771280633,95.93391076626597,12.0,12.0,12.0,12.0,36.0,363

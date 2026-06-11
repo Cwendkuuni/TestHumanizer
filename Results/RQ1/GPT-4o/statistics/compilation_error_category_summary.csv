@@ -1,0 +1,29 @@
+Dataset,Scenario,Model,Error_Category,Total_Errors
+Defects4J,Scenario-1,GPT,Cannot Find Symbol,2395
+Defects4J,Scenario-1,GPT,Other,356
+Defects4J,Scenario-1,GPT,Incompatible Types,299
+Defects4J,Scenario-1,GPT,Package Does Not Exist,183
+Defects4J,Scenario-2,GPT,Cannot Find Symbol,2428
+Defects4J,Scenario-2,GPT,Other,366
+Defects4J,Scenario-2,GPT,Incompatible Types,308
+Defects4J,Scenario-2,GPT,Package Does Not Exist,183
+Defects4J,Scenario-2,GPT,Public Class Redefinition,2
+Defects4J,Scenario-3,GPT,Cannot Find Symbol,2287
+Defects4J,Scenario-3,GPT,Other,343
+Defects4J,Scenario-3,GPT,Incompatible Types,294
+Defects4J,Scenario-3,GPT,Package Does Not Exist,183
+SF110,Scenario-1,GPT,Other,553
+SF110,Scenario-1,GPT,Incompatible Types,81
+SF110,Scenario-1,GPT,Cannot Find Symbol,98
+SF110,Scenario-1,GPT,Unclosed Character Literal,1
+SF110,Scenario-1,GPT,Unclosed String Literal,1
+SF110,Scenario-2,GPT,Other,602
+SF110,Scenario-2,GPT,Cannot Find Symbol,118
+SF110,Scenario-2,GPT,Incompatible Types,52
+SF110,Scenario-2,GPT,Unclosed Character Literal,5
+SF110,Scenario-2,GPT,Unclosed String Literal,1
+SF110,Scenario-3,GPT,Other,535
+SF110,Scenario-3,GPT,Cannot Find Symbol,61
+SF110,Scenario-3,GPT,Incompatible Types,25
+SF110,Scenario-3,GPT,Unclosed Character Literal,1
+SF110,Scenario-3,GPT,Unclosed String Literal,1

@@ -1,0 +1,61 @@
+{
+  "dataset": "defects4j",
+  "metadata_path": "/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Datasets/Defects4J_base_extracted.json",
+  "base_config_path": "/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/configs/templates/base_dataset_experiment.yaml",
+  "raw_rows": 1860,
+  "unique_targets": 124,
+  "valid_targets": 124,
+  "skipped_missing_files": 0,
+  "selected_targets": 2,
+  "sample_seed": 42,
+  "sample_size": 2,
+  "full": false,
+  "project_counts_selected": {
+    "Cli": 1,
+    "Jsoup": 1
+  },
+  "project_counts_valid": {
+    "Cli": 35,
+    "Closure": 1,
+    "Collections": 1,
+    "Compress": 13,
+    "Csv": 9,
+    "Gson": 3,
+    "JacksonCore": 3,
+    "JacksonDatabind": 1,
+    "Jsoup": 29,
+    "JxPath": 1,
+    "Lang": 14,
+    "Math": 2,
+    "Mockito": 9,
+    "Time": 3
+  },
+  "global_dependencies_dir": null,
+  "extra_classpath_entries": [],
+  "project_jars_recursive": false,
+  "run_dir": "/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42",
+  "targets_csv": "/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/generated_targets.csv",
+  "target_diagnostics_csv": "/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/target_diagnostics.csv",
+  "generated_config": "/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/generated_config.yaml",
+  "testhumanizer_output_dir": "/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs",
+  "selected_preview": [
+    {
+      "dataset": "Defects4J",
+      "project": "Cli",
+      "bug_id": "19",
+      "class_name": "PosixParser",
+      "test_class_fqdn": "org.apache.commons.cli.PosixParser",
+      "source_exists": "True",
+      "class_exists": "True"
+    },
+    {
+      "dataset": "Defects4J",
+      "project": "Jsoup",
+      "bug_id": "28",
+      "class_name": "Entities",
+      "test_class_fqdn": "org.jsoup.nodes.Entities",
+      "source_exists": "True",
+      "class_exists": "True"
+    }
+  ]
+}

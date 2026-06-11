@@ -1,0 +1,36 @@
+[
+  {
+    "dataset": "SF110",
+    "project": "33_javaviewcontrol",
+    "class_name": "TokenMgrError",
+    "bug_id": "",
+    "source_path": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/33_javaviewcontrol/com/pmdesigns/jvc/tools/TokenMgrError.java",
+    "classpath": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/33_javaviewcontrol:/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/33_javaviewcontrol/javaviewcontrol.jar",
+    "test_class_fqdn": "com.pmdesigns.jvc.tools.TokenMgrError",
+    "class_files_dir": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/33_javaviewcontrol",
+    "source_files_dir": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/33_javaviewcontrol",
+    "_source_exists": "True",
+    "_class_exists": "True",
+    "_source_token_count": "607",
+    "_source_method_count": "3",
+    "_source_loc": "60",
+    "_metadata_key": "SF110|33_javaviewcontrol||TokenMgrError|com.pmdesigns.jvc.tools"
+  },
+  {
+    "dataset": "SF110",
+    "project": "74_fixsuite",
+    "class_name": "Library",
+    "bug_id": "",
+    "source_path": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/74_fixsuite/org/fixsuite/message/Library.java",
+    "classpath": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/74_fixsuite:/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/74_fixsuite/fixsuite.jar",
+    "test_class_fqdn": "org.fixsuite.message.Library",
+    "class_files_dir": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/74_fixsuite",
+    "source_files_dir": "/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/74_fixsuite",
+    "_source_exists": "True",
+    "_class_exists": "True",
+    "_source_token_count": "898",
+    "_source_method_count": "5",
+    "_source_loc": "78",
+    "_metadata_key": "SF110|74_fixsuite||Library|org.fixsuite.message"
+  }
+]

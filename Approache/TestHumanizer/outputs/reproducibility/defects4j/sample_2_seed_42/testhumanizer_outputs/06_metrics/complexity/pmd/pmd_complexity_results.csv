@@ -1,0 +1,113 @@
+id,suite_kind,dataset,project,class_name,bug_id,testsuite_id,scenario,scenario_id,iteration,model_alias,provider,model,java_file,pmd_ok,pmd_returncode,pmd_report_xml,total_cyclomatic_complexity,loc,number_of_methods,comment_density,maintainability_index,method_complexities,error,stdout,stderr
+Defects4J_Cli_PosixParser_19_testsuite_1_original,original,Defects4J,Cli,PosixParser,19,testsuite_1,original,Original,,original,,,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs/02_evosuite/generated/Defects4J/Cli/PosixParser/19/testsuite_1/org/apache/commons/cli/PosixParser_ESTest.java,True,4,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs/06_metrics/complexity/pmd/reports/original/original/Defects4J/Cli/PosixParser/testsuite_1/Original/iter_NA/PosixParser.xml,13.0,142,11,0.08450704225352113,100.0,1.0;1.0;1.0;1.0;1.0;2.0;2.0;1.0;1.0;1.0;1.0,,"
+Processing files   0% [                                                                                                                                                               ] 0/1 (0:00:00) Violations:0, Errors:0
+[1A
+Processing files 100% [==============================================================================================================================================================] 1/1 (0:00:00) Violations:11, Errors:0[1B
+[1A
+Processing files 100% [==============================================================================================================================================================] 1/1 (0:00:00) Violations:11, Errors:0[1B
+[1A
+Processing files 100% [==============================================================================================================================================================] 1/1 (0:00:00) Violations:11, Errors:0[1B
+[1A
+
+                                                                                                                                                                                                                            
+[1B
+[1A
+Processing files 100% [==============================================================================================================================================================] 1/1 (0:00:00) Violations:11, Errors:0[1B
+[1A
+Processing files 100% [==============================================================================================================================================================] 1/1 (0:00:00) Violations:11, Errors:0[1B
+[1A
+
+                                                                                                                                                                                                                            
+[1B
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/pmd-bin-7.0.0-rc4/lib/groovy-2.4.21.jar) to method java.lang.Object.finalize()
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.CachedClass
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[main] INFO net.sourceforge.pmd.cli - Log level is at INFO
+[main] WARN net.sourceforge.pmd.cli - This analysis could be faster, please consider using Incremental Analysis: https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_userdocs_incremental_analysis.html
+"
+Defects4J_Jsoup_Entities_28_testsuite_1_original,original,Defects4J,Jsoup,Entities,28,testsuite_1,original,Original,,original,,,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs/02_evosuite/generated/Defects4J/Jsoup/Entities/28/testsuite_1/org/jsoup/nodes/Entities_ESTest.java,True,4,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs/06_metrics/complexity/pmd/reports/original/original/Defects4J/Jsoup/Entities/testsuite_1/Original/iter_NA/Entities.xml,9.0,66,9,0.06060606060606061,100.0,1.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0,,"
+Processing files   0% [                                                                                                                                                               ] 0/1 (0:00:00) Violations:0, Errors:0
+[1A
+Processing files 100% [===============================================================================================================================================================] 1/1 (0:00:00) Violations:9, Errors:0[1B
+[1A
+Processing files 100% [===============================================================================================================================================================] 1/1 (0:00:00) Violations:9, Errors:0[1B
+[1A
+Processing files 100% [===============================================================================================================================================================] 1/1 (0:00:00) Violations:9, Errors:0[1B
+[1A
+
+                                                                                                                                                                                                                            
+[1B
+[1A
+Processing files 100% [===============================================================================================================================================================] 1/1 (0:00:00) Violations:9, Errors:0[1B
+[1A
+Processing files 100% [===============================================================================================================================================================] 1/1 (0:00:00) Violations:9, Errors:0[1B
+[1A
+
+                                                                                                                                                                                                                            
+[1B
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/pmd-bin-7.0.0-rc4/lib/groovy-2.4.21.jar) to method java.lang.Object.finalize()
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.CachedClass
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[main] INFO net.sourceforge.pmd.cli - Log level is at INFO
+[main] WARN net.sourceforge.pmd.cli - This analysis could be faster, please consider using Incremental Analysis: https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_userdocs_incremental_analysis.html
+"
+Defects4J_Cli_PosixParser_19_testsuite_1_Scenario-1_gpt4o_iter_1,refactored,Defects4J,Cli,PosixParser,19,testsuite_1,tests-only,Scenario-1,1,gpt4o,openai,gpt-4o,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs/04_refactorings/extracted_suites/generated/gpt4o/Defects4J/Cli/PosixParser/testsuite_1/Scenario-1/iter_1/org/apache/commons/cli/PosixParser_ESTest.java,True,4,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs/06_metrics/complexity/pmd/reports/refactored/gpt4o/Defects4J/Cli/PosixParser/testsuite_1/Scenario-1/iter_1/PosixParser.xml,13.0,153,11,0.2549019607843137,95.90357805147164,1.0;1.0;1.0;1.0;1.0;2.0;2.0;1.0;1.0;1.0;1.0,,"
+Processing files   0% [                                                                                                                                                               ] 0/1 (0:00:00) Violations:0, Errors:0
+[1A
+Processing files 100% [==============================================================================================================================================================] 1/1 (0:00:00) Violations:11, Errors:0[1B
+[1A
+Processing files 100% [==============================================================================================================================================================] 1/1 (0:00:00) Violations:11, Errors:0[1B
+[1A
+Processing files 100% [==============================================================================================================================================================] 1/1 (0:00:00) Violations:11, Errors:0[1B
+[1A
+
+                                                                                                                                                                                                                            
+[1B
+[1A
+Processing files 100% [==============================================================================================================================================================] 1/1 (0:00:00) Violations:11, Errors:0[1B
+[1A
+Processing files 100% [==============================================================================================================================================================] 1/1 (0:00:00) Violations:11, Errors:0[1B
+[1A
+
+                                                                                                                                                                                                                            
+[1B
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/pmd-bin-7.0.0-rc4/lib/groovy-2.4.21.jar) to method java.lang.Object.finalize()
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.CachedClass
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[main] INFO net.sourceforge.pmd.cli - Log level is at INFO
+[main] WARN net.sourceforge.pmd.cli - This analysis could be faster, please consider using Incremental Analysis: https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_userdocs_incremental_analysis.html
+"
+Defects4J_Jsoup_Entities_28_testsuite_1_Scenario-1_gpt4o_iter_1,refactored,Defects4J,Jsoup,Entities,28,testsuite_1,tests-only,Scenario-1,1,gpt4o,openai,gpt-4o,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs/04_refactorings/extracted_suites/generated/gpt4o/Defects4J/Jsoup/Entities/testsuite_1/Scenario-1/iter_1/org/jsoup/nodes/Entities_ESTest.java,True,4,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs/06_metrics/complexity/pmd/reports/refactored/gpt4o/Defects4J/Jsoup/Entities/testsuite_1/Scenario-1/iter_1/Entities.xml,9.0,102,9,0.30392156862745096,96.00825042892843,1.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0,,"
+Processing files   0% [                                                                                                                                                               ] 0/1 (0:00:00) Violations:0, Errors:0
+[1A
+Processing files 100% [===============================================================================================================================================================] 1/1 (0:00:00) Violations:9, Errors:0[1B
+[1A
+Processing files 100% [===============================================================================================================================================================] 1/1 (0:00:00) Violations:9, Errors:0[1B
+[1A
+Processing files 100% [===============================================================================================================================================================] 1/1 (0:00:00) Violations:9, Errors:0[1B
+[1A
+
+                                                                                                                                                                                                                            
+[1B
+[1A
+Processing files 100% [===============================================================================================================================================================] 1/1 (0:00:00) Violations:9, Errors:0[1B
+[1A
+Processing files 100% [===============================================================================================================================================================] 1/1 (0:00:00) Violations:9, Errors:0[1B
+[1A
+
+                                                                                                                                                                                                                            
+[1B
+","WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/pmd-bin-7.0.0-rc4/lib/groovy-2.4.21.jar) to method java.lang.Object.finalize()
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.CachedClass
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[main] INFO net.sourceforge.pmd.cli - Log level is at INFO
+[main] WARN net.sourceforge.pmd.cli - This analysis could be faster, please consider using Incremental Analysis: https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_userdocs_incremental_analysis.html
+"

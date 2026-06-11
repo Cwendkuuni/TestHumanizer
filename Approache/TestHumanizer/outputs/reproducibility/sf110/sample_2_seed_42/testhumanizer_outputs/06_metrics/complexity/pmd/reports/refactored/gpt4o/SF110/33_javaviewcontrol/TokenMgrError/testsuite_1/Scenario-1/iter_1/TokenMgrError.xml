@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0-rc4" timestamp="2026-06-11T11:02:01.827">
+<file name="/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/04_refactorings/extracted_suites/generated/gpt4o/SF110/33_javaviewcontrol/TokenMgrError/testsuite_1/Scenario-1/iter_1/com/pmdesigns/jvc/tools/TokenMgrError_ESTest.java">
+<violation beginline="21" endline="21" begincolumn="17" endcolumn="40" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="testLexicalErrorWithEOF" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testLexicalErrorWithEOF()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="38" endline="38" begincolumn="17" endcolumn="45" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="testLexicalErrorWithFormFeed" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testLexicalErrorWithFormFeed()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="55" endline="55" begincolumn="17" endcolumn="53" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="testLexicalErrorWithControlCharacter" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testLexicalErrorWithControlCharacter()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="72" endline="72" begincolumn="17" endcolumn="31" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="testAddEscapes" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testAddEscapes()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="84" endline="84" begincolumn="17" endcolumn="51" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="testLexicalErrorWithCarriageReturn" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testLexicalErrorWithCarriageReturn()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="101" endline="101" begincolumn="17" endcolumn="44" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="testLexicalErrorWithNewLine" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testLexicalErrorWithNewLine()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="118" endline="118" begincolumn="17" endcolumn="48" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="testLexicalErrorWithNullMessage" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testLexicalErrorWithNullMessage()' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="138" endline="138" begincolumn="17" endcolumn="46" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="testLexicalErrorWithBackspace" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testLexicalErrorWithBackspace()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="155" endline="155" begincolumn="17" endcolumn="50" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="testLexicalErrorWithNullCharacter" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testLexicalErrorWithNullCharacter()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="172" endline="172" begincolumn="17" endcolumn="41" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="testTokenMgrErrorMessage" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testTokenMgrErrorMessage()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="186" endline="186" begincolumn="17" endcolumn="50" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="testTokenMgrErrorLexicalErrorCode" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testTokenMgrErrorLexicalErrorCode()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="205" endline="205" begincolumn="17" endcolumn="52" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="testTokenMgrErrorDefaultConstructor" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testTokenMgrErrorDefaultConstructor()' has a cyclomatic complexity of 1.
+</violation>
+</file>
+</pmd>

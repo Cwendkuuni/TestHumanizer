@@ -1,0 +1,15 @@
+task_id,dir_name,group,dataset,project,class,size_bin,loc,versionA,versionB
+03,04_Defects4J_Compress_ArchiveStreamFactory_medium,B,Defects4J,Compress,ArchiveStreamFactory,medium,118,TestHumanizer,EvoSuite
+04,05_Defects4J_Compress_DeflateCompressorInputStream_small,B,Defects4J,Compress,DeflateCompressorInputStream,small,24,EvoSuite,TestHumanizer
+06,08_Defects4J_Csv_CSVParser_large,B,Defects4J,Csv,CSVParser,large,212,EvoSuite,TestHumanizer
+11,13_Defects4J_Lang_ExtendedMessageFormat_large,B,Defects4J,Lang,ExtendedMessageFormat,large,245,EvoSuite,TestHumanizer
+12,14_Defects4J_Lang_SerializationUtils_medium,B,Defects4J,Lang,SerializationUtils,medium,101,EvoSuite,TestHumanizer
+15,17_SF110_41_follow_TabbedPane_small,B,SF110,41_follow,TabbedPane,small,44,EvoSuite,TestHumanizer
+16,18_SF110_47_dvd-homevideo_Menu_large,B,SF110,47_dvd-homevideo,Menu,large,288,EvoSuite,TestHumanizer
+18,20_SF110_69_lhamacaw_DisplayableListPanel_large,B,SF110,69_lhamacaw,DisplayableListPanel,large,268,EvoSuite,TestHumanizer
+21,23_SF110_86_at-robots2-j_RobotRenderer_medium,B,SF110,86_at-robots2-j,RobotRenderer,medium,114,EvoSuite,TestHumanizer
+22,24_SF110_87_jaw-br_Salvar_small,B,SF110,87_jaw-br,Salvar,small,16,EvoSuite,TestHumanizer
+25,27_SF110_guava_Predicates_large,B,SF110,guava,Predicates,large,325,TestHumanizer,EvoSuite
+26,28_SF110_guava_Suppliers_medium,B,SF110,guava,Suppliers,medium,125,EvoSuite,TestHumanizer
+27,29_SF110_javaml_Fold_medium,B,SF110,javaml,Fold,medium,174,EvoSuite,TestHumanizer
+28,30_SF110_scribe_Verifier_small,B,SF110,scribe,Verifier,small,3,TestHumanizer,EvoSuite

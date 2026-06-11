@@ -1,0 +1,113 @@
+evaluator,group,task_label,dataset,project,class,size_bin,loc,approach,readability,trust,adopt
+Advanced graduate student,A,Task 01,Defects4J,Cli,TypeHandler,medium,145,EvoSuite,3,3,3
+Advanced graduate student,A,Task 01,Defects4J,Cli,TypeHandler,medium,145,Summary,4,4,4
+Advanced graduate student,A,Task 02,Defects4J,Codec,Lang,medium,84,EvoSuite,3,3,3
+Advanced graduate student,A,Task 02,Defects4J,Codec,Lang,medium,84,Summary,4,3,3
+Advanced graduate student,A,Task 05,Defects4J,Compress,X7875_NewUnix,medium,164,EvoSuite,3,3,3
+Advanced graduate student,A,Task 05,Defects4J,Compress,X7875_NewUnix,medium,164,Summary,4,4,4
+Advanced graduate student,A,Task 07,Defects4J,Csv,CSVRecord,small,65,EvoSuite,2,3,2
+Advanced graduate student,A,Task 07,Defects4J,Csv,CSVRecord,small,65,Summary,5,4,5
+Advanced graduate student,A,Task 08,Defects4J,Gson,ISO8601Utils,large,242,EvoSuite,2,3,2
+Advanced graduate student,A,Task 08,Defects4J,Gson,ISO8601Utils,large,242,Summary,4,4,4
+Advanced graduate student,A,Task 09,Defects4J,JacksonCore,NumberInput,large,247,EvoSuite,4,4,4
+Advanced graduate student,A,Task 09,Defects4J,JacksonCore,NumberInput,large,247,Summary,3,3,3
+Advanced graduate student,A,Task 10,Defects4J,JacksonDatabind,StdDateFormat,large,254,EvoSuite,3,3,3
+Advanced graduate student,A,Task 10,Defects4J,JacksonDatabind,StdDateFormat,large,254,Summary,4,4,4
+Advanced graduate student,A,Task 13,Defects4J,Mockito,TypeBasedCandidateFilter,small,10,EvoSuite,3,3,3
+Advanced graduate student,A,Task 13,Defects4J,Mockito,TypeBasedCandidateFilter,small,10,Summary,4,4,4
+Advanced graduate student,A,Task 14,SF110,21_geo-google,AddressToUsAddressFunctor,small,54,EvoSuite,3,3,3
+Advanced graduate student,A,Task 14,SF110,21_geo-google,AddressToUsAddressFunctor,small,54,Summary,4,3,4
+Advanced graduate student,A,Task 17,SF110,60_sugar,FSPathExplorer,medium,158,EvoSuite,4,3,3
+Advanced graduate student,A,Task 17,SF110,60_sugar,FSPathExplorer,medium,158,Summary,4,2,3
+Advanced graduate student,A,Task 19,SF110,77_io-project,ClientGroup,medium,83,EvoSuite,4,4,4
+Advanced graduate student,A,Task 19,SF110,77_io-project,ClientGroup,medium,83,Summary,3,3,3
+Advanced graduate student,A,Task 20,SF110,85_shop,JSPredicateForm,large,218,EvoSuite,4,3,3
+Advanced graduate student,A,Task 20,SF110,85_shop,JSPredicateForm,large,218,Summary,3,3,3
+Advanced graduate student,A,Task 23,SF110,commons-math,AbstractSimplex,small,71,EvoSuite,4,4,4
+Advanced graduate student,A,Task 23,SF110,commons-math,AbstractSimplex,small,71,Summary,3,3,3
+Advanced graduate student,A,Task 24,SF110,guava,Monitor,large,442,EvoSuite,4,4,4
+Advanced graduate student,A,Task 24,SF110,guava,Monitor,large,442,Summary,3,3,3
+Senior developer,A,Task 01,Defects4J,Cli,TypeHandler,medium,145,EvoSuite,2,3,2
+Senior developer,A,Task 01,Defects4J,Cli,TypeHandler,medium,145,Summary,4,4,4
+Senior developer,A,Task 02,Defects4J,Codec,Lang,medium,84,EvoSuite,2,3,2
+Senior developer,A,Task 02,Defects4J,Codec,Lang,medium,84,Summary,4,3,3
+Senior developer,A,Task 05,Defects4J,Compress,X7875_NewUnix,medium,164,EvoSuite,3,3,3
+Senior developer,A,Task 05,Defects4J,Compress,X7875_NewUnix,medium,164,Summary,4,4,4
+Senior developer,A,Task 07,Defects4J,Csv,CSVRecord,small,65,EvoSuite,2,3,2
+Senior developer,A,Task 07,Defects4J,Csv,CSVRecord,small,65,Summary,5,4,5
+Senior developer,A,Task 08,Defects4J,Gson,ISO8601Utils,large,242,EvoSuite,1,3,1
+Senior developer,A,Task 08,Defects4J,Gson,ISO8601Utils,large,242,Summary,4,4,4
+Senior developer,A,Task 09,Defects4J,JacksonCore,NumberInput,large,247,EvoSuite,4,4,4
+Senior developer,A,Task 09,Defects4J,JacksonCore,NumberInput,large,247,Summary,2,3,2
+Senior developer,A,Task 10,Defects4J,JacksonDatabind,StdDateFormat,large,254,EvoSuite,3,3,3
+Senior developer,A,Task 10,Defects4J,JacksonDatabind,StdDateFormat,large,254,Summary,4,4,4
+Senior developer,A,Task 13,Defects4J,Mockito,TypeBasedCandidateFilter,small,10,EvoSuite,2,3,2
+Senior developer,A,Task 13,Defects4J,Mockito,TypeBasedCandidateFilter,small,10,Summary,4,4,4
+Senior developer,A,Task 14,SF110,21_geo-google,AddressToUsAddressFunctor,small,54,EvoSuite,3,3,3
+Senior developer,A,Task 14,SF110,21_geo-google,AddressToUsAddressFunctor,small,54,Summary,4,3,4
+Senior developer,A,Task 17,SF110,60_sugar,FSPathExplorer,medium,158,EvoSuite,4,3,3
+Senior developer,A,Task 17,SF110,60_sugar,FSPathExplorer,medium,158,Summary,3,2,2
+Senior developer,A,Task 19,SF110,77_io-project,ClientGroup,medium,83,EvoSuite,4,4,4
+Senior developer,A,Task 19,SF110,77_io-project,ClientGroup,medium,83,Summary,2,3,2
+Senior developer,A,Task 20,SF110,85_shop,JSPredicateForm,large,218,EvoSuite,4,3,3
+Senior developer,A,Task 20,SF110,85_shop,JSPredicateForm,large,218,Summary,2,2,2
+Senior developer,A,Task 23,SF110,commons-math,AbstractSimplex,small,71,EvoSuite,4,4,4
+Senior developer,A,Task 23,SF110,commons-math,AbstractSimplex,small,71,Summary,2,3,2
+Senior developer,A,Task 24,SF110,guava,Monitor,large,442,EvoSuite,4,4,4
+Senior developer,A,Task 24,SF110,guava,Monitor,large,442,Summary,2,3,2
+Advanced graduate student,B,Task 03,Defects4J,Compress,ArchiveStreamFactory,medium,118,EvoSuite,2,4,3
+Advanced graduate student,B,Task 03,Defects4J,Compress,ArchiveStreamFactory,medium,118,Summary,2,4,2
+Advanced graduate student,B,Task 04,Defects4J,Compress,DeflateCompressorInputStream,small,24,EvoSuite,2,4,2
+Advanced graduate student,B,Task 04,Defects4J,Compress,DeflateCompressorInputStream,small,24,Summary,4,4,4
+Advanced graduate student,B,Task 06,Defects4J,Csv,CSVParser,large,212,EvoSuite,2,5,2
+Advanced graduate student,B,Task 06,Defects4J,Csv,CSVParser,large,212,Summary,4,4,4
+Advanced graduate student,B,Task 11,Defects4J,Lang,ExtendedMessageFormat,large,245,EvoSuite,2,4,2
+Advanced graduate student,B,Task 11,Defects4J,Lang,ExtendedMessageFormat,large,245,Summary,4,4,4
+Advanced graduate student,B,Task 12,Defects4J,Lang,SerializationUtils,medium,101,EvoSuite,2,4,2
+Advanced graduate student,B,Task 12,Defects4J,Lang,SerializationUtils,medium,101,Summary,4,4,4
+Advanced graduate student,B,Task 15,SF110,41_follow,TabbedPane,small,44,EvoSuite,2,2,1
+Advanced graduate student,B,Task 15,SF110,41_follow,TabbedPane,small,44,Summary,4,2,3
+Advanced graduate student,B,Task 16,SF110,47_dvd-homevideo,Menu,large,288,EvoSuite,2,2,2
+Advanced graduate student,B,Task 16,SF110,47_dvd-homevideo,Menu,large,288,Summary,4,3,4
+Advanced graduate student,B,Task 18,SF110,69_lhamacaw,DisplayableListPanel,large,268,EvoSuite,2,2,1
+Advanced graduate student,B,Task 18,SF110,69_lhamacaw,DisplayableListPanel,large,268,Summary,4,2,3
+Advanced graduate student,B,Task 21,SF110,86_at-robots2-j,RobotRenderer,medium,114,EvoSuite,2,4,2
+Advanced graduate student,B,Task 21,SF110,86_at-robots2-j,RobotRenderer,medium,114,Summary,5,4,4
+Advanced graduate student,B,Task 22,SF110,87_jaw-br,Salvar,small,16,EvoSuite,2,2,1
+Advanced graduate student,B,Task 22,SF110,87_jaw-br,Salvar,small,16,Summary,4,2,3
+Advanced graduate student,B,Task 25,SF110,guava,Predicates,large,325,EvoSuite,2,4,3
+Advanced graduate student,B,Task 25,SF110,guava,Predicates,large,325,Summary,2,5,3
+Advanced graduate student,B,Task 26,SF110,guava,Suppliers,medium,125,EvoSuite,3,3,2
+Advanced graduate student,B,Task 26,SF110,guava,Suppliers,medium,125,Summary,5,4,4
+Advanced graduate student,B,Task 27,SF110,javaml,Fold,medium,174,EvoSuite,2,4,2
+Advanced graduate student,B,Task 27,SF110,javaml,Fold,medium,174,Summary,5,4,4
+Advanced graduate student,B,Task 28,SF110,scribe,Verifier,small,3,EvoSuite,3,3,3
+Advanced graduate student,B,Task 28,SF110,scribe,Verifier,small,3,Summary,3,3,2
+Senior developer,B,Task 03,Defects4J,Compress,ArchiveStreamFactory,medium,118,EvoSuite,2,4,3
+Senior developer,B,Task 03,Defects4J,Compress,ArchiveStreamFactory,medium,118,Summary,1,4,2
+Senior developer,B,Task 04,Defects4J,Compress,DeflateCompressorInputStream,small,24,EvoSuite,1,3,1
+Senior developer,B,Task 04,Defects4J,Compress,DeflateCompressorInputStream,small,24,Summary,4,4,4
+Senior developer,B,Task 06,Defects4J,Csv,CSVParser,large,212,EvoSuite,1,4,1
+Senior developer,B,Task 06,Defects4J,Csv,CSVParser,large,212,Summary,4,4,4
+Senior developer,B,Task 11,Defects4J,Lang,ExtendedMessageFormat,large,245,EvoSuite,1,4,1
+Senior developer,B,Task 11,Defects4J,Lang,ExtendedMessageFormat,large,245,Summary,4,4,4
+Senior developer,B,Task 12,Defects4J,Lang,SerializationUtils,medium,101,EvoSuite,1,3,1
+Senior developer,B,Task 12,Defects4J,Lang,SerializationUtils,medium,101,Summary,4,4,4
+Senior developer,B,Task 15,SF110,41_follow,TabbedPane,small,44,EvoSuite,1,2,1
+Senior developer,B,Task 15,SF110,41_follow,TabbedPane,small,44,Summary,4,2,3
+Senior developer,B,Task 16,SF110,47_dvd-homevideo,Menu,large,288,EvoSuite,1,2,1
+Senior developer,B,Task 16,SF110,47_dvd-homevideo,Menu,large,288,Summary,4,3,4
+Senior developer,B,Task 18,SF110,69_lhamacaw,DisplayableListPanel,large,268,EvoSuite,1,2,1
+Senior developer,B,Task 18,SF110,69_lhamacaw,DisplayableListPanel,large,268,Summary,4,2,3
+Senior developer,B,Task 21,SF110,86_at-robots2-j,RobotRenderer,medium,114,EvoSuite,1,3,1
+Senior developer,B,Task 21,SF110,86_at-robots2-j,RobotRenderer,medium,114,Summary,5,4,4
+Senior developer,B,Task 22,SF110,87_jaw-br,Salvar,small,16,EvoSuite,1,2,1
+Senior developer,B,Task 22,SF110,87_jaw-br,Salvar,small,16,Summary,4,2,3
+Senior developer,B,Task 25,SF110,guava,Predicates,large,325,EvoSuite,2,4,3
+Senior developer,B,Task 25,SF110,guava,Predicates,large,325,Summary,2,4,2
+Senior developer,B,Task 26,SF110,guava,Suppliers,medium,125,EvoSuite,1,3,1
+Senior developer,B,Task 26,SF110,guava,Suppliers,medium,125,Summary,5,4,4
+Senior developer,B,Task 27,SF110,javaml,Fold,medium,174,EvoSuite,1,4,1
+Senior developer,B,Task 27,SF110,javaml,Fold,medium,174,Summary,5,4,4
+Senior developer,B,Task 28,SF110,scribe,Verifier,small,3,EvoSuite,3,3,3
+Senior developer,B,Task 28,SF110,scribe,Verifier,small,3,Summary,2,3,2

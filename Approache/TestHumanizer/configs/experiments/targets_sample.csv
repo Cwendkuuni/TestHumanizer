@@ -1,0 +1,2 @@
+dataset,project,class_name,bug_id,source_path,classpath,test_class_fqdn
+custom,my_project,MyClass,,/absolute/path/to/src/main/java/com/foo/MyClass.java,/absolute/path/to/target/classes:/absolute/path/to/lib/*,com.foo.MyClass

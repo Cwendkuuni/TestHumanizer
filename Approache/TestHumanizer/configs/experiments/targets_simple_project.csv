@@ -1,0 +1,3 @@
+dataset,project,class_name,bug_id,source_path,classpath,test_class_fqdn,class_files_dir,source_files_dir
+custom,simple-java-project,Calculator,,examples/simple-java-project/src/main/java/com/testhumanizer/examples/Calculator.java,examples/simple-java-project/build/classes,com.testhumanizer.examples.Calculator,examples/simple-java-project/build/classes,examples/simple-java-project/src/main/java
+custom,simple-java-project,StringNormalizer,,examples/simple-java-project/src/main/java/com/testhumanizer/examples/StringNormalizer.java,examples/simple-java-project/build/classes,com.testhumanizer.examples.StringNormalizer,examples/simple-java-project/build/classes,examples/simple-java-project/src/main/java

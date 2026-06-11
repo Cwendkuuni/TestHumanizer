@@ -1,0 +1,45 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Going to generate test cases for class: org.jsoup.nodes.Entities
+* Starting Client-0
+* Connecting to master process on port 9922
+* Analyzing classpath: 
+  - /home/e113/Documents/Humanization-Project/HUMANIZATION/DEFECTS4J/SOURCES/Jsoup/28
+[MASTER] 10:57:08.933 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.Locale$IsoCountryCode
+* Finished analyzing classpath
+* Generating tests for class org.jsoup.nodes.Entities
+* Test criteria:
+  - Branch Coverage
+  - Top-Level Method Coverage
+  - Line Coverage
+* Total number of test goals for DYNAMOSA: 115
+* Using seed 1
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 41 / 115
+* Search finished after 32s and 2010 generations, 579197 statements, best individual has fitness: 43.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 69%
+* Total number of goals: 42
+* Number of covered goals: 29
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 86%
+* Total number of goals: 7
+* Number of covered goals: 6
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 56%
+* Total number of goals: 66
+* Number of covered goals: 37
+* Generated 9 tests with total length 13
+* Resulting test suite's coverage: 70% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 48%
+* Compiling and checking tests
+[MASTER] 10:57:40.808 [logback-2] ERROR ClassStateSupport - Could not initialize org.jsoup.nodes.Node: org/jsoup/select/NodeVisitor
+[MASTER] 10:57:40.811 [logback-2] ERROR ClassStateSupport - Could not initialize org.jsoup.nodes.Element: org/jsoup/select/NodeVisitor
+[MASTER] 10:57:40.812 [logback-2] ERROR ClassStateSupport - Could not initialize org.jsoup.nodes.Document: org/jsoup/select/NodeVisitor
+* Writing tests to file
+* Writing JUnit test case 'Entities_ESTest' to /home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs/02_evosuite/generated/Defects4J/Jsoup/Entities/28/testsuite_1
+* Done!
+
+* Computation finished

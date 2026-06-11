@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0-rc4" timestamp="2026-06-10T19:08:36.672">
+<file name="/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/evosuite_simple_project/04_refactorings/extracted_suites/generated/mistral/custom/simple-java-project/StringNormalizer/testsuite_1/Scenario-3/iter_3/com/testhumanizer/examples/StringNormalizer_ESTest.java">
+<violation beginline="21" endline="21" begincolumn="17" endcolumn="79" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="firstWord_ShouldReturnFirstWord_WhenInputContainsMultipleWords" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'firstWord_ShouldReturnFirstWord_WhenInputContainsMultipleWords()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="34" endline="34" begincolumn="17" endcolumn="79" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="firstWord_ShouldReturnEntireString_WhenInputContainsSingleWord" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'firstWord_ShouldReturnEntireString_WhenInputContainsSingleWord()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="47" endline="47" begincolumn="17" endcolumn="66" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="firstWord_ShouldReturnEmptyString_WhenInputIsNull" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'firstWord_ShouldReturnEmptyString_WhenInputIsNull()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="60" endline="60" begincolumn="17" endcolumn="79" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="repeat_ShouldThrowIllegalArgumentException_WhenTimesIsNegative" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'repeat_ShouldThrowIllegalArgumentException_WhenTimesIsNegative()' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="78" endline="78" begincolumn="17" endcolumn="75" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="repeat_ShouldThrowIllegalArgumentException_WhenInputIsNull" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'repeat_ShouldThrowIllegalArgumentException_WhenInputIsNull()' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="95" endline="95" begincolumn="17" endcolumn="65" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="repeat_ShouldReturnRepeatedString_WhenValidInput" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'repeat_ShouldReturnRepeatedString_WhenValidInput()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="110" endline="110" begincolumn="17" endcolumn="84" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="isBlank_ShouldReturnFalse_WhenStringContainsNonWhitespaceCharacters" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'isBlank_ShouldReturnFalse_WhenStringContainsNonWhitespaceCharacters()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="123" endline="123" begincolumn="17" endcolumn="59" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="isBlank_ShouldReturnTrue_WhenStringIsEmpty" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'isBlank_ShouldReturnTrue_WhenStringIsEmpty()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="136" endline="136" begincolumn="17" endcolumn="66" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="normalize_ShouldReturnEmptyString_WhenInputIsNull" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'normalize_ShouldReturnEmptyString_WhenInputIsNull()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="148" endline="148" begincolumn="17" endcolumn="90" rule="CyclomaticComplexity" ruleset="Design" package="com.testhumanizer.examples" class="StringNormalizer_ESTest" method="normalize_ShouldReturnNormalizedString_WhenInputContainsSpecialCharacters" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'normalize_ShouldReturnNormalizedString_WhenInputContainsSpecialCharacters()' has a cyclomatic complexity of 1.
+</violation>
+</file>
+</pmd>

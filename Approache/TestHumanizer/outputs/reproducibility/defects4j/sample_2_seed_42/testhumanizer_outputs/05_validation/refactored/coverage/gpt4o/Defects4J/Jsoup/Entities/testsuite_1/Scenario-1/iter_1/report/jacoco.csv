@@ -1,0 +1,131 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},113,0,12,0,23,0,8,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},184,0,22,0,23,0,13,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},127,0,20,0,34,0,15,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},239,0,23,0,39,0,16,0,4,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},232,0,22,0,42,0,15,0,4,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},235,0,24,0,38,0,16,0,4,0
+JaCoCo Coverage Report,org.jsoup.parser,Token.Doctype,40,0,0,0,11,0,5,0,5,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},285,0,47,0,62,0,29,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},131,0,10,0,12,0,7,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},81,0,18,0,20,0,11,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},138,0,30,0,35,0,17,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,Token.TokenType,64,0,0,0,7,0,1,0,1,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},82,0,20,0,18,0,12,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},50,0,12,0,10,0,8,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},59,0,16,0,11,0,10,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},8,0,0,0,2,0,2,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,Parser,131,0,6,0,28,0,16,0,13,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},65,0,6,0,25,0,7,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},56,0,6,0,22,0,7,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,Token.EndTag,24,0,0,0,7,0,3,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},21,0,0,0,6,0,2,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState,293,0,6,0,43,0,7,0,4,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},24,0,3,0,10,0,4,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},38,0,4,0,15,0,5,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},58,0,5,0,20,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},58,0,5,0,20,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},57,0,6,0,22,0,7,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilder,1795,0,188,0,371,0,169,0,75,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},79,0,10,0,24,0,9,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},24,0,2,0,7,0,3,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},31,0,3,0,12,0,4,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},79,0,10,0,24,0,9,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},24,0,2,0,7,0,3,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,ParseError,39,0,0,0,11,0,5,0,5,0
+JaCoCo Coverage Report,org.jsoup.parser,Token.Comment,28,0,0,0,6,0,3,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},63,0,8,0,16,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},227,0,31,0,48,0,20,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},149,0,28,0,20,0,17,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},102,0,16,0,21,0,11,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},120,0,20,0,23,0,12,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},43,0,6,0,12,0,5,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},23,0,2,0,7,0,3,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,XmlTreeBuilder,191,0,21,0,58,0,22,0,9,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},87,0,12,0,26,0,10,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},390,0,46,0,79,0,26,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},199,0,22,0,39,0,14,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},37,0,2,0,9,0,3,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,HtmlTreeBuilderState.new HtmlTreeBuilderState() {...},2318,0,288,0,403,0,149,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},53,0,6,0,12,0,5,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},77,0,6,0,16,0,7,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,Token.EOF,7,0,0,0,3,0,1,0,1,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},73,0,9,0,19,0,8,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},73,0,9,0,19,0,8,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},70,0,9,0,29,0,10,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState,677,0,0,0,69,0,1,0,1,0
+JaCoCo Coverage Report,org.jsoup.parser,Token.StartTag,63,0,4,0,14,0,6,0,4,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},67,0,8,0,27,0,9,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},110,0,8,0,23,0,9,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},64,0,7,0,26,0,8,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},50,0,6,0,16,0,5,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},23,0,2,0,7,0,3,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},53,0,6,0,21,0,7,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},49,0,5,0,19,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},62,0,5,0,19,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},50,0,6,0,16,0,5,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},79,0,10,0,24,0,9,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},36,0,2,0,9,0,3,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},50,0,4,0,12,0,4,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,ParseErrorList,31,0,2,0,7,0,6,0,5,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},53,0,7,0,21,0,7,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},49,0,6,0,19,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},60,0,6,0,18,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},21,0,2,0,6,0,3,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,Tokeniser,531,0,72,0,121,0,60,0,24,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},21,0,2,0,6,0,3,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,CharacterReader,750,0,130,0,136,0,95,0,30,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},59,0,6,0,23,0,7,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},63,0,5,0,20,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},48,0,6,0,14,0,5,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},42,0,6,0,15,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},32,0,3,0,11,0,4,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},45,0,4,0,13,0,5,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},45,0,4,0,13,0,5,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},25,0,2,0,7,0,3,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},58,0,5,0,20,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},53,0,5,0,15,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},25,0,2,0,7,0,3,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},58,0,5,0,20,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,Token.Character,16,0,0,0,6,0,3,0,3,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},52,0,5,0,14,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},57,0,6,0,22,0,7,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},66,0,6,0,25,0,7,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},87,0,10,0,20,0,7,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,Token.Tag,139,0,18,0,34,0,22,0,13,0
+JaCoCo Coverage Report,org.jsoup.parser,Tag,1038,0,58,0,88,0,48,0,19,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},65,0,7,0,22,0,7,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},61,0,6,0,22,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},37,0,3,0,14,0,4,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokenQueue,707,0,106,0,130,0,85,0,32,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},73,0,6,0,24,0,7,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},51,0,4,0,16,0,5,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TreeBuilder,77,0,2,0,21,0,7,0,6,0
+JaCoCo Coverage Report,org.jsoup.parser,Token,67,0,12,0,12,0,18,0,12,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},54,0,4,0,15,0,5,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},56,0,5,0,20,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},56,0,5,0,20,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},39,0,6,0,11,0,5,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},26,0,0,0,7,0,2,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},35,0,3,0,13,0,4,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},41,0,5,0,17,0,6,0,2,0
+JaCoCo Coverage Report,org.jsoup.parser,TokeniserState.new TokeniserState() {...},127,0,11,0,25,0,10,0,2,0
+JaCoCo Coverage Report,org.jsoup.nodes,Comment,38,0,2,0,11,0,7,0,6,0
+JaCoCo Coverage Report,org.jsoup.nodes,Document,336,0,34,0,83,0,36,0,19,0
+JaCoCo Coverage Report,org.jsoup.nodes,Entities,33,385,3,29,4,69,3,22,0,9
+JaCoCo Coverage Report,org.jsoup.nodes,TextNode,238,0,32,0,52,0,37,0,21,0
+JaCoCo Coverage Report,org.jsoup.nodes,Document.OutputSettings,71,27,2,0,22,8,10,3,9,3
+JaCoCo Coverage Report,org.jsoup.nodes,Document.QuirksMode,0,34,0,0,0,2,0,1,0,1
+JaCoCo Coverage Report,org.jsoup.nodes,Node,862,0,78,0,207,0,87,0,48,0
+JaCoCo Coverage Report,org.jsoup.nodes,Attributes.Dataset.DatasetIterator,55,0,4,0,9,0,6,0,4,0
+JaCoCo Coverage Report,org.jsoup.nodes,Attributes.Dataset.EntrySet,29,0,2,0,7,0,4,0,3,0
+JaCoCo Coverage Report,org.jsoup.nodes,Attributes,297,0,42,0,69,0,39,0,18,0
+JaCoCo Coverage Report,org.jsoup.nodes,DocumentType,67,0,4,0,15,0,6,0,4,0
+JaCoCo Coverage Report,org.jsoup.nodes,Node.new NodeVisitor() {...},15,0,0,0,4,0,3,0,3,0
+JaCoCo Coverage Report,org.jsoup.nodes,Node.OuterHtmlVisitor,30,0,2,0,9,0,4,0,3,0
+JaCoCo Coverage Report,org.jsoup.nodes,Entities.EscapeMode,0,48,0,0,0,8,0,3,0,3
+JaCoCo Coverage Report,org.jsoup.nodes,DataNode,42,0,0,0,13,0,8,0,8,0
+JaCoCo Coverage Report,org.jsoup.nodes,XmlDeclaration,40,0,2,0,10,0,7,0,6,0
+JaCoCo Coverage Report,org.jsoup.nodes,Attributes.Dataset,55,0,4,0,10,0,5,0,3,0
+JaCoCo Coverage Report,org.jsoup.nodes,Element,1287,0,134,0,292,0,156,0,89,0
+JaCoCo Coverage Report,org.jsoup.nodes,Attribute,182,0,24,0,34,0,25,0,13,0

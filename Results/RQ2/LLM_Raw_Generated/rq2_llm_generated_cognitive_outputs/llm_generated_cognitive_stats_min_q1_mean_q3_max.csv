@@ -1,0 +1,3 @@
+dataset,paradigm,metric,min,q1,mean,q3,max,n
+defects4j,LLM (gpt-4o),Cognitive Complexity,3,13.0,26.44,34.0,127,1257
+sf110,LLM (gpt-4o),Cognitive Complexity,2,16.0,28.41,34.0,206,1141

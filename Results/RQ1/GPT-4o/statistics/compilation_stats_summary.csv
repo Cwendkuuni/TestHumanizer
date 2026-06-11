@@ -1,0 +1,7 @@
+Dataset,Scenario,Model,Total_Compiled,Success_Count,Failure_Count
+SF110,Scenario-2,GPT,7079,6328,751
+SF110,Scenario-3,GPT,7071,6383,688
+SF110,Scenario-1,GPT,7042,6345,697
+Defects4J,Scenario-2,GPT,5693,2429,3264
+Defects4J,Scenario-3,GPT,5689,2451,3238
+Defects4J,Scenario-1,GPT,5629,2504,3125

@@ -1,0 +1,7 @@
+Dataset,Scenario,Model,Total_Compiled,Success_Count,Failure_Count
+SF110,Scenario-2,MISTRAL,6989,6168,821
+SF110,Scenario-3,MISTRAL,7010,6152,858
+SF110,Scenario-1,MISTRAL,6996,6153,843
+Defects4J,Scenario-2,MISTRAL,5652,2537,3115
+Defects4J,Scenario-3,MISTRAL,5648,2460,3188
+Defects4J,Scenario-1,MISTRAL,5653,2580,3073

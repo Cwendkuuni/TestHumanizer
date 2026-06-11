@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0-rc4" timestamp="2026-06-11T10:59:01.289">
+<file name="/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/defects4j/sample_2_seed_42/testhumanizer_outputs/04_refactorings/extracted_suites/generated/gpt4o/Defects4J/Jsoup/Entities/testsuite_1/Scenario-1/iter_1/org/jsoup/nodes/Entities_ESTest.java">
+<violation beginline="23" endline="23" begincolumn="17" endcolumn="39" rule="CyclomaticComplexity" ruleset="Design" package="org.jsoup.nodes" class="Entities_ESTest" method="testEscapeWithBaseMode" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testEscapeWithBaseMode()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="37" endline="37" begincolumn="17" endcolumn="42" rule="CyclomaticComplexity" ruleset="Design" package="org.jsoup.nodes" class="Entities_ESTest" method="testUnescapeWithoutChange" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testUnescapeWithoutChange()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="49" endline="49" begincolumn="17" endcolumn="45" rule="CyclomaticComplexity" ruleset="Design" package="org.jsoup.nodes" class="Entities_ESTest" method="testUnescapeWithoutAmpersand" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testUnescapeWithoutAmpersand()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="61" endline="61" begincolumn="17" endcolumn="42" rule="CyclomaticComplexity" ruleset="Design" package="org.jsoup.nodes" class="Entities_ESTest" method="testUnescapeWithAmpersand" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testUnescapeWithAmpersand()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="73" endline="73" begincolumn="17" endcolumn="54" rule="CyclomaticComplexity" ruleset="Design" package="org.jsoup.nodes" class="Entities_ESTest" method="testUnescapeWithoutChangeInStrictMode" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testUnescapeWithoutChangeInStrictMode()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="85" endline="85" begincolumn="17" endcolumn="38" rule="CyclomaticComplexity" ruleset="Design" package="org.jsoup.nodes" class="Entities_ESTest" method="testIsNamedEntityTrue" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testIsNamedEntityTrue()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="97" endline="97" begincolumn="17" endcolumn="39" rule="CyclomaticComplexity" ruleset="Design" package="org.jsoup.nodes" class="Entities_ESTest" method="testIsNamedEntityFalse" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testIsNamedEntityFalse()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="109" endline="109" begincolumn="17" endcolumn="45" rule="CyclomaticComplexity" ruleset="Design" package="org.jsoup.nodes" class="Entities_ESTest" method="testEscapeWithOutputSettings" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testEscapeWithOutputSettings()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="122" endline="122" begincolumn="17" endcolumn="39" rule="CyclomaticComplexity" ruleset="Design" package="org.jsoup.nodes" class="Entities_ESTest" method="testGetCharacterByName" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'testGetCharacterByName()' has a cyclomatic complexity of 1.
+</violation>
+</file>
+</pmd>

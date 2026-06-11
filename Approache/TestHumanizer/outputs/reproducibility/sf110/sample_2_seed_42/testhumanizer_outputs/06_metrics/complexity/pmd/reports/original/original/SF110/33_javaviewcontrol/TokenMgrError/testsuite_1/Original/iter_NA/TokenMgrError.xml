@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0-rc4" timestamp="2026-06-11T11:02:00.672">
+<file name="/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/02_evosuite/generated/SF110/33_javaviewcontrol/TokenMgrError/testsuite_1/com/pmdesigns/jvc/tools/TokenMgrError_ESTest.java">
+<violation beginline="20" endline="20" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="test00" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test00()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="26" endline="26" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="test01" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test01()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="32" endline="32" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="test02" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test02()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="38" endline="38" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="test03" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test03()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="44" endline="44" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="test04" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test04()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="50" endline="50" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="test05" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test05()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="56" endline="56" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="test06" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test06()' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="71" endline="71" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="test07" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test07()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="77" endline="77" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="test08" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test08()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="83" endline="83" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="test09" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test09()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="90" endline="90" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="test10" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test10()' has a cyclomatic complexity of 1.
+</violation>
+<violation beginline="96" endline="96" begincolumn="15" endcolumn="21" rule="CyclomaticComplexity" ruleset="Design" package="com.pmdesigns.jvc.tools" class="TokenMgrError_ESTest" method="test11" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'test11()' has a cyclomatic complexity of 1.
+</violation>
+</file>
+</pmd>

@@ -1,0 +1,26 @@
+Dataset : Defects4J
+Project : Mockito
+Class   : TypeBasedCandidateFilter
+Size    : small (source_loc=10)
+Test methods : 2
+
+Class summary:
+```
+1. Overall Purpose:
+   The `TypeBasedCandidateFilter` class is part of the Mockito framework, used in the mock injection process. Its primary purpose is to filter a collection of mock objects, selecting those that match the type of a specified field, which is useful in dependency injection scenarios within testing contexts.
+
+2. Key Elements Identification:
+   - Main Method:
+     - `filterCandidate(Collection<Object> mocks, Field field, Object fieldInstance)`: This method filters a collection of mock objects to find those that are type-compatible with a given field. It takes a collection of mocks, a field, and a field instance as parameters, and returns an `OngoingInjecter`. The method iterates over the mock objects, checking if each one's class is assignable to the field's type, and collects the matches in a list. It then delegates further processing to the next filter in the chain.
+   - Important Variable:
+     - `MockCandidateFilter next`: This field holds a reference to the next filter in the chain, allowing a chain of responsibility pattern where multiple filters can be applied sequentially.
+
+3. Method Relationships:
+   - `filterCandidate` is the only method in this class and interacts directly with the `next` filter. This relationship establishes a chain of responsibility, where each filter can refine the list of candidates before passing them to the next filter in the chain.
+
+4. Summarize by Sections:
+   - Constructor and Field:
+     - The constructor `TypeBasedCandidateFilter(MockCandidateFilter next)` initializes the filter with a reference to the next filter, setting up a chain of responsibility. This design allows multiple filters to be linked together, each performing a specific filtering task.
+   - Method: 
+     - The `filterCandidate` method implements the core functionality of the class by filtering mock objects based on their compatibility with a specified field. It collects type-compatible mocks and delegates further processing to the next filter, ensuring that the filtering process can be extended by chaining additional filters.
+```

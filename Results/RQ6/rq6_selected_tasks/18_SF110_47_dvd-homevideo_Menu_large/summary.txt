@@ -1,0 +1,38 @@
+Dataset : SF110
+Project : 47_dvd-homevideo
+Class   : Menu
+Size    : large (source_loc=288)
+Test methods : 6
+
+Class summary:
+```
+1. Overall Purpose: 
+   The `Menu` class is designed to facilitate the creation of DVD menus by handling media files, generating command-line options for DVD menu creation, and producing XML files for DVD authoring. It is likely a component of a larger application focused on DVD authoring or media management, where it interacts with a graphical user interface (GUI) to provide input and display results.
+
+2. Key Elements Identification:
+   - Main methods:
+     - `Menu()` (Constructors): These constructors initialize the `Menu` object with optional parameters for title, picture path, audio path, text file path, PAL format indication, and a GUI object. They set up default values and prepare the instance for further operations.
+     - `init()`: Starts a new thread to execute the menu creation process. It joins the thread and checks for errors, returning a boolean indicating success or failure.
+     - `run()`: Implements the `Runnable` interface and delegates to `DVDMainMenu()`.
+     - `DVDMainMenu()`: Constructs DVD menu command options based on available inputs and text file contents, executes the menu creation process, manages file operations, and handles errors.
+     - `createXML()`: Generates an XML configuration file for DVD authoring based on the video files and titles, handling file writing and error management.
+
+   - Important variables:
+     - `strTitle`, `strPicPath`, `strAudioPath`, `strTextFilePath`: Store paths and title strings used for constructing menu options.
+     - `dvd_menu`: Holds the final command string for DVD menu creation.
+     - `titles`: An array to store titles read from a text file, affecting menu command construction.
+     - `pal_menu`: Boolean flag indicating whether the PAL format is used.
+     - `m_GUI`: Reference to a GUI object for user interaction and error display.
+     - `m_Thread`: Thread object for running the menu creation process.
+     - `m_Error`: Boolean flag to track if an error occurred during processing.
+     - `video_files`: Array to store filtered video file names for processing.
+
+3. Method Relationships:
+   - `init()`, `run()`, and `DVDMainMenu()`: These methods work together to initiate and execute the menu creation process in a separate thread, handle input processing, and manage command execution.
+   - Constructors: Provide flexibility in initializing the `Menu` object with different parameters, allowing for varied use cases.
+
+4. Summarize by Sections:
+   - Constructors: The constructors initialize the `Menu` object with default values, allowing optional specification of paths and GUI components, setting up the environment for menu creation.
+   - Thread Initialization and Execution (`init`, `run`, `DVDMainMenu`): These methods manage the threading and execution of the DVD menu creation process. The `init()` method starts the thread, `run()` delegates the task, and `DVDMainMenu()` conducts the main logic for constructing command options and executing them.
+   - XML Creation (`createXML`): This method is responsible for generating an XML file that configures the DVD structure, ensuring the video files are properly referenced, and handling any errors during the process.
+```

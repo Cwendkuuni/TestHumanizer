@@ -1,0 +1,189 @@
+candidate_id,selected_candidate,selection_reason,dataset,project,class_name,bug_id,testsuite_id,scenario,model_alias,iteration,compile_ok_normalized,junit_ok_normalized,validation_pass,selection_cosine_metric,selection_cosine_score,selection_cosine_threshold,selection_cosine_pass,selection_ctses_metric,selection_ctses_score,selection_ctses_threshold,selection_ctses_pass,selection_composite_score,passes_all_thresholds,CTSES_score_1,CTSES_score_2,CodeBLEU,CodeBLEU_error,CodeBLEU_status,Dataflow Match,METEOR,N-gram Match,ROUGE-L,Syntax Match,Weighted N-gram Match,average_score_1,branch_coverage,branch_covered,branch_missed,class_coverage,class_covered,class_missed,compiled,compiled_tests_dir,complexity_coverage,complexity_covered,complexity_missed,cosine_similarity,coverage_compiled_tests_dir,coverage_ok,csv_file,device,embedding_model_alias,embedding_model_name,error,exec_file,extra_returncode,extra_stderr,extra_stdout,extraction_message,extraction_status,extraction_strategy,fqdn_path,html_dir,id,input_id,instruction_coverage,instruction_covered,instruction_missed,junit_ok,line_coverage,line_covered,line_missed,llm_model,llm_model_alias,method_coverage,method_covered,method_missed,model,openai_cosine_similarity,original_token_count,original_truncated,prompt_id,provider,raw_output_id,refactored_code_length_chars,refactored_code_sha256,refactored_test_file,refactored_token_count,refactored_truncated,returncode,scaffolding_file,scenario_id,selection_embedding_model_alias,selection_embedding_model_name,separate_classloader_patched,status,stderr,stdout,test_class_fqdn,test_file,test_file_name,xml_file
+SF110_33_javaviewcontrol_TokenMgrError_NA_testsuite_1_tests-only_gpt4o_iter_1,,first_candidate_passing_all_thresholds,SF110,33_javaviewcontrol,TokenMgrError,,testsuite_1,tests-only,gpt4o,1,True,True,True,cosine_similarity,0.93938,0.8,True,ctses_score,0.5655,0.5,True,0.789828,True,0.5993,0.6009,0.5655,,ok,0.7081,0.6672,0.2694,0.5818,0.6853,0.5991,0.6048,,,,,,,True,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/05_validation/refactored/compiled_tests/gpt4o/SF110/33_javaviewcontrol/TokenMgrError/testsuite_1/Scenario-1/iter_1,,,,0.93938,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/05_validation/refactored/coverage/gpt4o/SF110/33_javaviewcontrol/TokenMgrError/testsuite_1/Scenario-1/iter_1/compiled_tests,False,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/05_validation/refactored/coverage/gpt4o/SF110/33_javaviewcontrol/TokenMgrError/testsuite_1/Scenario-1/iter_1/report/jacoco.csv,api,openai,text-embedding-3-small,,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/05_validation/refactored/coverage/gpt4o/SF110/33_javaviewcontrol/TokenMgrError/testsuite_1/Scenario-1/iter_1/jacoco.exec,1,"WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+","JUnit version 4.13.2
+11:01:50.607 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.pmdesigns.jvc.tools.TokenMgrError_ESTest
+11:01:50.608 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.pmdesigns.jvc.tools.TokenMgrError_ESTest'.
+11:01:50.620 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.pmdesigns.jvc.tools.TokenMgrError_ESTest_scaffolding
+11:01:50.620 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.pmdesigns.jvc.tools.TokenMgrError_ESTest_scaffolding'.
+11:01:50.621 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.pmdesigns.jvc.tools.TokenMgrError_ESTest_scaffolding
+11:01:50.621 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.pmdesigns.jvc.tools.TokenMgrError_ESTest
+11:01:50.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+11:01:50.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+11:01:50.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+11:01:50.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+11:01:50.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+11:01:50.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+11:01:50.791 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+11:01:50.801 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: com.pmdesigns.jvc.tools.TokenMgrError
+11:01:50.801 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'com.pmdesigns.jvc.tools.TokenMgrError'.
+11:01:50.803 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/pmdesigns/jvc/tools/TokenMgrError
+11:01:50.842 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/pmdesigns/jvc/tools/TokenMgrError
+11:01:50.842 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field LEXICAL_ERROR
+11:01:50.842 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field STATIC_LEXER_ERROR
+11:01:50.842 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field INVALID_LEXICAL_STATE
+11:01:50.842 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field LOOP_DETECTED
+11:01:50.842 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: com.pmdesigns.jvc.tools.TokenMgrError
+............
+Time: 0.217
+
+OK (12 tests)
+
+",Extracted Java-like code from fenced block.,ok,fenced_java_like_block,com/pmdesigns/jvc/tools,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/05_validation/refactored/coverage/gpt4o/SF110/33_javaviewcontrol/TokenMgrError/testsuite_1/Scenario-1/iter_1/report/html,SF110_33_javaviewcontrol_TokenMgrError_NA_testsuite_1_Scenario-1_gpt4o_iter_1,SF110_33_javaviewcontrol_TokenMgrError_NA_testsuite_1,,,,True,,,,gpt-4o,gpt4o,,,,gpt-4o,0.93938,1213,False,SF110_33_javaviewcontrol_TokenMgrError_NA_testsuite_1_Scenario-1_gpt4o,openai,SF110_33_javaviewcontrol_TokenMgrError_NA_testsuite_1_Scenario-1_gpt4o_iter_1,8924,cf1967ea261891b0789f43ba80abf7ae4238a4bd0d8d0aa462cf19fdf340dd75,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/04_refactorings/extracted_suites/generated/gpt4o/SF110/33_javaviewcontrol/TokenMgrError/testsuite_1/Scenario-1/iter_1/com/pmdesigns/jvc/tools/TokenMgrError_ESTest.java,1615,False,0,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/04_refactorings/extracted_suites/generated/gpt4o/SF110/33_javaviewcontrol/TokenMgrError/testsuite_1/Scenario-1/iter_1/com/pmdesigns/jvc/tools/TokenMgrError_ESTest_scaffolding.java,Scenario-1,openai,text-embedding-3-small,True,ok,"WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+
+Exception in thread ""main"" java.io.IOException: Error while analyzing /home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/33_javaviewcontrol/lib/servlet.jar@javax/servlet/http/Cookie.class with JaCoCo 0.8.8.202204050719/5dcf34a.
+	at org.jacoco.cli.internal.core.analysis.Analyzer.analyzerError(Analyzer.java:163)
+	at org.jacoco.cli.internal.core.analysis.Analyzer.analyzeClass(Analyzer.java:135)
+	at org.jacoco.cli.internal.core.analysis.Analyzer.analyzeClass(Analyzer.java:158)
+	at org.jacoco.cli.internal.core.analysis.Analyzer.analyzeAll(Analyzer.java:195)
+	at org.jacoco.cli.internal.core.analysis.Analyzer.analyzeZip(Analyzer.java:267)
+	at org.jacoco.cli.internal.core.analysis.Analyzer.analyzeAll(Analyzer.java:198)
+	at org.jacoco.cli.internal.core.analysis.Analyzer.analyzeAll(Analyzer.java:228)
+	at org.jacoco.cli.internal.core.analysis.Analyzer.analyzeAll(Analyzer.java:223)
+	at org.jacoco.cli.internal.core.analysis.Analyzer.analyzeAll(Analyzer.java:223)
+	at org.jacoco.cli.internal.commands.Report.analyze(Report.java:110)
+	at org.jacoco.cli.internal.commands.Report.execute(Report.java:84)
+	at org.jacoco.cli.internal.Main.execute(Main.java:90)
+	at org.jacoco.cli.internal.Main.main(Main.java:105)
+Caused by: java.lang.IllegalStateException: Can't add different class with same name: javax/servlet/http/Cookie
+	at org.jacoco.cli.internal.core.analysis.CoverageBuilder.visitCoverage(CoverageBuilder.java:106)
+	at org.jacoco.cli.internal.core.analysis.Analyzer$1.visitEnd(Analyzer.java:100)
+	at org.jacoco.cli.internal.asm.ClassVisitor.visitEnd(ClassVisitor.java:377)
+	at org.jacoco.cli.internal.core.internal.flow.ClassProbesAdapter.visitEnd(ClassProbesAdapter.java:100)
+	at org.jacoco.cli.internal.asm.ClassReader.accept(ClassReader.java:748)
+	at org.jacoco.cli.internal.asm.ClassReader.accept(ClassReader.java:424)
+	at org.jacoco.cli.internal.core.analysis.Analyzer.analyzeClass(Analyzer.java:117)
+	at org.jacoco.cli.internal.core.analysis.Analyzer.analyzeClass(Analyzer.java:133)
+	... 11 more
+","JUnit version 4.13.2
+11:01:51.302 [main] INFO org.evosuite.runtime.agent.AgentLoader - dynamically loading javaagent
+11:01:51.320 [main] INFO org.evosuite.runtime.agent.AgentLoader - Using JavaAgent in /home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar
+11:01:51.325 [main] INFO org.evosuite.runtime.agent.AgentLoader - Classpath: /home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/33_javaviewcontrol:/home/e113/Documents/Humanization-Project/HUMANIZATION/SF-110/SOURCES/33_javaviewcontrol/javaviewcontrol.jar:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/05_validation/refactored/coverage/gpt4o/SF110/33_javaviewcontrol/TokenMgrError/testsuite_1/Scenario-1/iter_1/compiled_tests:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/JUNIT-HAMCREST/junit-4.13.2.jar:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/JUNIT-HAMCREST/hamcrest-core-1.3.jar
+11:01:51.325 [main] INFO org.evosuite.runtime.agent.AgentLoader - Going to attach agent to process 466142
+11:01:51.509 [Attach Listener] INFO org.evosuite.runtime.agent.InstrumentingAgent - Executing agentmain of JavaAgent
+11:01:51.689 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+11:01:51.689 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+11:01:51.689 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+11:01:51.689 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""process reaper""
+11:01:51.689 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Attach Listener""
+11:01:51.689 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+11:01:51.689 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+11:01:51.689 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+11:01:51.689 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+11:01:51.707 [main] DEBUG org.evosuite.runtime.agent.TransformerForTests - Going to instrument: com.pmdesigns.jvc.tools.TokenMgrError
+11:01:51.729 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/pmdesigns/jvc/tools/TokenMgrError
+11:01:51.786 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/pmdesigns/jvc/tools/TokenMgrError
+11:01:51.787 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field LEXICAL_ERROR
+11:01:51.787 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field STATIC_LEXER_ERROR
+11:01:51.787 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field INVALID_LEXICAL_STATE
+11:01:51.787 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field LOOP_DETECTED
+11:01:51.788 [main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Found $jacocoInit in class com.pmdesigns.jvc.tools.TokenMgrError
+............
+Time: 0.267
+
+OK (12 tests)
+
+
+[INFO] Loading execution data file /home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/05_validation/refactored/coverage/gpt4o/SF110/33_javaviewcontrol/TokenMgrError/testsuite_1/Scenario-1/iter_1/jacoco.exec.
+",com.pmdesigns.jvc.tools.TokenMgrError_ESTest,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/04_refactorings/extracted_suites/generated/gpt4o/SF110/33_javaviewcontrol/TokenMgrError/testsuite_1/Scenario-1/iter_1/com/pmdesigns/jvc/tools/TokenMgrError_ESTest.java,TokenMgrError_ESTest.java,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/05_validation/refactored/coverage/gpt4o/SF110/33_javaviewcontrol/TokenMgrError/testsuite_1/Scenario-1/iter_1/report/jacoco.xml
+SF110_74_fixsuite_Library_NA_testsuite_1_tests-only_gpt4o_iter_1,,best_candidate_but_validation_failed_or_missing,SF110,74_fixsuite,Library,,testsuite_1,tests-only,gpt4o,1,True,False,False,cosine_similarity,0.956221,0.8,True,ctses_score,0.7377,0.5,True,0.8688125999999999,False,0.7414,0.7366,0.7377,,ok,0.9612,0.782,0.3647,0.6897,1.0,0.6248,0.7364,,,,,,,True,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/05_validation/refactored/compiled_tests/gpt4o/SF110/74_fixsuite/Library/testsuite_1/Scenario-1/iter_1,,,,0.956221,,,,api,openai,text-embedding-3-small,,,1,,,Extracted Java-like code from fenced block.,ok,fenced_java_like_block,org/fixsuite/message,,SF110_74_fixsuite_Library_NA_testsuite_1_Scenario-1_gpt4o_iter_1,SF110_74_fixsuite_Library_NA_testsuite_1,,,,False,,,,gpt-4o,gpt4o,,,,gpt-4o,0.956221,389,False,SF110_74_fixsuite_Library_NA_testsuite_1_Scenario-1_gpt4o,openai,SF110_74_fixsuite_Library_NA_testsuite_1_Scenario-1_gpt4o_iter_1,2853,b6fac93e5780dad8aca54d62fa097e6149223244c1151a46a29dbdd86c14bad2,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/04_refactorings/extracted_suites/generated/gpt4o/SF110/74_fixsuite/Library/testsuite_1/Scenario-1/iter_1/org/fixsuite/message/Library_ESTest.java,376,False,0,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/04_refactorings/extracted_suites/generated/gpt4o/SF110/74_fixsuite/Library/testsuite_1/Scenario-1/iter_1/org/fixsuite/message/Library_ESTest_scaffolding.java,Scenario-1,openai,text-embedding-3-small,,ok,"WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/tools/evosuite-master-1.2.1-SNAPSHOT.jar) to field java.awt.GraphicsEnvironment.headless
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+","JUnit version 4.13.2
+11:01:52.429 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.Library_ESTest
+11:01:52.429 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.Library_ESTest'.
+11:01:52.441 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.Library_ESTest_scaffolding
+11:01:52.441 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.Library_ESTest_scaffolding'.
+11:01:52.442 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.Library_ESTest_scaffolding
+11:01:52.442 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.Library_ESTest
+11:01:52.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Reference Handler""
+11:01:52.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Finalizer""
+11:01:52.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Signal Dispatcher""
+11:01:52.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Java2D Disposer""
+11:01:52.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""AWT-XAWT""
+11:01:52.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""main""
+11:01:52.608 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: ""Common-Cleaner""
+11:01:52.616 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.CompositeFixInfo
+11:01:52.617 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.CompositeFixInfo'.
+11:01:52.630 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.fixsuite.message.info, 233256630
+11:01:52.630 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.FixInfo
+11:01:52.630 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.FixInfo'.
+11:01:52.631 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.FixInfo
+11:01:52.631 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.CompositeFixInfo
+11:01:52.631 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.DictionaryInfo
+11:01:52.631 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.DictionaryInfo'.
+11:01:52.631 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/info/DictionaryInfo
+11:01:52.657 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/fixsuite/message/info/DictionaryInfo
+11:01:52.657 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.DictionaryInfo
+11:01:52.658 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.Library
+11:01:52.658 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.Library'.
+11:01:52.658 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/Library
+11:01:52.661 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/fixsuite/message/Library
+11:01:52.661 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.Library
+11:01:52.662 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.GroupInfo
+11:01:52.662 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.GroupInfo'.
+11:01:52.662 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/info/GroupInfo
+11:01:52.662 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/fixsuite/message/info/GroupInfo
+11:01:52.663 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.FieldInfo
+11:01:52.663 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.FieldInfo'.
+11:01:52.663 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/info/FieldInfo
+11:01:52.664 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/fixsuite/message/info/FieldInfo
+11:01:52.664 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.FieldInfo
+11:01:52.664 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.GroupInfo
+11:01:52.664 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.ComponentInfo
+11:01:52.664 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.ComponentInfo'.
+11:01:52.664 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/info/ComponentInfo
+11:01:52.665 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/fixsuite/message/info/ComponentInfo
+11:01:52.665 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.ComponentInfo
+11:01:52.665 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.MessageInfo
+11:01:52.665 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.MessageInfo'.
+11:01:52.665 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/info/MessageInfo
+11:01:52.666 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/fixsuite/message/info/MessageInfo
+11:01:52.666 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.MessageInfo
+11:01:52.666 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.info.ValueInfo
+11:01:52.666 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.info.ValueInfo'.
+11:01:52.666 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/info/ValueInfo
+11:01:52.666 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/fixsuite/message/info/ValueInfo
+11:01:52.666 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.info.ValueInfo
+.11:01:52.678 [Time-limited test] ERROR org.fixsuite.message.Library - Supplied path is not a directory.
+11:01:52.683 [Time-limited test] DEBUG org.fixsuite.message.Library - Approximate memory allocation: 0 MB.
+11:01:52.683 [Time-limited test] INFO org.fixsuite.message.Library - Loading time: 0 milliseconds.
+11:01:52.684 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.parsers.fpl.MainParser
+11:01:52.684 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.parsers.fpl.MainParser'.
+11:01:52.685 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/fixsuite/message/parsers/fpl/MainParser
+11:01:52.685 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/fixsuite/message/parsers/fpl/MainParser
+11:01:52.685 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.fixsuite.message.parsers.fpl, 248437024
+11:01:52.685 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.parsers.fpl.MainParser
+11:01:52.685 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.fixsuite.message.parsers.Parser
+11:01:52.685 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.fixsuite.message.parsers.Parser'.
+11:01:52.685 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.fixsuite.message.parsers, 1247861036
+11:01:52.685 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.fixsuite.message.parsers.Parser
+.11:01:52.694 [Time-limited test] ERROR org.fixsuite.message.Library - Supplied directory is empty.
+11:01:52.700 [Time-limited test] DEBUG org.fixsuite.message.Library - Approximate memory allocation: 0 MB.
+11:01:52.701 [Time-limited test] INFO org.fixsuite.message.Library - Loading time: 0 milliseconds.
+..11:01:52.710 [Time-limited test] ERROR org.fixsuite.message.Library - Supplied directory is empty.
+11:01:52.716 [Time-limited test] DEBUG org.fixsuite.message.Library - Approximate memory allocation: 0 MB.
+11:01:52.716 [Time-limited test] INFO org.fixsuite.message.Library - Loading time: 0 milliseconds.
+E.
+Time: 0.262
+There was 1 failure:
+1) testLoadFromDirectoryWithFile(org.fixsuite.message.Library_ESTest)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at org.fixsuite.message.Library_ESTest.testLoadFromDirectoryWithFile(Library_ESTest.java:34)
+
+FAILURES!!!
+Tests run: 5,  Failures: 1
+
+",org.fixsuite.message.Library_ESTest,/home/e113/Documents/Humanization-Project/HUMANIZATION/For_GitHub/TestHumanizer/Approache/TestHumanizer/outputs/reproducibility/sf110/sample_2_seed_42/testhumanizer_outputs/04_refactorings/extracted_suites/generated/gpt4o/SF110/74_fixsuite/Library/testsuite_1/Scenario-1/iter_1/org/fixsuite/message/Library_ESTest.java,Library_ESTest.java,

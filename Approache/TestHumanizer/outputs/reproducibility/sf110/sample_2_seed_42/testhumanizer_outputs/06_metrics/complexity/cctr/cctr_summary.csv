@@ -1,0 +1,5 @@
+suite_kind,dataset,project,class_name,scenario_id,model_alias,total_files,ok_files,average_cognitive_complexity,median_cognitive_complexity,min_cognitive_complexity,max_cognitive_complexity,total_cognitive_complexity
+original,SF110,33_javaviewcontrol,TokenMgrError,Original,original,1,1,51.0,51.0,51.0,51.0,51.0
+original,SF110,74_fixsuite,Library,Original,original,1,1,19.0,19.0,19.0,19.0,19.0
+refactored,SF110,33_javaviewcontrol,TokenMgrError,Scenario-1,gpt4o,1,1,47.0,47.0,47.0,47.0,47.0
+refactored,SF110,74_fixsuite,Library,Scenario-1,gpt4o,1,1,19.0,19.0,19.0,19.0,19.0
